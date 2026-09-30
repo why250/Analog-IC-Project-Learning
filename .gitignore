@@ -1,0 +1,26 @@
+# Per-machine configuration and credentials
+config/local.env
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+
+# Local EDA data and generated output
+local/
+artifacts/local/
+simulation/
+psf/
+psf*/
+*.raw
+*.log
+*.log.*
+*.cdslck
+*.lck
+*.oa
+*.oa-
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+.DS_Store
