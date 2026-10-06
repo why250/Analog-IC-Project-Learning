@@ -1,0 +1,221 @@
+{
+  "date": "2026-10-03",
+  "source_kind": "live bridge schematic reads and fresh nominal simulation",
+  "bridge_commit": "168943ca917e592c492a0db1b70aca0544f311c0",
+  "profile": "adc_course",
+  "workspace_package": "adc_verification_v5.0_001",
+  "virtuoso": "IC25.1-64b.38",
+  "spectre": "25.1.0.054",
+  "remote_evidence_directory": "COURSE_REMOTE_ROOT/2026-10-03-circuits",
+  "original_archive_sha256": "d2d30077c9d2243b86b2addc207ae8089468a2f7707d0812eab516d6bd2b2095",
+  "read_modules": [
+    {
+      "library": "saradc",
+      "cell": "10Bit_capdac_TB_new",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_capdac_TB_new/schematic/sch.oa",
+      "schematic_sha256": "dec2908ecbfd4f000e8a4b56a28c4f87fa37e7fc43762918bd3842d251154b70"
+    },
+    {
+      "library": "saradc",
+      "cell": "backplate_clamp_1",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/backplate_clamp_1/schematic/sch.oa",
+      "schematic_sha256": "a6a74d60a4bf8be10770bdbc15a04041bec863b4c27d6f4e77df3b2bbc9d4757"
+    },
+    {
+      "library": "saradc",
+      "cell": "backplate_clamp_2",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/backplate_clamp_2/schematic/sch.oa",
+      "schematic_sha256": "a181875e0d6d39bac0140286d2b2931105adaa8e75159191a5adefd3752360a8"
+    },
+    {
+      "library": "saradc",
+      "cell": "backplate_clamp_4",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/backplate_clamp_4/schematic/sch.oa",
+      "schematic_sha256": "6049e692bbf7cfe44f22baeaad8ef6974ea094fd57f3322b2fda4fe78c46ac2d"
+    },
+    {
+      "library": "saradc",
+      "cell": "backplate_clamp_8",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/backplate_clamp_8/schematic/sch.oa",
+      "schematic_sha256": "10bfb029484982a6a4e1643df309d4e41738905974ca3005ae47a3b3d23fb114"
+    },
+    {
+      "library": "saradc",
+      "cell": "comparator",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/comparator/schematic/sch.oa",
+      "schematic_sha256": "38fccbde0301bb477463a173c03937007f9b364732e1500541adf5688d7ea21c"
+    },
+    {
+      "library": "saradc",
+      "cell": "comparator_noise_TB_new",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_noise_TB_new/schematic/sch.oa",
+      "schematic_sha256": "c71d267fbde9d7cecbd47bf1130cb5f5b6992b30e3f988c68a41892550cbf5e5"
+    },
+    {
+      "library": "saradc",
+      "cell": "comparator_offset_TB_new",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_offset_TB_new/schematic/sch.oa",
+      "schematic_sha256": "2c9e70426e7ac12b0b26aab3d5c4c9316e0d9716a9a1d1bbb4025b0b62ab8890"
+    },
+    {
+      "library": "saradc",
+      "cell": "srlatch_nand",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/srlatch_nand/schematic/sch.oa",
+      "schematic_sha256": "0551cdcef90d0be1601e2addd97c16f21d057433ac845bc62f51365111fa2601"
+    },
+    {
+      "library": "saradcII",
+      "cell": "10BIT_CAPDAC_ld1",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/10BIT_CAPDAC_ld1/schematic/sch.oa",
+      "schematic_sha256": "90c9f6f5df98df9456da2954eed42acc6665ae0fbb3aed83af54d41980d33513"
+    },
+    {
+      "library": "saradcII",
+      "cell": "10bit_adc_core_w_split_dac_ld1_msb",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/10bit_adc_core_w_split_dac_ld1_msb/schematic/sch.oa",
+      "schematic_sha256": "9c78c40ab5bed2ee3485b52961acb5a2624dcd58caf3680df9d3843beb70b109"
+    },
+    {
+      "library": "saradcII",
+      "cell": "analog_mux_1",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/analog_mux_1/schematic/sch.oa",
+      "schematic_sha256": "d4f0c4b68c270fd8c5cb4211fab6544ca96a4707dfdf3a19efbe813b3efce140"
+    },
+    {
+      "library": "saradcII",
+      "cell": "analog_mux_16",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/analog_mux_16/schematic/sch.oa",
+      "schematic_sha256": "99b3257e57cdb7cb8c3ee88c6ccbc2cc211a0e8ff4ee44fe6a34b3a1f9022406"
+    },
+    {
+      "library": "saradcII",
+      "cell": "analog_mux_16_ld1",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/analog_mux_16_ld1/schematic/sch.oa",
+      "schematic_sha256": "954f105e7290266fb06d56db952032d2e1d9b1d5ed52cd7d70c58621e5a2e8a2"
+    },
+    {
+      "library": "saradcII",
+      "cell": "analog_mux_1_ld1",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/analog_mux_1_ld1/schematic/sch.oa",
+      "schematic_sha256": "c7cc11f253edb97427f77ec0c615a265efcc1505ca6134e4d3846a517d5b8379"
+    },
+    {
+      "library": "saradcII",
+      "cell": "analog_mux_2",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/analog_mux_2/schematic/sch.oa",
+      "schematic_sha256": "45e5f1f7113b131263aed2b33c33526fdbda93a91ffe23db5248112bf0459c4e"
+    },
+    {
+      "library": "saradcII",
+      "cell": "analog_mux_2_ld1",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/analog_mux_2_ld1/schematic/sch.oa",
+      "schematic_sha256": "05b94c440f93cb18edeb0c9a87600b64aa440409d3694231c38f2e4a362ac99c"
+    },
+    {
+      "library": "saradcII",
+      "cell": "analog_mux_4",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/analog_mux_4/schematic/sch.oa",
+      "schematic_sha256": "1be85cbf6a2df9c56daf034cf91d7fba7d28a506531bac16637581ac00df7cbd"
+    },
+    {
+      "library": "saradcII",
+      "cell": "analog_mux_4_ld1",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/analog_mux_4_ld1/schematic/sch.oa",
+      "schematic_sha256": "535ee9c652ed0e40da16c94c65af0faa226eec62b82457d4ea79bfe80fb58474"
+    },
+    {
+      "library": "saradcII",
+      "cell": "analog_mux_8",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/analog_mux_8/schematic/sch.oa",
+      "schematic_sha256": "199812f90e3ea8c5b0a76b60e49b47db32e34477d03995c00180bdba0ec5d5f5"
+    },
+    {
+      "library": "saradcII",
+      "cell": "analog_mux_8_ld1",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/analog_mux_8_ld1/schematic/sch.oa",
+      "schematic_sha256": "0c8dab499a2636dd7c34db4a0bc0344304992889ff570414d498949c03d3c635"
+    },
+    {
+      "library": "saradcII",
+      "cell": "backplate_clamp",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/backplate_clamp/schematic/sch.oa",
+      "schematic_sha256": "1aeb2519f4b914825eea29e4acb53f39e6c9ac3a64622a6b6ec31711738db3b6"
+    },
+    {
+      "library": "saradcII",
+      "cell": "boosted_SH_switch",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/boosted_SH_switch/schematic/sch.oa",
+      "schematic_sha256": "edbfada172bc52ff0ab8d8a3c4908598f724fdfc56b0581fa7fe7c8f9b6c4f47"
+    },
+    {
+      "library": "saradcII",
+      "cell": "comparator",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/comparator/schematic/sch.oa",
+      "schematic_sha256": "38fccbde0301bb477463a173c03937007f9b364732e1500541adf5688d7ea21c"
+    },
+    {
+      "library": "saradcII",
+      "cell": "latch_buffer",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/latch_buffer/schematic/sch.oa",
+      "schematic_sha256": "e549caa189a456a90fa1f9adf8d9a1dc06abed624f5f776f3b6979d8f0e3db0f"
+    },
+    {
+      "library": "saradcII",
+      "cell": "latchonly_updated",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/latchonly_updated/schematic/sch.oa",
+      "schematic_sha256": "0be0d58a8eba3b0da5d58634bc325f86203661bbecdd98bc7e572c55ec754120"
+    },
+    {
+      "library": "saradcII",
+      "cell": "mos_switch",
+      "schematic_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradcII/mos_switch/schematic/sch.oa",
+      "schematic_sha256": "a9be5b6a6e76f4006ef5ccbce5cfb1739138f4d821a4deecd67f870d1e70a1fe"
+    }
+  ],
+  "new_run": {
+    "maestro": "saradc/course_cmp_offset_20261003/maestro",
+    "test": "saradc:comparator_offset_TB_new:1",
+    "dut": "saradc/comparator",
+    "history": "ExplorerRun.0",
+    "analysis": "tran",
+    "model_section": "tt",
+    "temperature_C": 27,
+    "VDD_V": 1.2,
+    "fclk_Hz": 1000000.0,
+    "input_ramp_range_V": [
+      -0.02,
+      0.02
+    ],
+    "ramp_resolution_V": 0.0001,
+    "stop_s": 0.0008001,
+    "netlist_sha256": "dad7535315471abf5be362f36eee6c51d446d4f51e67f517cb1a1e8dc0a239e6",
+    "simulator_summary": "spectre completes with 0 errors, 2 warnings, and 8 notices.",
+    "warnings": [
+      "WARNING (CMI-2426): I0.I0.I10.NM3: `Pdiblc2' = -1.46371e-09 is negative."
+    ],
+    "ade_log_simulation_errors": 0,
+    "saved_scalar_outputs": {
+      "Offset_V": 6.418e-17,
+      "Offsetf_V": -5e-05,
+      "Offsetr_V": 5e-05
+    },
+    "measurement_limit": "Saved ramp crossing expressions, 100 uV grid, nominal only; average cancellation is not precision, mismatch yield or dynamic timing validation",
+    "waveform_exports": [
+      "ExplorerRun.0-ramp.txt",
+      "ExplorerRun.0-decision.txt"
+    ],
+    "original_maestro_files_unchanged": {
+      "maestro.sdb": true,
+      "active.state": true,
+      "master.tag": true,
+      "data.dm": true
+    }
+  },
+  "not_newly_simulated": [
+    "ADC system",
+    "CDAC",
+    "boosted_SH_switch",
+    "PLL"
+  ],
+  "pending_anomaly": "analog_mux_8: no vin-to-cap sampling instance found in schematic read; core netlist audit pending"
+}

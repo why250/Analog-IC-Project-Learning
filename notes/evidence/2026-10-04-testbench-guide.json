@@ -1,0 +1,1785 @@
+{
+  "date": "2026-10-04",
+  "new_simulation_run": false,
+  "active_Maestro_read": false,
+  "source_package": "adc_verification_v5.0_001",
+  "saved_XML_not_current_session": true,
+  "records": [
+    {
+      "library": "saradc",
+      "cell": "10Bit_ADC_TB_new",
+      "evidence_kind": "saved_XML_and_live_readonly_schematic",
+      "new_run": false,
+      "saved_variables": {
+        "ron_sample": "100",
+        "VDD": "1.2",
+        "fsample": "100M",
+        "numberofbits": "10",
+        "tone": "503",
+        "tr": "10p",
+        "numPoints": "1024",
+        "delay": "400n",
+        "percentFullScale": "840m",
+        "trise": "tr",
+        "VCM": "VDD/2",
+        "fclk": "(numberofbits+2)*fsample",
+        "quanta": "VDD/(2**numberofbits)",
+        "tsample": "1/fsample",
+        "fin": "(fsample/numPoints)*tone",
+        "fnyquist": "fsample/2",
+        "fullInputScale": "VDD/2",
+        "vin": "percentFullScale*fullInputScale",
+        "TSTOP": "(4+numPoints)*tsample",
+        "tclk": "1/fclk",
+        "f_fftbin": "fnyquist/128",
+        "scaleInput": "(percentFullScale/200)*fullInputScale",
+        "TSTOP_tran": "TSTOP+40n"
+      },
+      "saved_analyses": [
+        {
+          "name": "dc",
+          "saved_fields": {
+            "stop": "\"\"",
+            "start": "\"\"",
+            "sweep": "\"\"",
+            "enable": "(nil)"
+          }
+        },
+        {
+          "name": "tran",
+          "saved_fields": {
+            "strobedelay": "\"\"",
+            "strobeperiod": "\"10n\"",
+            "start": "\"\"",
+            "maxstep": "\"\"",
+            "fundFreq": "\"\"",
+            "noisetmin": "\"\"",
+            "noiseseed": "\"\"",
+            "noisefmin": "\"\"",
+            "noisefmax": "\"\"",
+            "stop": "\"VAR(\\\"TSTOP_tran\\\")\"",
+            "enable": "(t)",
+            "tranNoiseMultiRuns": "\"\"",
+            "noiseruns": "\"100\"",
+            "noiseonoff": "\"\"",
+            "noiseinst": "\"\""
+          }
+        }
+      ],
+      "saved_models": [
+        "((\"$PROJECT/TECH/GPDK045/gpdk045/models/spectre/gpdk045.scs\" \"mc\"))"
+      ],
+      "saved_outputs": [
+        {
+          "name": "\"Analog Out\"",
+          "expression": "((v(\"/out<0>\" ?result \"tran\") / 1024) + (v(\"/out<9>\" ?result \"tran\") / 2) + ((v(\"/out<8>\" ?result \"tran\") / 4) + ((v(\"/out<7>\" ?result \"tran\") / 8) + ((v(\"/out<6>\" ?result \"tran\") / 16) + ((v(\"/out<5>\" ?result \"tran\") / 32) + ((v(\"/out<4>\" ?result \"tran\") / 64) + ((v(\"/out<3>\" ?result \"tran\") / 128) + ((v(\"/out<2>\" ?result \"tran\") / 256) + (v(\"/out<1>\" ?result \"tran\") / 512)))))))))",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_enob\"",
+          "expression": "spectrumMeasurement(((v(\"/out<0>\" ?result \"tran\") / 1024) + (v(\"/out<9>\" ?result \"tran\") / 2) + ((v(\"/out<8>\" ?result \"tran\") / 4) + ((v(\"/out<7>\" ?result \"tran\") / 8) + ((v(\"/out<6>\" ?result \"tran\") / 16) + ((v(\"/out<5>\" ?result \"tran\") / 32) + ((v(\"/out<4>\" ?result \"tran\") / 64) + ((v(\"/out<3>\" ?result \"tran\") / 128) + ((v(\"/out<2>\" ?result \"tran\") / 256) + (v(\"/out<1>\" ?result \"tran\") / 512))))))))) t 4e-08 1.028e-05 1024 97280 4.981e+07 1 \"Cosine2\" 0 0 10 \"enob\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_sinad\"",
+          "expression": "spectrumMeasurement(((v(\"/out<0>\" ?result \"tran\") / 1024) + (v(\"/out<9>\" ?result \"tran\") / 2) + ((v(\"/out<8>\" ?result \"tran\") / 4) + ((v(\"/out<7>\" ?result \"tran\") / 8) + ((v(\"/out<6>\" ?result \"tran\") / 16) + ((v(\"/out<5>\" ?result \"tran\") / 32) + ((v(\"/out<4>\" ?result \"tran\") / 64) + ((v(\"/out<3>\" ?result \"tran\") / 128) + ((v(\"/out<2>\" ?result \"tran\") / 256) + (v(\"/out<1>\" ?result \"tran\") / 512))))))))) t 4e-08 1.028e-05 1024 97660 5e+07 1 \"Cosine2\" 0 0 10 \"sinad\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_snr\"",
+          "expression": "spectrumMeasurement(((v(\"/out<0>\" ?result \"tran\") / 1024) + (v(\"/out<9>\" ?result \"tran\") / 2) + ((v(\"/out<8>\" ?result \"tran\") / 4) + ((v(\"/out<7>\" ?result \"tran\") / 8) + ((v(\"/out<6>\" ?result \"tran\") / 16) + ((v(\"/out<5>\" ?result \"tran\") / 32) + ((v(\"/out<4>\" ?result \"tran\") / 64) + ((v(\"/out<3>\" ?result \"tran\") / 128) + ((v(\"/out<2>\" ?result \"tran\") / 256) + (v(\"/out<1>\" ?result \"tran\") / 512))))))))) t 4e-08 1.028e-05 1024 97660 5e+07 1 \"Cosine2\" 0 0 10 \"snr\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_sfdr\"",
+          "expression": "spectrumMeasurement(((v(\"/out<0>\" ?result \"tran\") / 1024) + (v(\"/out<9>\" ?result \"tran\") / 2) + ((v(\"/out<8>\" ?result \"tran\") / 4) + ((v(\"/out<7>\" ?result \"tran\") / 8) + ((v(\"/out<6>\" ?result \"tran\") / 16) + ((v(\"/out<5>\" ?result \"tran\") / 32) + ((v(\"/out<4>\" ?result \"tran\") / 64) + ((v(\"/out<3>\" ?result \"tran\") / 128) + ((v(\"/out<2>\" ?result \"tran\") / 256) + (v(\"/out<1>\" ?result \"tran\") / 512))))))))) t 4e-08 1.028e-05 1024 97660 5e+07 1 \"Cosine2\" 0 0 10 \"sfdr\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_thddb\"",
+          "expression": "spectrumMeasurement(((v(\"/out<0>\" ?result \"tran\") / 1024) + (v(\"/out<9>\" ?result \"tran\") / 2) + ((v(\"/out<8>\" ?result \"tran\") / 4) + ((v(\"/out<7>\" ?result \"tran\") / 8) + ((v(\"/out<6>\" ?result \"tran\") / 16) + ((v(\"/out<5>\" ?result \"tran\") / 32) + ((v(\"/out<4>\" ?result \"tran\") / 64) + ((v(\"/out<3>\" ?result \"tran\") / 128) + ((v(\"/out<2>\" ?result \"tran\") / 256) + (v(\"/out<1>\" ?result \"tran\") / 512))))))))) t 4e-08 1.028e-05 1024 97660 5e+07 1 \"Cosine2\" 0 0 10 \"thddb\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net3\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<9>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<5>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<8>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<7>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<6>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<4>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<3>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<2>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<1>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<0>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net17\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net15\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net21\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net19\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net13\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net7\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net26\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net18\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net050\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net16\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net058\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/voutp\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<9>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<8>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<7>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<6>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<5>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<4>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<3>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<2>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<1>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<0>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/sample\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/voutn\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/clk!\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/I55/I1/VSS!\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/vip\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/vin\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/vrefp\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/vrefn\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/SC\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/CLK\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/DR\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/VSS\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/VDD\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/vcm\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net013\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net012\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/sump\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/sumn\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/sample_B\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/outp\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/outn\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net025\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net026\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/I55/I0/rb\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/I55/I0/sb\"",
+          "plot": "nil",
+          "save": "nil"
+        }
+      ],
+      "design_instances": [
+        {
+          "name": "I0",
+          "lib": "saradcII",
+          "cell": "10bit_adc_core_w_split_dac_ld1_msb",
+          "terms": {
+            "vcm": "net04",
+            "VDD": "vdda!",
+            "VSS": "vssa!",
+            "DR": "data_ready",
+            "CLK": "CLK",
+            "out<9:0>": "out<0:9>",
+            "SC": "SC",
+            "vrefn": "net06",
+            "vrefp": "net05",
+            "vin": "vin",
+            "vip": "vip"
+          },
+          "params": {}
+        }
+      ],
+      "source_sha256": {
+        "DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_ADC_TB_new/maestro/maestro.sdb": "2877194c579366e58bf3d3233dda89cca68a6df5b5b16ab00fc68d782fb3ae5b",
+        "DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_ADC_TB_new/maestro/active.state": "80aba1f83143b6e8cd573dd0d7458ddc523ff687d846a7fa40ebf3f4e56ce49d"
+      }
+    },
+    {
+      "library": "saradc",
+      "cell": "10Bit_ADC_TB_noise",
+      "evidence_kind": "saved_XML_and_live_readonly_schematic",
+      "new_run": false,
+      "saved_variables": {
+        "ron_sample": "100",
+        "VDD": "1.2",
+        "fsample": "100M",
+        "numberofbits": "10",
+        "tone": "503",
+        "tr": "10p",
+        "numPoints": "1024",
+        "delay": "400n",
+        "percentFullScale": "840m",
+        "trise": "tr",
+        "VCM": "VDD/2",
+        "fclk": "(numberofbits+2)*fsample",
+        "quanta": "VDD/(2**numberofbits)",
+        "tsample": "1/fsample",
+        "fin": "(fsample/numPoints)*tone",
+        "fnyquist": "fsample/2",
+        "fullInputScale": "VDD/2",
+        "vin": "percentFullScale*fullInputScale",
+        "TSTOP": "(4+numPoints)*tsample",
+        "tclk": "1/fclk",
+        "f_fftbin": "fnyquist/128",
+        "scaleInput": "(percentFullScale/200)*fullInputScale",
+        "TSTOP_tran": "TSTOP+40n"
+      },
+      "saved_analyses": [
+        {
+          "name": "tran",
+          "saved_fields": {
+            "start": "\"\"",
+            "maxstep": "\"\"",
+            "strobeperiod": "\"10n\"",
+            "strobedelay": "\"\"",
+            "noiseonoff": "\"\"",
+            "noiseruns": "\"100\"",
+            "tranNoiseMultiRuns": "\"\"",
+            "fundFreq": "\"\"",
+            "noisetmin": "\"\"",
+            "noiseseed": "\"1\"",
+            "noisefmin": "\"\"",
+            "noisefmax": "\"50G\"",
+            "stop": "\"VAR(\\\"TSTOP_tran\\\")\"",
+            "enable": "(t)",
+            "noiseinst": "\"\""
+          }
+        },
+        {
+          "name": "dc",
+          "saved_fields": {
+            "stop": "\"\"",
+            "start": "\"\"",
+            "sweep": "\"\"",
+            "enable": null
+          }
+        }
+      ],
+      "saved_models": [
+        "((\"$PROJECT/TECH/GPDK045/gpdk045/models/spectre/gpdk045.scs\" \"mc\"))"
+      ],
+      "saved_outputs": [
+        {
+          "name": "\"Analog Out\"",
+          "expression": "((v(\"/out<0>\" ?result \"tran\") / 1024) + (v(\"/out<9>\" ?result \"tran\") / 2) + ((v(\"/out<8>\" ?result \"tran\") / 4) + ((v(\"/out<7>\" ?result \"tran\") / 8) + ((v(\"/out<6>\" ?result \"tran\") / 16) + ((v(\"/out<5>\" ?result \"tran\") / 32) + ((v(\"/out<4>\" ?result \"tran\") / 64) + ((v(\"/out<3>\" ?result \"tran\") / 128) + ((v(\"/out<2>\" ?result \"tran\") / 256) + (v(\"/out<1>\" ?result \"tran\") / 512)))))))))",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_enob\"",
+          "expression": "spectrumMeasurement(((v(\"/out<0>\" ?result \"tran\") / 1024) + (v(\"/out<9>\" ?result \"tran\") / 2) + ((v(\"/out<8>\" ?result \"tran\") / 4) + ((v(\"/out<7>\" ?result \"tran\") / 8) + ((v(\"/out<6>\" ?result \"tran\") / 16) + ((v(\"/out<5>\" ?result \"tran\") / 32) + ((v(\"/out<4>\" ?result \"tran\") / 64) + ((v(\"/out<3>\" ?result \"tran\") / 128) + ((v(\"/out<2>\" ?result \"tran\") / 256) + (v(\"/out<1>\" ?result \"tran\") / 512))))))))) t 4e-08 1.028e-05 1024 97280 4.981e+07 1 \"Cosine2\" 0 0 10 \"enob\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_sinad\"",
+          "expression": "spectrumMeasurement(((v(\"/out<0>\" ?result \"tran\") / 1024) + (v(\"/out<9>\" ?result \"tran\") / 2) + ((v(\"/out<8>\" ?result \"tran\") / 4) + ((v(\"/out<7>\" ?result \"tran\") / 8) + ((v(\"/out<6>\" ?result \"tran\") / 16) + ((v(\"/out<5>\" ?result \"tran\") / 32) + ((v(\"/out<4>\" ?result \"tran\") / 64) + ((v(\"/out<3>\" ?result \"tran\") / 128) + ((v(\"/out<2>\" ?result \"tran\") / 256) + (v(\"/out<1>\" ?result \"tran\") / 512))))))))) t 4e-08 1.028e-05 1024 97660 5e+07 1 \"Cosine2\" 0 0 10 \"sinad\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_snr\"",
+          "expression": "spectrumMeasurement(((v(\"/out<0>\" ?result \"tran\") / 1024) + (v(\"/out<9>\" ?result \"tran\") / 2) + ((v(\"/out<8>\" ?result \"tran\") / 4) + ((v(\"/out<7>\" ?result \"tran\") / 8) + ((v(\"/out<6>\" ?result \"tran\") / 16) + ((v(\"/out<5>\" ?result \"tran\") / 32) + ((v(\"/out<4>\" ?result \"tran\") / 64) + ((v(\"/out<3>\" ?result \"tran\") / 128) + ((v(\"/out<2>\" ?result \"tran\") / 256) + (v(\"/out<1>\" ?result \"tran\") / 512))))))))) t 4e-08 1.028e-05 1024 97660 5e+07 1 \"Cosine2\" 0 0 10 \"snr\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_sfdr\"",
+          "expression": "spectrumMeasurement(((v(\"/out<0>\" ?result \"tran\") / 1024) + (v(\"/out<9>\" ?result \"tran\") / 2) + ((v(\"/out<8>\" ?result \"tran\") / 4) + ((v(\"/out<7>\" ?result \"tran\") / 8) + ((v(\"/out<6>\" ?result \"tran\") / 16) + ((v(\"/out<5>\" ?result \"tran\") / 32) + ((v(\"/out<4>\" ?result \"tran\") / 64) + ((v(\"/out<3>\" ?result \"tran\") / 128) + ((v(\"/out<2>\" ?result \"tran\") / 256) + (v(\"/out<1>\" ?result \"tran\") / 512))))))))) t 4e-08 1.028e-05 1024 97660 5e+07 1 \"Cosine2\" 0 0 10 \"sfdr\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_thddb\"",
+          "expression": "spectrumMeasurement(((v(\"/out<0>\" ?result \"tran\") / 1024) + (v(\"/out<9>\" ?result \"tran\") / 2) + ((v(\"/out<8>\" ?result \"tran\") / 4) + ((v(\"/out<7>\" ?result \"tran\") / 8) + ((v(\"/out<6>\" ?result \"tran\") / 16) + ((v(\"/out<5>\" ?result \"tran\") / 32) + ((v(\"/out<4>\" ?result \"tran\") / 64) + ((v(\"/out<3>\" ?result \"tran\") / 128) + ((v(\"/out<2>\" ?result \"tran\") / 256) + (v(\"/out<1>\" ?result \"tran\") / 512))))))))) t 4e-08 1.028e-05 1024 97660 5e+07 1 \"Cosine2\" 0 0 10 \"thddb\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net3\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<9>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<5>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<8>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<7>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<6>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<4>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<3>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<2>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<1>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out<0>\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net17\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net15\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net21\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net19\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net13\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net7\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net26\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net18\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net050\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net16\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net058\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/voutp\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<9>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<8>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<7>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<6>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<5>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<4>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<3>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<2>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<1>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/bit<0>\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/sample\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/voutn\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/clk!\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/I55/I1/VSS!\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/vip\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/vin\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/vrefp\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/vrefn\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/SC\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/CLK\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/DR\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/VSS\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/VDD\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/vcm\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net013\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net012\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/sump\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/sumn\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/sample_B\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/outp\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/outn\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net025\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net026\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/I55/I0/rb\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/I55/I0/sb\"",
+          "plot": "nil",
+          "save": "nil"
+        }
+      ],
+      "design_instances": [
+        {
+          "name": "I0",
+          "lib": "saradcII",
+          "cell": "10bit_adc_core_w_split_dac_ld1_msb",
+          "terms": {
+            "vcm": "net04",
+            "VDD": "vdda!",
+            "VSS": "vssa!",
+            "DR": "data_ready",
+            "CLK": "CLK",
+            "out<9:0>": "out<0:9>",
+            "SC": "SC",
+            "vrefn": "net06",
+            "vrefp": "net05",
+            "vin": "vin",
+            "vip": "vip"
+          },
+          "params": {}
+        }
+      ],
+      "source_sha256": {
+        "DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_ADC_TB_noise/maestro/maestro.sdb": "bb535c3b9d97548fe8b24182f5cc58f947ad6e01c99ed35c2826e433b1d90c4f",
+        "DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_ADC_TB_noise/maestro/active.state": "fc597c2a65c368441e57e97d23dbe491b836cc32aeb2008c190a45ebeca7a181"
+      }
+    },
+    {
+      "library": "saradc",
+      "cell": "10Bit_capdac_TB_new",
+      "evidence_kind": "saved_XML_and_live_readonly_schematic",
+      "new_run": false,
+      "saved_variables": {
+        "ron_sample": "100",
+        "trise": "10p",
+        "VDD": "1.2",
+        "number_of_bits": "10",
+        "fsample": "100M",
+        "scaleInput": "990m",
+        "tone": "127",
+        "numPoints": "512",
+        "down": "0",
+        "reset": "0",
+        "tr": "1p",
+        "Vol": "0",
+        "VCM": "VDD/2",
+        "Voh": "VDD",
+        "up": "VDD",
+        "tfall": "trise",
+        "fclk": "fsample*(number_of_bits+2)",
+        "period": "1/fclk",
+        "delay": "2*period+period/2",
+        "TSTOP": "delay+(numPoints+4)*period"
+      },
+      "saved_analyses": [
+        {
+          "name": "tran",
+          "saved_fields": {
+            "start": "\"\"",
+            "maxstep": "\"\"",
+            "strobeperiod": "\"\"",
+            "strobedelay": "\"\"",
+            "noiseonoff": "\"\"",
+            "noiseruns": "\"100\"",
+            "tranNoiseMultiRuns": "\"\"",
+            "fundFreq": "\"\"",
+            "noisetmin": "\"\"",
+            "noiseseed": "\"1\"",
+            "noisefmin": "\"\"",
+            "noisefmax": "\"\"",
+            "stop": "\"VAR(\\\"TSTOP\\\")\"",
+            "enable": "(t)",
+            "noiseinst": "\"\""
+          }
+        }
+      ],
+      "saved_models": [
+        "((\"$PROJECT/TECH/GPDK045/gpdk045/models/spectre/gpdk045.scs\" \"mc\"))"
+      ],
+      "saved_outputs": [
+        {
+          "name": "\"spectrum_enob\"",
+          "expression": "spectrumMeasurement((VT(\"/outn\") - VT(\"/outp\")) t (VAR(\"delay\") + (4 * VAR(\"period\"))) VAR(\"TSTOP\") (VAR(\"numPoints\") / 2) (VAR(\"fclk\") / VAR(\"numPoints\")) (VAR(\"fclk\") / 4) 0 \"Rectangular\" 0 0 10 \"enob\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_sinad\"",
+          "expression": "spectrumMeasurement((VT(\"/outn\") - VT(\"/outp\")) t (VAR(\"delay\") + (4 * VAR(\"period\"))) VAR(\"TSTOP\") (VAR(\"numPoints\") / 2) (VAR(\"fclk\") / VAR(\"numPoints\")) (VAR(\"fclk\") / 4) 0 \"Rectangular\" 0 0 10 \"sinad\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_snr\"",
+          "expression": "spectrumMeasurement((VT(\"/outn\") - VT(\"/outp\")) t (VAR(\"delay\") + (4 * VAR(\"period\"))) VAR(\"TSTOP\") (VAR(\"numPoints\") / 2) (VAR(\"fclk\") / VAR(\"numPoints\")) (VAR(\"fclk\") / 4) 0 \"Rectangular\" 0 0 10 \"snr\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_sfdr\"",
+          "expression": "spectrumMeasurement((VT(\"/outn\") - VT(\"/outp\")) t (VAR(\"delay\") + (4 * VAR(\"period\"))) VAR(\"TSTOP\") (VAR(\"numPoints\") / 2) (VAR(\"fclk\") / VAR(\"numPoints\")) (VAR(\"fclk\") / 4) 0 \"Rectangular\" 0 0 10 \"sfdr\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"spectrum_thddb\"",
+          "expression": "spectrumMeasurement((VT(\"/outn\") - VT(\"/outp\")) t (VAR(\"delay\") + (4 * VAR(\"period\"))) VAR(\"TSTOP\") (VAR(\"numPoints\") / 2) (VAR(\"fclk\") / VAR(\"numPoints\")) (VAR(\"fclk\") / 4) 0 \"Rectangular\" 0 0 10 \"thddb\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"analog output\"",
+          "expression": "(VT(\"/outn\") - VT(\"/outp\"))",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"Output_Spectrum\"",
+          "expression": "db20(dft((VT(\"/outn\") - VT(\"/outp\")) (VAR(\"delay\") + (4 * VAR(\"period\"))) VAR(\"TSTOP\") (VAR(\"numPoints\") / 2) \"Rectangular\"))",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        }
+      ],
+      "design_instances": [
+        {
+          "name": "I13",
+          "lib": "saradc",
+          "cell": "adc_10bit",
+          "terms": {
+            "vd9": "data<9>",
+            "vd8": "data<8>",
+            "vd0": "data<0>",
+            "vd1": "data<1>",
+            "vd2": "data<2>",
+            "vd3": "data<3>",
+            "vd4": "data<4>",
+            "vd5": "data<5>",
+            "vd6": "data<6>",
+            "vd7": "data<7>",
+            "vclk": "CLK",
+            "vin": "net025"
+          },
+          "params": {
+            "trise": "10p",
+            "tfall": "10p",
+            "tdel": "10p",
+            "vlogic_high": "VDD",
+            "vlogic_low": "0",
+            "vtrans_clk": "VDD/2",
+            "vref": "1",
+            "mismatch_fact": "0"
+          }
+        },
+        {
+          "name": "I6",
+          "lib": "saradcII",
+          "cell": "10BIT_CAPDAC_ld1",
+          "terms": {
+            "vip": "vcm",
+            "bit<0:9>": "data<0:9>",
+            "vin": "vcm",
+            "sump": "outp",
+            "sumn": "outn",
+            "vrefp": "vdda!",
+            "vrefn": "gnd!",
+            "sample": "net06",
+            "vcm": "vcm"
+          },
+          "params": {}
+        }
+      ],
+      "source_sha256": {
+        "DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_capdac_TB_new/maestro/maestro.sdb": "00d77a0376c8ae54b6fab698b59da0cdfc6b7ec18f4ed5da77833170b15f196a",
+        "DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_capdac_TB_new/maestro/active.state": "2c837afc5d42e49416c9e895c796a4355c9ebbdd369bb075cd6dfa93104ab7cc"
+      }
+    },
+    {
+      "library": "saradc",
+      "cell": "comparator_offset_TB_new",
+      "evidence_kind": "saved_XML_and_live_readonly_schematic",
+      "new_run": false,
+      "saved_variables": {
+        "trise": "1p",
+        "VDD": "1.2",
+        "fclk": "1M",
+        "fin": "10k",
+        "resolution": "100u",
+        "delay": "100n",
+        "vin": "20m",
+        "period": "numberoflevels/(fclk)",
+        "numberoflevels": "int(2*vin/resolution)",
+        "TSTOP": "delay+2*(numberoflevels/fclk)",
+        "ramprate": "(2*vin)/period"
+      },
+      "saved_analyses": [
+        {
+          "name": "tran",
+          "saved_fields": {
+            "start": "\"\"",
+            "maxstep": "\"\"",
+            "strobeperiod": "\"\"",
+            "strobedelay": "\"\"",
+            "noiseonoff": "\"\"",
+            "noiseruns": "\"100\"",
+            "tranNoiseMultiRuns": "\"\"",
+            "fundFreq": "\"\"",
+            "noisetmin": "\"\"",
+            "noiseseed": "\"1\"",
+            "noisefmin": "\"\"",
+            "noisefmax": "\"\"",
+            "stop": "\"VAR(\\\"TSTOP\\\")\"",
+            "enable": "(t)",
+            "noiseinst": "\"\""
+          }
+        }
+      ],
+      "saved_models": [
+        "((\"$PROJECT/TECH/GPDK045/gpdk045/models/spectre/gpdk045.scs\" \"tt\"))"
+      ],
+      "saved_outputs": [
+        {
+          "name": "\"Offset\"",
+          "expression": "((value(v(\"/net10\" ?result \"tran\") cross(clip((VT(\"/outb\") - VT(\"/out\")) VAR(\"delay\") (VAR(\"TSTOP\") / 2)) 0 1 \"rising\" nil nil)) + value(v(\"/net10\" ?result \"tran\") cross(clip((VT(\"/outb\") - VT(\"/out\")) (VAR(\"TSTOP\") / 2) VAR(\"TSTOP\")) 0 1 \"falling\" nil nil))) / 2)",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"Offsetf\"",
+          "expression": "value(v(\"/net10\" ?result \"tran\") cross(clip((VT(\"/outb\") - VT(\"/out\")) VAR(\"delay\") VAR(\"TSTOP\")) 0 1 \"rising\" nil nil))",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"Offsetr\"",
+          "expression": "value(v(\"/net10\" ?result \"tran\") cross(clip((VT(\"/outb\") - VT(\"/out\")) 1e-07 VAR(\"TSTOP\")) 0 1 \"falling\" nil nil))",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"Latch Out\"",
+          "expression": "sample((v(\"/I0/net5\" ?result \"tran\") - v(\"/I0/net4\" ?result \"tran\")) 5e-09 VAR(\"TSTOP\") \"linear\" 1e-08)",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"Clock\"",
+          "expression": "v(\"/clk\" ?result \"tran\")",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "\"Input\"",
+          "expression": "v(\"/net10\" ?result \"tran\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"VT(\\\"/I0/net5\\\")\"",
+          "expression": "v(\"/I0/net5\" ?result \"tran\")",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "\"VT(\\\"/I0/net4\\\")\"",
+          "expression": "v(\"/I0/net4\" ?result \"tran\")",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "\"v(\\\"/I0/net5\\\" ?result \\\"tran\\\")-v(\\\"/I0/net4\\\" ?result \\\"tran\\\")\"",
+          "expression": "(v(\"/I0/net5\" ?result \"tran\") - v(\"/I0/net4\" ?result \"tran\"))",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/net10\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "\"Offset_latch\"",
+          "expression": "(0.0001 + (value(v(\"/net10\" ?result \"tran\") cross(clip((VT(\"/I0/I0/sb\") - VT(\"/I0/I0/rb\")) VAR(\"delay\") VAR(\"TSTOP\")) 0 1 \"rising\" nil nil)) + value(v(\"/net10\" ?result \"tran\") cross(clip((VT(\"/I0/I0/sb\") - VT(\"/I0/I0/rb\")) (VAR(\"TSTOP\") / 2) VAR(\"TSTOP\")) 0 1 \"falling\" nil nil))))",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/outb\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net5\"",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I0/net4\"",
+          "plot": "nil",
+          "save": "nil"
+        }
+      ],
+      "design_instances": [
+        {
+          "name": "I0",
+          "lib": "saradc",
+          "cell": "comparator",
+          "terms": {
+            "out": "out",
+            "outb": "outb",
+            "clk": "clk",
+            "Din-": "net2",
+            "Din+": "net3"
+          },
+          "params": {}
+        },
+        {
+          "name": "I2",
+          "lib": "saradc",
+          "cell": "offsetrampgenerator",
+          "terms": {
+            "vramp": "net10",
+            "clk": "clk"
+          },
+          "params": {
+            "vth": "VDD/2",
+            "td": "delay",
+            "tr": "trise",
+            "resolution": "resolution",
+            "maxin": "vin"
+          }
+        }
+      ],
+      "source_sha256": {
+        "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_offset_TB_new/maestro/maestro.sdb": "ec086393f3b666681cde5de27e39c477cc01b7892eca5ed0297c1c6d0b923d34",
+        "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_offset_TB_new/maestro/active.state": "f9ebe05ef081a15af1e54a59fdd58970957df543a18dfac5bea1bc3410f2e801"
+      }
+    },
+    {
+      "library": "saradc",
+      "cell": "comparator_noise_TB_new",
+      "evidence_kind": "saved_XML_and_live_readonly_schematic",
+      "new_run": false,
+      "saved_variables": {
+        "vin": "500u",
+        "VDD": "1.2",
+        "fclk": "fsample*(numberofbits+2)",
+        "gain": "100",
+        "vout": "gain*vin",
+        "fsample": "100M",
+        "numberofbits": "10",
+        "fnyquist": "fsample/2",
+        "maxacfreq": "2*fclk",
+        "period": "1/fclk"
+      },
+      "saved_analyses": [
+        {
+          "name": "pss",
+          "saved_fields": {
+            "sweep": "\"Variable\"",
+            "tstab": "\"2*period\"",
+            "enable": "(t)",
+            "fund": "\"\"",
+            "period": "\"2*period\"",
+            "harms": "\"10\"",
+            "start": "\"\"",
+            "stop": "\"\"",
+            "maxstep": "\"\"",
+            "strobeperiod": "\"\"",
+            "strobedelay": "\"\""
+          }
+        },
+        {
+          "name": "pnoise",
+          "saved_fields": {
+            "enable": "(t)",
+            "fund": "\"\"",
+            "period": "\"2*period\"",
+            "sweeptype": "\"default\"",
+            "start": "\"1\"",
+            "stop": "\"VAR(\\\"fclk\\\")/2\"",
+            "maxsideband": "\"\"",
+            "refsideband": "\"1\"",
+            "noisetype": "\"sampled\"",
+            "noiseout": "(\"usb\")",
+            "sampleratio": "\"\""
+          }
+        }
+      ],
+      "saved_models": [
+        "((\"$PROJECT/TECH/GPDK045/gpdk045/models/spectre/gpdk045.scs\" \"mc\"))"
+      ],
+      "saved_outputs": [
+        {
+          "name": "\"PSS\"",
+          "expression": "(vtime('pss \"/net011\") - vtime('pss \"/net8\"))",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "\"clk_transient\"",
+          "expression": "v(\"/clk\" ?result \"pss_tran\")",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "\"noninvertingoutput_transient\"",
+          "expression": "v(\"/net8\" ?result \"pss_tran\")",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "\"/I9/I0/rb\"",
+          "expression": "v(\"/I9/I0/rb\" ?result \"pss_tran\")",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "\"/I9/I0/sb\"",
+          "expression": "v(\"/I9/I0/sb\" ?result \"pss_tran\")",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "\"crossTime\"",
+          "expression": "(cross((vtime('pss \"/I9/I0/sb\") - vtime('pss \"/I9/I0/rb\")) VAR(\"vout\") 1 \"falling\" nil nil) - cross(vtime('pss \"/clk\") (VAR(\"VDD\") / 2) 1 \"falling\" nil nil))",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "\"v (/I9/I0/sb /I9/I0/rb); pss (V)\"",
+          "expression": "(vtime('pss \"/I9/I0/sb\") - vtime('pss \"/I9/I0/rb\"))",
+          "signal": "nil",
+          "plot": "nil",
+          "save": "nil"
+        },
+        {
+          "name": "\"TotalNoiseOutput\"",
+          "expression": "value(ymax(sqrt(iinteg((getData(\"/out\" ?result \"pnoise_sample_pm0\")**2)))) (1 / VAR(\"fclk\")))",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"noiseDensity\"",
+          "expression": "getData(\"/out\" ?result \"pnoise_sample_pm0\")",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        },
+        {
+          "name": "\"InputReferredNoise\"",
+          "expression": "value((ymax(sqrt(iinteg((getData(\"/out\" ?result \"pnoise_sample_pm0\")**2)))) / VAR(\"gain\")) (1 / VAR(\"fclk\")))",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        }
+      ],
+      "design_instances": [
+        {
+          "name": "I9",
+          "lib": "saradcII",
+          "cell": "comparator",
+          "terms": {
+            "out": "net8",
+            "outb": "net011",
+            "clk": "clk",
+            "Din-": "net2",
+            "Din+": "net017"
+          },
+          "params": {}
+        }
+      ],
+      "source_sha256": {
+        "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_noise_TB_new/maestro/maestro.sdb": "3253238fbb9c1d2dd9b8aa654c108c3cdded3dd47bb5d415c0327a8cfe583d68",
+        "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_noise_TB_new/maestro/active.state": "19970b44d647052d168bb09611282ae70207b12044f447e60a401c0ac8a89d78"
+      }
+    },
+    {
+      "library": "saradc",
+      "cell": "comparator_tran_noise_TB",
+      "evidence_kind": "saved_XML_and_live_readonly_schematic",
+      "new_run": false,
+      "saved_variables": {
+        "tr": "1p",
+        "fin": "1M",
+        "vin": "-1m:125u:1m",
+        "VDD": "1.2",
+        "fclk": "1.2G",
+        "AV": "1",
+        "Q": "781.25e-6",
+        "VL": "0.8",
+        "Bits": "10",
+        "Samples": "2",
+        "T": "1/(2*(Samples+Bits)*fclk)",
+        "period": "1/fclk",
+        "fsample": "100M",
+        "Vcommon": "VDD/2"
+      },
+      "saved_analyses": [
+        {
+          "name": "tran",
+          "saved_fields": {
+            "start": "\"\"",
+            "maxstep": "\"\"",
+            "strobeperiod": "\"\"",
+            "strobedelay": "\"\"",
+            "noiseonoff": "\"\"",
+            "noiseruns": "\"100\"",
+            "tranNoiseMultiRuns": "\"\"",
+            "fundFreq": "\"\"",
+            "noisetmin": "\"\"",
+            "noiseseed": "\"1\"",
+            "noisefmin": "\"\"",
+            "noisefmax": "\"50G\"",
+            "stop": "\"10u\"",
+            "enable": "(t)",
+            "noiseinst": "\"\""
+          }
+        }
+      ],
+      "saved_models": [
+        "((\"$PROJECT/TECH/GPDK045/gpdk045/models/spectre/gpdk045.scs\" \"mc\"))"
+      ],
+      "saved_outputs": [
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/out\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I8/I0/sb\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "nil",
+          "expression": "nil",
+          "signal": "\"/I8/I0/rb\"",
+          "plot": "nil",
+          "save": "t"
+        },
+        {
+          "name": "\"tran_noise\"",
+          "expression": "average(clip(v(\"/out\" ?result \"tran\") 1e-08 1e-05))",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        }
+      ],
+      "design_instances": [
+        {
+          "name": "I8",
+          "lib": "saradcII",
+          "cell": "comparator",
+          "terms": {
+            "out": "net8",
+            "outb": "net011",
+            "clk": "clk",
+            "Din-": "net2",
+            "Din+": "net3"
+          },
+          "params": {}
+        }
+      ],
+      "source_sha256": {
+        "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_tran_noise_TB/maestro/maestro.sdb": "b201fa6d3d1379632792568dfabb02364d8144b5a48ad437ee62500f86aa1b0a",
+        "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_tran_noise_TB/maestro/active.state": "279f1b8491905bde3193057dd79ab95bd09da256fd563158ebea05dbf0383208"
+      },
+      "observer_path": {
+        "evidence_kind": "live_readonly_schematic_not_new_netlist",
+        "comparator_outputs": [
+          "net8",
+          "net011"
+        ],
+        "VCVS": {
+          "instance": "E0",
+          "master": "analogLib/vcvs",
+          "gain": "1.0/(2*VDD)",
+          "input_plus": "net8",
+          "input_minus": "net011",
+          "output_plus": "net04",
+          "output_minus": "net012"
+        },
+        "observer": {
+          "instance": "I9",
+          "master": "ahdlLib/comparator",
+          "sigin": "net04",
+          "sigref": "net012",
+          "sigout": "out",
+          "sigout_high": "1",
+          "sigout_low": "0",
+          "comp_slope": "1000"
+        },
+        "reference": {
+          "instance": "V9",
+          "master": "analogLib/vdc",
+          "plus": "net012",
+          "minus": "gnd!",
+          "vdc": "500.0m"
+        },
+        "interpretation": "out is a separate 0/1 observer. Its time average is not automatically the per-evaluate decision probability; noise activation and valid sampling remain unverified."
+      }
+    },
+    {
+      "library": "saradc",
+      "cell": "clockPhaseGenerator_TB_new",
+      "evidence_kind": "saved_XML_and_live_readonly_schematic",
+      "new_run": false,
+      "saved_variables": {
+        "VDD": "1.2",
+        "fsample": "100M",
+        "trise": "10p",
+        "fclk": "12*fsample",
+        "period": "1/fclk"
+      },
+      "saved_analyses": [
+        {
+          "name": "pnoise",
+          "saved_fields": {
+            "enable": "(t)",
+            "fund": "\"1.2G\"",
+            "period": "\"833.333333p\"",
+            "sweeptype": "\"default\"",
+            "start": "\"1\"",
+            "stop": "\"fsample/2\"",
+            "maxsideband": "\"\"",
+            "refsideband": "\"\"",
+            "noisetype": "\"sampled\"",
+            "noiseout": "nil",
+            "sampleratio": "\"\""
+          }
+        },
+        {
+          "name": "pss",
+          "saved_fields": {
+            "sweep": "\"Variable\"",
+            "tstab": "\"VAR(\\\"period\\\")\"",
+            "enable": "(t)",
+            "fund": "\"1.2G\"",
+            "period": "\"833.333333p\"",
+            "harms": "\"10\"",
+            "start": "\"\"",
+            "stop": "\"\"",
+            "maxstep": "\"\"",
+            "strobeperiod": "\"\"",
+            "strobedelay": "\"\""
+          }
+        }
+      ],
+      "saved_models": [
+        "((\"$PROJECT/TECH/GPDK045/gpdk045/models/spectre/gpdk045.scs\" \"mc\"))"
+      ],
+      "saved_outputs": [
+        {
+          "name": "\"jitter[ps,rms]\"",
+          "expression": "ymax(sqrt(iinteg((drplJitter(?result \"pnoise_sample_pm0\" ?unit \"Second\" ?k 1 ?event 0)**2))))",
+          "signal": "nil",
+          "plot": "t",
+          "save": "nil"
+        }
+      ],
+      "design_instances": [
+        {
+          "name": "I0",
+          "lib": "saradc",
+          "cell": "clockPhaseGenerator",
+          "terms": {
+            "CLK": "net3",
+            "phi2d": "net4",
+            "phi2": "net5",
+            "phi1d": "net6",
+            "phi1": "net7"
+          },
+          "params": {}
+        }
+      ],
+      "source_sha256": {
+        "DESIGNS/GPDK045/SARADC/oa/saradc/clockPhaseGenerator_TB_new/maestro/maestro.sdb": "4f265e1b40ca3140caf290635f2182056ce0c93e5ec63519f9bb3a4bebb7057e",
+        "DESIGNS/GPDK045/SARADC/oa/saradc/clockPhaseGenerator_TB_new/maestro/active.state": "f6be264a854e77eceb662e0673ef93bdb8881ec0e05d98e7b32632d3ad378d60"
+      }
+    }
+  ]
+}

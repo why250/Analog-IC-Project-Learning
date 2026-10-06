@@ -1,0 +1,7397 @@
+{
+  "checked_at_utc": "2026-10-04T12:26:09.459006+00:00",
+  "profile": "afe_course",
+  "working_directory": "\"/home/userone/AAAIC/workspaces/afe4404\"",
+  "method": "live schematic.read, read-only",
+  "simulation": "not run",
+  "cells": {
+    "TOP_HIER": {
+      "library": "HIX_1907151TOP",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151TOP/TOP_HIER/schematic/sch.oa",
+      "source_sha256_before": "9e6d4f4a5f687931d2da3aa99d85a326a867ab81f0202fa8e38949220733904f",
+      "source_sha256_after": "9e6d4f4a5f687931d2da3aa99d85a326a867ab81f0202fa8e38949220733904f",
+      "instance_count": 226,
+      "pins": [
+        "X26327_PDN",
+        "X24398_A1",
+        "X24239_Q",
+        "X24172_A1",
+        "X24170_Z",
+        "X23954_A1N",
+        "X23951_A1N",
+        "X23950_A1N",
+        "X23634_S",
+        "X23634_A1",
+        "X23619_S",
+        "X23603_S",
+        "X23581_S",
+        "X23579_S",
+        "X23530_A1",
+        "X23530_A0",
+        "X23528_A1",
+        "X23526_S",
+        "X23526_A1",
+        "X23526_A0",
+        "X23486_ZN",
+        "X23485_ZN",
+        "X23105_ZN",
+        "X23104_ZN",
+        "X23103_ZN",
+        "X23102_ZN",
+        "X23101_ZN",
+        "X23100_ZN",
+        "X23099_ZN",
+        "X23098_ZN",
+        "X23097_ZN",
+        "X23096_ZN",
+        "X23095_ZN",
+        "X23094_ZN",
+        "X23093_ZN",
+        "X23092_ZN",
+        "X23091_ZN",
+        "X23090_ZN",
+        "X23089_ZN",
+        "X23088_ZN",
+        "X23087_ZN",
+        "X23086_ZN",
+        "X23085_ZN",
+        "X23083_ZN",
+        "X23082_ZN",
+        "X23081_ZN",
+        "X23080_ZN",
+        "X23079_ZN",
+        "X23078_ZN",
+        "X23077_ZN",
+        "X23076_ZN",
+        "X23075_ZN",
+        "X23074_ZN",
+        "X23073_ZN",
+        "X23072_ZN",
+        "X23071_ZN",
+        "X23070_ZN",
+        "X23067_ZN",
+        "X23064_ZN",
+        "X23063_ZN",
+        "X22910_ZN",
+        "X22903_A",
+        "X22768_A",
+        "X22766_A",
+        "X22764_A",
+        "X22762_A",
+        "X22564_A",
+        "X22563_A",
+        "X22562_A",
+        "X22561_A",
+        "X22559_A",
+        "X22558_A",
+        "X22557_A",
+        "X22556_A",
+        "X22555_A",
+        "X22554_A",
+        "X22553_A",
+        "X22551_A",
+        "X22550_A",
+        "X22548_A",
+        "X22547_A",
+        "X22546_A",
+        "X22545_A",
+        "X22544_A",
+        "X22543_A",
+        "X22542_A",
+        "X22541_A",
+        "X22540_A",
+        "X22539_A",
+        "X22538_A",
+        "X22537_A",
+        "X22536_A",
+        "X22535_A",
+        "X22534_A",
+        "X22533_A",
+        "X22532_A",
+        "X22531_A",
+        "X22530_A",
+        "X22529_A",
+        "X22528_A",
+        "X22527_A",
+        "X22526_A",
+        "X22525_A",
+        "X22524_A",
+        "X22523_A",
+        "X22522_A",
+        "X22521_A",
+        "X22519_A",
+        "X22518_A",
+        "X22517_A",
+        "X22516_A",
+        "X22515_A",
+        "X22514_A",
+        "X22512_A",
+        "X22511_A",
+        "X22510_A",
+        "X22509_A",
+        "X22508_A",
+        "X22507_A",
+        "X22506_A",
+        "X22503_A",
+        "X22502_A",
+        "X22501_A",
+        "X22500_A",
+        "X22499_A",
+        "X22498_A",
+        "X22496_A",
+        "X22495_A",
+        "X22494_A",
+        "X22493_A",
+        "X22492_A",
+        "X22491_A",
+        "X22490_A",
+        "X22489_A",
+        "X22488_A",
+        "X22487_A",
+        "X22485_A",
+        "X22484_A",
+        "X22483_A",
+        "X22482_A",
+        "X22481_A",
+        "X22480_A",
+        "X22478_A",
+        "X22477_A",
+        "X22476_A",
+        "X22475_A",
+        "X22474_A",
+        "X22473_A",
+        "X22380_A",
+        "X22369_A",
+        "X22362_A",
+        "X22360_A",
+        "X22359_A",
+        "X22358_A",
+        "X22357_A",
+        "X22355_A",
+        "X22352_A",
+        "X22350_A",
+        "X22348_A",
+        "X22347_A",
+        "X22346_A",
+        "X22345_A",
+        "X22343_A",
+        "X22341_A",
+        "X22340_A",
+        "X22339_A",
+        "X22338_A",
+        "X22332_A",
+        "X22330_A",
+        "X22328_A",
+        "X22324_A",
+        "X22321_A",
+        "X22319_A",
+        "X22318_A",
+        "X22315_A",
+        "X22312_A",
+        "X22311_A",
+        "X22310_A",
+        "X22308_A",
+        "X22307_A",
+        "X22302_A",
+        "X22300_A",
+        "X22299_A",
+        "X22293_A",
+        "X22291_A",
+        "X22290_A",
+        "X22289_A",
+        "X22287_A",
+        "X22283_A",
+        "X22281_A",
+        "X22280_A",
+        "X22278_A",
+        "X22277_A",
+        "X22276_A",
+        "X22275_A",
+        "X22272_A",
+        "X22270_A",
+        "X22269_A",
+        "X22267_A",
+        "X22262_A",
+        "X22260_A",
+        "X22255_A",
+        "X22251_A",
+        "X22247_A",
+        "X22244_A",
+        "X22243_A",
+        "X22241_A",
+        "X22240_A",
+        "X22238_A",
+        "X22236_A",
+        "X22235_A",
+        "X22233_A",
+        "X22232_A",
+        "X22231_A",
+        "X22229_A",
+        "X22227_A",
+        "X22226_A",
+        "X22223_A",
+        "X22222_A",
+        "X22218_A",
+        "X22216_A",
+        "X22215_A",
+        "X22212_A",
+        "X22210_A",
+        "X22209_A",
+        "X22205_A",
+        "X22202_A",
+        "X22201_A",
+        "X22200_A",
+        "X22199_A",
+        "X22193_A",
+        "X22192_A",
+        "X22191_A",
+        "X22186_A",
+        "X22185_A",
+        "X22184_A",
+        "X22183_A",
+        "X22182_A",
+        "X22181_A",
+        "X22180_A",
+        "X22178_A",
+        "X22177_A",
+        "X22174_A",
+        "X22173_A",
+        "X22169_A",
+        "X22166_A",
+        "X22164_A",
+        "X22162_A",
+        "X22161_A",
+        "X22160_A",
+        "X22158_A",
+        "X22157_A",
+        "X22153_A",
+        "X22141_A",
+        "X22139_A",
+        "X22138_A",
+        "X22137_A",
+        "X22134_A",
+        "X22132_A",
+        "X22130_A",
+        "X22129_A",
+        "X22128_A",
+        "X22127_A",
+        "X22124_A",
+        "X22121_A",
+        "X22118_A",
+        "X22117_A",
+        "X22113_A",
+        "X22109_A",
+        "X22107_A",
+        "X22103_A",
+        "X22101_A",
+        "X22089_A",
+        "X22086_A",
+        "X22085_A",
+        "X22084_A",
+        "X22079_A",
+        "X22077_A",
+        "X22073_A",
+        "X22067_A",
+        "X22062_A",
+        "X22059_A",
+        "X22055_A",
+        "X22053_ZN",
+        "X22052_A",
+        "X22049_A",
+        "X22046_A",
+        "X22041_A",
+        "X22022_A",
+        "X22016_A",
+        "X21966_ZN",
+        "X21957_ZN",
+        "X21938_ZN",
+        "X21931_ZN",
+        "X21917_ZN",
+        "X21909_ZN",
+        "X21907_A",
+        "X21504_A2",
+        "X21504_A1",
+        "X21492_A1",
+        "X21490_A2",
+        "X21488_A2",
+        "X21450_A1",
+        "X21363_Z",
+        "X13875_Q",
+        "X13632_SDN",
+        "X13540_Z",
+        "X13539_Z",
+        "X13527_Z",
+        "X13515_Z",
+        "X13502_A",
+        "X13501_A",
+        "X13500_A",
+        "X13498_A",
+        "X13497_A",
+        "X13496_A",
+        "X13494_A",
+        "X13493_A",
+        "X13488_VS",
+        "X13454_A1N",
+        "TX_SUP",
+        "TX3",
+        "TX2",
+        "TX1",
+        "RX_SUP",
+        "RESETZ",
+        "PAD7",
+        "PAD6",
+        "PAD5",
+        "PAD4",
+        "PAD3",
+        "PAD2",
+        "PAD1",
+        "N26299_G",
+        "L42_MINUS",
+        "L41_MINUS",
+        "L40_MINUS",
+        "L3_MINUS",
+        "L37_MINUS",
+        "L36_MINUS",
+        "L35_MINUS",
+        "L34_MINUS",
+        "L32_MINUS",
+        "L31_MINUS",
+        "L30_MINUS",
+        "L29_MINUS",
+        "L28_MINUS",
+        "L27_MINUS",
+        "L25_MINUS",
+        "L24_MINUS",
+        "L21_MINUS",
+        "L16_MINUS",
+        "L15_MINUS",
+        "L10_MINUS",
+        "IO_SUP",
+        "INP",
+        "INM",
+        "I2C_DAT",
+        "I2C_CLK",
+        "GND",
+        "DNC",
+        "CLK",
+        "ADC_RDY"
+      ],
+      "master_counts": {
+        "gf018hv_green/nmos_3p3": 12,
+        "gf018hv_green/pmos_3p3": 5,
+        "gf018hv_green/npolyf_u": 13,
+        "HIX_1907151DEV/nmoscap_3p3_EX": 15,
+        "gf018hv_green/nmoscap_3p3": 2,
+        "HIX_1907151DEV/RTF": 9,
+        "HIX_1907151DEV/NPN": 1,
+        "gf018hv_green/dnwpw_3p3": 10,
+        "gf018hv_green/pn_3p3": 13,
+        "gf018hv_green/np_3p3": 3,
+        "HIX_1907151DEV/nmos_3p3_EX": 4,
+        "HIX_1907151LIB/FA_DIFINVF_40_20D2S1": 1,
+        "HIX_1907151LIB/FA_INV_20_14D2": 1,
+        "HIX_1907151LIB/FB_AND2_13_9": 11,
+        "HIX_1907151LIB/FB_BUF_21X3_8X2": 1,
+        "HIX_1907151LIB/FB_BUF_E23_E8": 1,
+        "HIX_1907151LIB/FB_INV_13X2_E11": 2,
+        "HIX_1907151LIB/FB_INV_13X4_10X2": 10,
+        "HIX_1907151LIB/FB_INV_13_9": 5,
+        "HIX_1907151LIB/FB_INV_3X3_4": 2,
+        "HIX_1907151LIB/FB_MX22_13_9": 7,
+        "HIX_1907151LIB/FB_NOR2B1_15_9": 1,
+        "HIX_1907151LIB/FB_OR2_13_9": 11,
+        "HIX_1907151LIB/FB_TRIGATEF_50L3X6_31L3X2": 1,
+        "HIX_1907151LIB/FB_INVF_13_9": 2,
+        "HIX_1907151LIB/FB_INVF_13_9S2": 2,
+        "HIX_1907151SUB/AMP_BLOCK": 1,
+        "HIX_1907151SUB/DRIVER_1": 2,
+        "HIX_1907151SUB/AMP_4": 1,
+        "HIX_1907151SUB/VOL_GEN_3": 1,
+        "HIX_1907151SUB/COMP_1": 1,
+        "HIX_1907151SUB/BIAS_3": 1,
+        "HIX_1907151SUB/BIAS_4": 1,
+        "HIX_1907151SUB/PAD_IO_1S1": 1,
+        "HIX_1907151SUB/DECODER_BLOCK_1": 1,
+        "HIX_1907151SUB/RES_ADJ_6": 1,
+        "HIX_1907151SUB/OSC_2": 1,
+        "HIX_1907151SUB/LDO_1": 1,
+        "HIX_1907151SUB/AMP_5": 1,
+        "HIX_1907151SUB/CTRL_2": 1,
+        "HIX_1907151SUB/PAD_ESD": 4,
+        "HIX_1907151SUB/POWER_CAP": 1,
+        "HIX_1907151SUB/DIFINV_8B": 1,
+        "HIX_1907151SUB/LDO_2": 1,
+        "HIX_1907151SUB/DAC_1": 1,
+        "HIX_1907151SUB/FREQ_BLOCK_1": 1,
+        "HIX_1907151SUB/BUFF_1": 1,
+        "HIX_1907151SUB/UNUSED_4": 1,
+        "HIX_1907151SUB/MX21_15BX4": 1,
+        "HIX_1907151SUB/BUFF_2": 1,
+        "HIX_1907151SUB/VOL_GEN_2": 1,
+        "HIX_1907151SUB/VOL_GEN_1": 2,
+        "HIX_1907151SUB/PAD_IO_1": 1,
+        "HIX_1907151SUB/PAD_IO_2": 1,
+        "HIX_1907151SUB/PAD_IO_3": 1,
+        "HIX_1907151SUB/PAD_IO_4": 2,
+        "HIX_1907151SUB/DRIVER_2": 1,
+        "HIX_1907151SUB/SMBUF_1": 1,
+        "HIX_1907151SUB/CTRL_1": 1,
+        "HIX_1907151SUB/SWITCH_1": 2,
+        "HIX_1907151SUB/CTRL_5": 1,
+        "HIX_1907151SUB/ADC_1": 1,
+        "HIX_1907151SUB/BUF_1": 1,
+        "HIX_1907151SUB/FREQ_DIV_1": 1,
+        "HIX_1907151SUB/FREQ_DIV_2": 1,
+        "HIX_1907151SUB/CTRL_6": 1,
+        "HIX_1907151SUB/VOL_GEN_4": 1,
+        "HIX_1907151SUB/VREF_1": 1,
+        "HIX_1907151SUB/CTRL_4": 1,
+        "HIX_1907151SUB/LSQU_CELL_1": 1,
+        "HIX_1907151SUB/DAC_3": 1,
+        "HIX_1907151SUB/BUF_2": 1,
+        "HIX_1907151SUB/BUF_3": 1,
+        "HIX_1907151SUB/BUF_4": 1,
+        "HIX_1907151SUB/BUF_5": 1,
+        "HIX_1907151SUB/BUF_6": 1,
+        "HIX_1907151SUB/UNUSED_5": 1,
+        "HIX_1907151SUB/S_TRIGATE_50L4X6_30L4X2": 2,
+        "HIX_1907151SUB/BUF_8B": 1,
+        "HIX_1907151SUB/SWITCHED_RC_FILTER": 1,
+        "HIX_1907151SUB/S_TRIGATE_50_50D8": 2,
+        "HIX_1907151SUB/RC_CELL_2": 2,
+        "HIX_1907151SUB/OSC_3": 1,
+        "HIX_1907151SUB/BLOCK_1": 1,
+        "HIX_1907151SUB/DEC_3B_1S1": 1,
+        "HIX_1907151SUB/SWITCH_BLOCK": 1,
+        "HIX_1907151SUB/S_TRIGATE_80_80D6": 3,
+        "HIX_1907151SUB/MUX_1": 1,
+        "HIX_1907151SUB/CTRL_3": 1,
+        "HIX_1907151SUB/DIFINV_9B": 1,
+        "HIX_1907151SUB/BUF_BLOCK": 1,
+        "HIX_1907151SUB/DIFINV_5B": 1,
+        "HIX_1907151SUB/DAC_2": 1,
+        "HIX_1907151SUB/COUNT_4B_1": 1,
+        "HIX_1907151SUB/AMP_6": 1
+      }
+    },
+    "AMP_6": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/AMP_6/schematic/sch.oa",
+      "source_sha256_before": "b2ea8623d173dad25451bee4d909f9d376ce62fb9e643e611d6ad8ff91830e0c",
+      "source_sha256_after": "b2ea8623d173dad25451bee4d909f9d376ce62fb9e643e611d6ad8ff91830e0c",
+      "instance_count": 173,
+      "pins": [
+        "X24590_ZN",
+        "X24500_ZN",
+        "X24441_ZN",
+        "X24435_ZN",
+        "VS",
+        "VP",
+        "VOP",
+        "VOM",
+        "VM",
+        "P14069_D",
+        "NIB",
+        "GS",
+        "ENN",
+        "ADJ2_3",
+        "ADJ2_2",
+        "ADJ2_1",
+        "ADJ2_0",
+        "ADJ1_3",
+        "ADJ1_2",
+        "ADJ1_1",
+        "ADJ1_0"
+      ],
+      "master_counts": {
+        "gf018hv_green/pmos_3p3": 44,
+        "gf018hv_green/nmos_3p3": 56,
+        "HIX_1907151DEV/nmos_3p3_EX": 25,
+        "HIX_1907151DEV/pmos_3p3_EX": 2,
+        "gf018hv_green/nmoscap_3p3": 7,
+        "gf018hv_green/mim_1p0fF": 14,
+        "HIX_1907151DEV/RTF": 11,
+        "HIX_1907151LIB/FB_INV_13_9": 12,
+        "HIX_1907151DEV/mim_1p0fF_EX": 2
+      }
+    },
+    "SWITCHED_RC_FILTER": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/SWITCHED_RC_FILTER/schematic/sch.oa",
+      "source_sha256_before": "db312aab2fe522c43a67f20c4fd9564f8262f9b59c529606713e1ae934d55b4c",
+      "source_sha256_after": "db312aab2fe522c43a67f20c4fd9564f8262f9b59c529606713e1ae934d55b4c",
+      "instance_count": 73,
+      "pins": [
+        "VS1",
+        "VS",
+        "VOUT2",
+        "VOUT1",
+        "VIN2",
+        "VIN1",
+        "S2",
+        "S1",
+        "GS",
+        "A7",
+        "A6",
+        "A5",
+        "A4",
+        "A3",
+        "A2",
+        "A1",
+        "A0"
+      ],
+      "master_counts": {
+        "HIX_1907151DEV/RTF": 32,
+        "gf018hv_green/mim_1p0fF": 4,
+        "HIX_1907151DEV/FCAP_M34": 4,
+        "HIX_1907151SUB/S_TRIGATE_50_50": 32,
+        "HIX_1907151SUB/CTRL_7": 1
+      }
+    },
+    "VOL_GEN_1": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/VOL_GEN_1/schematic/sch.oa",
+      "source_sha256_before": "13ea964b3e50103cebcce07b00e9122be359f2cd41b9ea68f5826b4da53d5448",
+      "source_sha256_after": "13ea964b3e50103cebcce07b00e9122be359f2cd41b9ea68f5826b4da53d5448",
+      "instance_count": 108,
+      "pins": [
+        "VS1",
+        "VS",
+        "VO",
+        "VI2",
+        "VI1",
+        "NIB",
+        "GS",
+        "ENP2",
+        "ENP1",
+        "ENN"
+      ],
+      "master_counts": {
+        "HIX_1907151DEV/RTF": 21,
+        "gf018hv_green/mim_1p0fF": 2,
+        "gf018hv_green/pmos_3p3": 30,
+        "HIX_1907151DEV/pmos_3p3_EX": 9,
+        "gf018hv_green/nmos_3p3": 39,
+        "HIX_1907151DEV/nmos_3p3_EX": 7
+      },
+      "selected_instances": [
+        {
+          "name": "R19265",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "net66",
+            "PLUS": "VS"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19264",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "net66",
+            "PLUS": "VS"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19263",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "VS",
+            "PLUS": "net75"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19262",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "VS",
+            "PLUS": "net75"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19261",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "VS",
+            "PLUS": "net75"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19260",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "VS",
+            "PLUS": "net75"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19259",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "net66",
+            "PLUS": "VS"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19258",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "net66",
+            "PLUS": "VS"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19256",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "net95",
+            "PLUS": "VS"
+          },
+          "saved_params": {
+            "r": "45.714",
+            "l": "8.00u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19254",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "net76",
+            "PLUS": "net93"
+          },
+          "saved_params": {
+            "r": "64.286",
+            "l": "15.00u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19252",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "net77",
+            "PLUS": "net94"
+          },
+          "saved_params": {
+            "r": "64.286",
+            "l": "15.00u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19184",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "GS",
+            "PLUS": "net96"
+          },
+          "saved_params": {
+            "r": "182.857",
+            "l": "16.00u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19182",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "GS",
+            "PLUS": "net97"
+          },
+          "saved_params": {
+            "r": "182.857",
+            "l": "16.00u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19173",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "GS",
+            "PLUS": "net68"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19172",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "GS",
+            "PLUS": "net68"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19171",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "GS",
+            "PLUS": "net68"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19170",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "GS",
+            "PLUS": "net68"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19169",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "net59",
+            "PLUS": "GS"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19168",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "net59",
+            "PLUS": "GS"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19167",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "net59",
+            "PLUS": "GS"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "R19166",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "net59",
+            "PLUS": "GS"
+          },
+          "saved_params": {
+            "r": "30.714",
+            "l": "21.5u",
+            "w": "700.0n"
+          }
+        },
+        {
+          "name": "C18765",
+          "lib": "gf018hv_green",
+          "cell": "mim_1p0fF",
+          "terms": {
+            "BOT": "VO",
+            "TOP": "net93"
+          },
+          "saved_params": {
+            "c": "2.5335p",
+            "l": "50.000u",
+            "w": "50.00u",
+            "m": "1"
+          }
+        },
+        {
+          "name": "C18764",
+          "lib": "gf018hv_green",
+          "cell": "mim_1p0fF",
+          "terms": {
+            "BOT": "VO",
+            "TOP": "net94"
+          },
+          "saved_params": {
+            "c": "2.5335p",
+            "l": "50.000u",
+            "w": "50.00u",
+            "m": "1"
+          }
+        },
+        {
+          "name": "P38895",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net40",
+            "G": "VI1",
+            "S": "P14941_S"
+          },
+          "saved_params": {
+            "totalW": "10.000u",
+            "fingerW": "10.000u",
+            "l": "10.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P25107",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net90",
+            "G": "VI1",
+            "S": "P15098_S"
+          },
+          "saved_params": {
+            "totalW": "60.000u",
+            "fingerW": "10.000u",
+            "l": "10.000u",
+            "nf": "6",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15324",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS1",
+            "D": "P15098_S",
+            "G": "P15048_D",
+            "S": "VS1"
+          },
+          "saved_params": {
+            "totalW": "96.000u",
+            "fingerW": "4.000u",
+            "l": "6.000u",
+            "nf": "24",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15100",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net89",
+            "G": "VO",
+            "S": "P15098_S"
+          },
+          "saved_params": {
+            "totalW": "60.000u",
+            "fingerW": "10.000u",
+            "l": "10.000u",
+            "nf": "6",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15098",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "GS",
+            "G": "VS",
+            "S": "P15098_S"
+          },
+          "saved_params": {
+            "totalW": "90.000u",
+            "fingerW": "15.000u",
+            "l": "0.600u",
+            "nf": "6",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15075",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net98",
+            "G": "net67",
+            "S": "net75"
+          },
+          "saved_params": {
+            "totalW": "72.000u",
+            "fingerW": "6.000u",
+            "l": "8.000u",
+            "nf": "12",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15072",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net99",
+            "G": "net67",
+            "S": "net66"
+          },
+          "saved_params": {
+            "totalW": "72.000u",
+            "fingerW": "6.000u",
+            "l": "8.000u",
+            "nf": "12",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15050",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS1",
+            "D": "P14941_S",
+            "G": "P15048_D",
+            "S": "VS1"
+          },
+          "saved_params": {
+            "totalW": "8.000u",
+            "fingerW": "4.000u",
+            "l": "6.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15049",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS1",
+            "D": "P15048_D",
+            "G": "net38",
+            "S": "VS1"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "6.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15048",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS1",
+            "D": "P15048_D",
+            "G": "ENP1",
+            "S": "VS1"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "6.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15047",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS1",
+            "D": "net38",
+            "G": "ENP1",
+            "S": "VS1"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "6.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15046",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS1",
+            "D": "net38",
+            "G": "net38",
+            "S": "VS1"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "6.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15015",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net98",
+            "G": "net58",
+            "S": "net77"
+          },
+          "saved_params": {
+            "totalW": "48.000u",
+            "fingerW": "2.000u",
+            "l": "0.400u",
+            "nf": "24",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15014",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net99",
+            "G": "net58",
+            "S": "net67"
+          },
+          "saved_params": {
+            "totalW": "48.000u",
+            "fingerW": "2.000u",
+            "l": "0.400u",
+            "nf": "24",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15010",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net95",
+            "G": "net31",
+            "S": "net100"
+          },
+          "saved_params": {
+            "totalW": "3.000u",
+            "fingerW": "3.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15009",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "P14950_S",
+            "G": "net31",
+            "S": "net100"
+          },
+          "saved_params": {
+            "totalW": "3.000u",
+            "fingerW": "3.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15003",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net31",
+            "G": "net31",
+            "S": "P14950_S"
+          },
+          "saved_params": {
+            "totalW": "6.000u",
+            "fingerW": "6.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14982",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net49",
+            "G": "VS",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "8.000u",
+            "fingerW": "4.000u",
+            "l": "12.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14981",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net49",
+            "G": "net46",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "12.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14979",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net46",
+            "G": "VS",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "8.000u",
+            "fingerW": "4.000u",
+            "l": "12.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14978",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net46",
+            "G": "net46",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "12.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14977",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net34",
+            "G": "net46",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "12.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14974",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "P14974_D",
+            "G": "net46",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "16.000u",
+            "fingerW": "4.000u",
+            "l": "12.000u",
+            "nf": "4",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14963",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "net77",
+            "D": "net76",
+            "G": "P14923_G",
+            "S": "net77"
+          },
+          "saved_params": {
+            "totalW": "6.000u",
+            "fingerW": "2.000u",
+            "l": "2.000u",
+            "nf": "3",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14950",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net58",
+            "G": "net58",
+            "S": "P14950_S"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "2.000u",
+            "l": "0.400u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14947",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net49",
+            "G": "net45",
+            "S": "net48"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "2.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14946",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net45",
+            "G": "net45",
+            "S": "net46"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "2.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14941",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "GS",
+            "G": "VS",
+            "S": "P14941_S"
+          },
+          "saved_params": {
+            "totalW": "15.000u",
+            "fingerW": "15.000u",
+            "l": "0.600u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14939",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "VS",
+            "G": "P14923_G",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "10.000u",
+            "fingerW": "2.000u",
+            "l": "2.000u",
+            "nf": "5",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14923",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "net25",
+            "D": "P14923_G",
+            "G": "P14923_G",
+            "S": "net25"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "2.000u",
+            "l": "2.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14968",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net77",
+            "G": "ENP2",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14966",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "VO",
+            "G": "net77",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "6",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14953",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net67",
+            "G": "ENP2",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14952",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net58",
+            "G": "ENP2",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14936",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net46",
+            "G": "ENP2",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14935",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "P14923_G",
+            "G": "ENP2",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14930",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net101",
+            "G": "net25",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "3",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14929",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net101",
+            "G": "net25",
+            "S": "net102"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "3",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P14928",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net25",
+            "G": "net25",
+            "S": "net102"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "3",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19336",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "GS",
+            "G": "net48",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "8.000u",
+            "fingerW": "8.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19324",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "GS",
+            "G": "net22",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "32.000u",
+            "fingerW": "8.000u",
+            "l": "8.000u",
+            "nf": "4",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16364",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "GS",
+            "G": "net22",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "10.000u",
+            "fingerW": "5.000u",
+            "l": "20.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16359",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "VO",
+            "G": "net76",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "7.200u",
+            "fingerW": "1.200u",
+            "l": "0.600u",
+            "nf": "6",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16346",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net77",
+            "G": "P14974_D",
+            "B": "GS",
+            "S": "net76"
+          },
+          "saved_params": {
+            "totalW": "3.000u",
+            "fingerW": "1.000u",
+            "l": "4.000u",
+            "nf": "3",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16335",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net76",
+            "G": "VI2",
+            "B": "GS",
+            "S": "net90"
+          },
+          "saved_params": {
+            "totalW": "48.000u",
+            "fingerW": "2.000u",
+            "l": "0.400u",
+            "nf": "24",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16334",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net67",
+            "G": "VI2",
+            "B": "GS",
+            "S": "net89"
+          },
+          "saved_params": {
+            "totalW": "48.000u",
+            "fingerW": "2.000u",
+            "l": "0.400u",
+            "nf": "24",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16327",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net108",
+            "G": "VI2",
+            "B": "GS",
+            "S": "net31"
+          },
+          "saved_params": {
+            "totalW": "10.000u",
+            "fingerW": "10.000u",
+            "l": "9.800u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16326",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net45",
+            "G": "VI2",
+            "B": "GS",
+            "S": "net110"
+          },
+          "saved_params": {
+            "totalW": "10.000u",
+            "fingerW": "10.000u",
+            "l": "9.800u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16325",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net112",
+            "G": "VI2",
+            "B": "GS",
+            "S": "NIB"
+          },
+          "saved_params": {
+            "totalW": "10.000u",
+            "fingerW": "10.000u",
+            "l": "9.800u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16317",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net104",
+            "G": "net34",
+            "B": "GS",
+            "S": "net38"
+          },
+          "saved_params": {
+            "totalW": "20.000u",
+            "fingerW": "10.000u",
+            "l": "4.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16316",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net40",
+            "G": "net34",
+            "B": "GS",
+            "S": "P15048_D"
+          },
+          "saved_params": {
+            "totalW": "20.000u",
+            "fingerW": "10.000u",
+            "l": "4.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16315",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net34",
+            "G": "net34",
+            "B": "GS",
+            "S": "net83"
+          },
+          "saved_params": {
+            "totalW": "20.000u",
+            "fingerW": "10.000u",
+            "l": "4.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16286",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net103",
+            "G": "net22",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "8.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16285A",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net104",
+            "G": "net22",
+            "B": "GS",
+            "S": "net103"
+          },
+          "saved_params": {
+            "totalW": "8.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16278",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net105",
+            "G": "net22",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "16.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "4",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16277",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net40",
+            "G": "net22",
+            "B": "GS",
+            "S": "net105"
+          },
+          "saved_params": {
+            "totalW": "16.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "4",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16276",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net106",
+            "G": "net48",
+            "B": "GS",
+            "S": "net58"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16275",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net106",
+            "G": "net48",
+            "B": "GS",
+            "S": "net96"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16274",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net48",
+            "G": "net48",
+            "B": "GS",
+            "S": "net107"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16273A",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net97",
+            "G": "net48",
+            "B": "GS",
+            "S": "net107"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16272A",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net109",
+            "G": "net22",
+            "B": "GS",
+            "S": "net108"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16271",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net109",
+            "G": "net22",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16270",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net111",
+            "G": "net22",
+            "B": "GS",
+            "S": "net110"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16269",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net111",
+            "G": "net22",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16268",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net113",
+            "G": "net22",
+            "B": "GS",
+            "S": "net112"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16267",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net113",
+            "G": "net22",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16244",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "P14974_D",
+            "G": "P14974_D",
+            "B": "GS",
+            "S": "net52"
+          },
+          "saved_params": {
+            "totalW": "2.000u",
+            "fingerW": "1.000u",
+            "l": "4.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16239A",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net52",
+            "G": "net52",
+            "B": "GS",
+            "S": "net114"
+          },
+          "saved_params": {
+            "totalW": "3.600u",
+            "fingerW": "1.200u",
+            "l": "0.800u",
+            "nf": "3",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16238A",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net114",
+            "G": "net52",
+            "B": "GS",
+            "S": "net115"
+          },
+          "saved_params": {
+            "totalW": "3.600u",
+            "fingerW": "1.200u",
+            "l": "0.800u",
+            "nf": "3",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16237A",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net115",
+            "G": "net52",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "3.600u",
+            "fingerW": "1.200u",
+            "l": "0.800u",
+            "nf": "3",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16034",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net116",
+            "G": "net22",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "16.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "4",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16033",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net116",
+            "G": "net22",
+            "B": "GS",
+            "S": "P14923_G"
+          },
+          "saved_params": {
+            "totalW": "16.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "4",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16025",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net117",
+            "G": "net48",
+            "B": "GS",
+            "S": "net90"
+          },
+          "saved_params": {
+            "totalW": "96.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "24",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16024",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net117",
+            "G": "net48",
+            "B": "GS",
+            "S": "net68"
+          },
+          "saved_params": {
+            "totalW": "96.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "24",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16023",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net118",
+            "G": "net48",
+            "B": "GS",
+            "S": "net89"
+          },
+          "saved_params": {
+            "totalW": "96.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "24",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16022",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net118",
+            "G": "net48",
+            "B": "GS",
+            "S": "net59"
+          },
+          "saved_params": {
+            "totalW": "96.000u",
+            "fingerW": "4.000u",
+            "l": "8.000u",
+            "nf": "24",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N15984",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "GS",
+            "G": "P14974_D",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "10.000u",
+            "fingerW": "5.000u",
+            "l": "20.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N15982",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "GS",
+            "G": "net48",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "20.000u",
+            "fingerW": "5.000u",
+            "l": "20.000u",
+            "nf": "4",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16257",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net83",
+            "G": "net83",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.40u",
+            "l": "0.15u",
+            "nf": "3",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16250A",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net76",
+            "G": "ENN",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16249",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net22",
+            "G": "ENP2",
+            "B": "GS",
+            "S": "NIB"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16248",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net34",
+            "G": "ENN",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16247",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "P14974_D",
+            "G": "ENN",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16020",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net48",
+            "G": "ENN",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N16008",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net22",
+            "G": "ENN",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        }
+      ]
+    },
+    "AMP_BLOCK": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/AMP_BLOCK/schematic/sch.oa",
+      "source_sha256_before": "071fdb042978df236e418cdb5f77c62e6674b3abd73f01af6b09109d6c3b8550",
+      "source_sha256_after": "071fdb042978df236e418cdb5f77c62e6674b3abd73f01af6b09109d6c3b8550",
+      "instance_count": 61,
+      "pins": [
+        "VS",
+        "VO2_2",
+        "VO2_1",
+        "VO1_2",
+        "VO1_1",
+        "VI4",
+        "VI3_2",
+        "VI3_1",
+        "VI2_2",
+        "VI2_1",
+        "VI1_2",
+        "VI1_1",
+        "S9",
+        "S8",
+        "S7",
+        "S6",
+        "S5",
+        "S4",
+        "S3",
+        "S2",
+        "S12",
+        "S11",
+        "S10",
+        "S1",
+        "S0",
+        "NIB4",
+        "NIB3",
+        "NIB2",
+        "NIB1",
+        "GS",
+        "ENP",
+        "CTRLO",
+        "CTRL2_2",
+        "CTRL2_1",
+        "CTRL1_2",
+        "CTRL1_1",
+        "ADJ2",
+        "ADJ1"
+      ],
+      "master_counts": {
+        "HIX_1907151LIB/FB_BUF_13X2_E11": 1,
+        "HIX_1907151DEV/nmos_3p3_EX": 5,
+        "HIX_1907151DEV/RTF": 24,
+        "HIX_1907151LIB/FB_AND2_13_9": 1,
+        "HIX_1907151LIB/FB_INVF_9_3D9": 1,
+        "HIX_1907151LIB/FB_INV_13_9": 2,
+        "HIX_1907151LIB/FB_INV_3X3_4": 3,
+        "HIX_1907151LIB/FB_TRIGATEF_50L3X6_31L3X2": 8,
+        "HIX_1907151LIB/FB_TRIGATE_5_5D4": 2,
+        "HIX_1907151SUB/AMP_2": 2,
+        "HIX_1907151SUB/CAP_SWITCH_1": 2,
+        "HIX_1907151SUB/CAP_SWITCH_1S1": 2,
+        "HIX_1907151SUB/AMP_1": 1,
+        "HIX_1907151SUB/RC_SWITCH": 2,
+        "HIX_1907151SUB/RC_CELL_1": 2,
+        "HIX_1907151SUB/CAP_SWITCH_3": 2,
+        "HIX_1907151SUB/AMP_3": 1
+      },
+      "selected_instances": [
+        {
+          "name": "MI5",
+          "lib": "HIX_1907151SUB",
+          "cell": "AMP_2",
+          "terms": {
+            "ENN": "X23166_ZN",
+            "ENP": "ENP",
+            "GS": "GS",
+            "NIB": "NIB2",
+            "S0": "S0",
+            "S1": "S1",
+            "VM1": "net98",
+            "VM2": "net99",
+            "VOM": "net105",
+            "VOP": "net104",
+            "VP1": "net97",
+            "VP2": "VI4",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI3",
+          "lib": "HIX_1907151SUB",
+          "cell": "AMP_2",
+          "terms": {
+            "ENN": "X23166_ZN",
+            "ENP": "ENP",
+            "GS": "GS",
+            "NIB": "NIB3",
+            "S0": "S0",
+            "S1": "S1",
+            "VM1": "net108",
+            "VM2": "net110",
+            "VOM": "net113",
+            "VOP": "net115",
+            "VP1": "net107",
+            "VP2": "VI4",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI78",
+          "lib": "HIX_1907151SUB",
+          "cell": "CAP_SWITCH_1",
+          "terms": {
+            "GS": "GS",
+            "S0": "X21889_ZN",
+            "S0N": "X13506_Z",
+            "S1": "S4",
+            "S2": "S5",
+            "S3": "S6",
+            "S4": "S7",
+            "VI": "net113",
+            "VO": "net107",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI12",
+          "lib": "HIX_1907151SUB",
+          "cell": "CAP_SWITCH_1",
+          "terms": {
+            "GS": "GS",
+            "S0": "X21889_ZN",
+            "S0N": "X13506_Z",
+            "S1": "S4",
+            "S2": "S5",
+            "S3": "S6",
+            "S4": "S7",
+            "VI": "net115",
+            "VO": "net108",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI80",
+          "lib": "HIX_1907151SUB",
+          "cell": "CAP_SWITCH_1S1",
+          "terms": {
+            "GS": "GS",
+            "S0": "X21889_ZN",
+            "S0N": "X13506_Z",
+            "S1": "S4",
+            "S2": "S5",
+            "S3": "S6",
+            "S4": "S7",
+            "VI": "net105",
+            "VO": "net97",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI79",
+          "lib": "HIX_1907151SUB",
+          "cell": "CAP_SWITCH_1S1",
+          "terms": {
+            "GS": "GS",
+            "S0": "X21889_ZN",
+            "S0N": "X13506_Z",
+            "S1": "S4",
+            "S2": "S5",
+            "S3": "S6",
+            "S4": "S7",
+            "VI": "net104",
+            "VO": "net98",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI83",
+          "lib": "HIX_1907151SUB",
+          "cell": "AMP_1",
+          "terms": {
+            "ENN": "X23166_ZN",
+            "ENP": "ENP",
+            "GS": "GS",
+            "NIB": "NIB4",
+            "VI": "VI4",
+            "VM": "VI2_1",
+            "VOM": "VO1_2",
+            "VOP": "VO1_1",
+            "VP": "VI2_2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI85",
+          "lib": "HIX_1907151SUB",
+          "cell": "RC_SWITCH",
+          "terms": {
+            "GS": "GS",
+            "S0": "S6",
+            "S1": "S4",
+            "S2": "S8",
+            "VI": "net86",
+            "VO": "VI2_2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI84",
+          "lib": "HIX_1907151SUB",
+          "cell": "RC_SWITCH",
+          "terms": {
+            "GS": "GS",
+            "S0": "S6",
+            "S1": "S4",
+            "S2": "S8",
+            "VI": "net89",
+            "VO": "VI2_1",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI87",
+          "lib": "HIX_1907151SUB",
+          "cell": "RC_CELL_1",
+          "terms": {
+            "GS": "GS",
+            "VI": "VO1_1",
+            "VO": "VI2_1",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI86",
+          "lib": "HIX_1907151SUB",
+          "cell": "RC_CELL_1",
+          "terms": {
+            "GS": "GS",
+            "VI": "VO1_2",
+            "VO": "VI2_2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI89",
+          "lib": "HIX_1907151SUB",
+          "cell": "CAP_SWITCH_3",
+          "terms": {
+            "GS": "GS",
+            "S0": "S4",
+            "S1": "S5",
+            "S2": "S6",
+            "S3": "S7",
+            "VI": "net89",
+            "VO": "VI3_2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI88",
+          "lib": "HIX_1907151SUB",
+          "cell": "CAP_SWITCH_3",
+          "terms": {
+            "GS": "GS",
+            "S0": "S4",
+            "S1": "S5",
+            "S2": "S6",
+            "S3": "S7",
+            "VI": "net86",
+            "VO": "VI3_1",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI315",
+          "lib": "HIX_1907151SUB",
+          "cell": "AMP_3",
+          "terms": {
+            "ADJ1": "ADJ1",
+            "ADJ2": "ADJ2",
+            "CTRL1_1": "CTRL1_1",
+            "CTRL1_2": "CTRL1_2",
+            "CTRL2_1": "CTRL2_1",
+            "CTRL2_2": "CTRL2_2",
+            "ENN": "X23166_ZN",
+            "ENP": "ENP",
+            "GS": "GS",
+            "NIB": "NIB1",
+            "S0": "S0",
+            "S1": "S1",
+            "S2": "S2",
+            "S3": "S3",
+            "VI": "VI4",
+            "VM": "VI3_2",
+            "VOM1": "net86",
+            "VOM2": "VO2_2",
+            "VOP1": "net89",
+            "VOP2": "VO2_1",
+            "VP": "VI3_1",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        }
+      ]
+    },
+    "AMP_1": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/AMP_1/schematic/sch.oa",
+      "source_sha256_before": "690aff207d12edafe09ccf7b38b2ec2d9768b257a184dda4d23664d9eec5ad77",
+      "source_sha256_after": "690aff207d12edafe09ccf7b38b2ec2d9768b257a184dda4d23664d9eec5ad77",
+      "instance_count": 59,
+      "pins": [
+        "VS",
+        "VP",
+        "VOP",
+        "VOM",
+        "VM",
+        "VI",
+        "NIB",
+        "GS",
+        "ENP",
+        "ENN"
+      ],
+      "master_counts": {
+        "HIX_1907151DEV/RTF": 4,
+        "gf018hv_green/mim_1p0fF": 2,
+        "HIX_1907151DEV/mim_1p0fF_EX": 2,
+        "gf018hv_green/pmos_3p3": 22,
+        "HIX_1907151DEV/pmos_3p3_EX": 2,
+        "gf018hv_green/nmos_3p3": 26,
+        "HIX_1907151SUB/NMOS_CELL_1": 1
+      }
+    },
+    "AMP_2": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/AMP_2/schematic/sch.oa",
+      "source_sha256_before": "5259ace02a96f09f6fef1d7d2faaf87dfb021893c1bd388d241e23b5251c545e",
+      "source_sha256_after": "5259ace02a96f09f6fef1d7d2faaf87dfb021893c1bd388d241e23b5251c545e",
+      "instance_count": 84,
+      "pins": [
+        "VS",
+        "VP2",
+        "VP1",
+        "VOP",
+        "VOM",
+        "VM2",
+        "VM1",
+        "S1",
+        "S0",
+        "NIB",
+        "GS",
+        "ENP",
+        "ENN"
+      ],
+      "master_counts": {
+        "HIX_1907151DEV/RTF": 2,
+        "gf018hv_green/mim_1p0fF": 2,
+        "gf018hv_green/pmos_3p3": 31,
+        "HIX_1907151DEV/pmos_3p3_EX": 6,
+        "gf018hv_green/nmos_3p3": 34,
+        "HIX_1907151DEV/nmos_3p3_EX": 7,
+        "HIX_1907151SUB/PMOS_CELL_1": 1,
+        "HIX_1907151SUB/CAP_SWITCH_2": 1
+      }
+    },
+    "AMP_3": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/AMP_3/schematic/sch.oa",
+      "source_sha256_before": "4ca14f5d455b97de60e279b3ae064fed6765a61be65945ff784684481ddb751c",
+      "source_sha256_after": "4ca14f5d455b97de60e279b3ae064fed6765a61be65945ff784684481ddb751c",
+      "instance_count": 173,
+      "pins": [
+        "VS",
+        "VP",
+        "VOP2",
+        "VOP1",
+        "VOM2",
+        "VOM1",
+        "VM",
+        "VI",
+        "S3",
+        "S2",
+        "S1",
+        "S0",
+        "NIB",
+        "GS",
+        "ENP",
+        "ENN",
+        "CTRL2_2",
+        "CTRL2_1",
+        "CTRL1_2",
+        "CTRL1_1",
+        "ADJ2",
+        "ADJ1"
+      ],
+      "master_counts": {
+        "HIX_1907151DEV/pmos_3p3_EX": 18,
+        "HIX_1907151DEV/nmos_3p3_EX": 19,
+        "HIX_1907151LIB/FB_NAND2_13_11": 2,
+        "gf018hv_green/pmos_3p3": 30,
+        "gf018hv_green/nmos_3p3": 37,
+        "HIX_1907151DEV/mim_1p0fF_EX": 2,
+        "HIX_1907151DEV/RTF": 38,
+        "HIX_1907151LIB/FB_INV_13X2_E11": 3,
+        "HIX_1907151LIB/FB_INV_13_9": 8,
+        "HIX_1907151LIB/FB_INV_3X3_4": 2,
+        "HIX_1907151LIB/FB_INV_4_4S1": 6,
+        "HIX_1907151LIB/FB_NOR2_14_9": 2,
+        "HIX_1907151LIB/FB_TRIGATEF_50L3X6_31L3X2": 4,
+        "HIX_1907151SUB/AMP_7": 1,
+        "HIX_1907151SUB/CAP_SWITCH_4": 1
+      }
+    },
+    "DAC_1": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/DAC_1/schematic/sch.oa",
+      "source_sha256_before": "1d081c21561b84905b2ac0aa552afa94df0a41ce5fcc1e710b0750996ec9bfa5",
+      "source_sha256_after": "1d081c21561b84905b2ac0aa552afa94df0a41ce5fcc1e710b0750996ec9bfa5",
+      "instance_count": 54,
+      "pins": [
+        "VS1",
+        "VS",
+        "VO2",
+        "VO1",
+        "PVB2",
+        "PVB1",
+        "NVB2",
+        "NVB1",
+        "GS",
+        "A<14:0>"
+      ],
+      "master_counts": {
+        "HIX_1907151LIB/FB_BUF_13X2_E11": 15,
+        "gf018hv_green/pmos_3p3": 8,
+        "HIX_1907151DEV/pmos_3p3_EX": 4,
+        "gf018hv_green/nmos_3p3": 8,
+        "HIX_1907151DEV/nmos_3p3_EX": 4,
+        "HIX_1907151SUB/DAC_CELL_1": 15
+      },
+      "selected_instances": [
+        {
+          "name": "MI174",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net39",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI173",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net28",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI172",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net36",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI171",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net29",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI170",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net38",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI169",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net30",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI168",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net40",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI167",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net31",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI166",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net32",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI165",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net42",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI164",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net33",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI163",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net34",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI162",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net37",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI161",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net35",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI160",
+          "lib": "HIX_1907151SUB",
+          "cell": "DAC_CELL_1",
+          "terms": {
+            "A": "net41",
+            "GS": "GS",
+            "NVB1": "NVB1",
+            "NVB2": "NVB2",
+            "PVB1": "PVB1",
+            "PVB2": "PVB2",
+            "VO1": "VO1",
+            "VO2": "VO2",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        }
+      ]
+    },
+    "ADC_1": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/ADC_1/schematic/sch.oa",
+      "source_sha256_before": "2fd1f94b6b329e86fc8d7441ecdbf2f373db371a39a2e9990e984ee77e2de453",
+      "source_sha256_after": "2fd1f94b6b329e86fc8d7441ecdbf2f373db371a39a2e9990e984ee77e2de453",
+      "instance_count": 34,
+      "pins": [
+        "Z<14:0>",
+        "VS",
+        "VI3",
+        "VI2_2",
+        "VI2_1",
+        "VI1_2",
+        "VI1_1",
+        "S2",
+        "S1N",
+        "S1",
+        "S0N",
+        "S0",
+        "GS",
+        "ENP2",
+        "ENP1",
+        "ENN",
+        "CTRL"
+      ],
+      "master_counts": {
+        "HIX_1907151LIB/FB_BUF_13X2_E11": 15,
+        "HIX_1907151LIB/FB_INV_3X3_4": 1,
+        "HIX_1907151SUB/RES_DIV_1": 1,
+        "HIX_1907151SUB/ADC_CELL_1": 17
+      }
+    },
+    "COUNT_4B_1": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/COUNT_4B_1/schematic/sch.oa",
+      "source_sha256_before": "a11992b3a4d77e90a0f5df805ebfd06a9dc9bd3647dfb9e7e8d7f6ab2d5c86d4",
+      "source_sha256_after": "a11992b3a4d77e90a0f5df805ebfd06a9dc9bd3647dfb9e7e8d7f6ab2d5c86d4",
+      "instance_count": 32,
+      "pins": [
+        "VS",
+        "SUM<3>",
+        "SUM<2>",
+        "SUM<1>",
+        "SUM<0>",
+        "QN<3>",
+        "QN<2>",
+        "QN<1>",
+        "QN<0>",
+        "Q<3>",
+        "Q<2>",
+        "Q<1>",
+        "Q<0>",
+        "GS",
+        "ENN",
+        "D<14:0>",
+        "CPN",
+        "CP"
+      ],
+      "master_counts": {
+        "HIX_1907151LIB/FB_BUF_13X2_E11": 4,
+        "HIX_1907151LIB/FB_BUF_13_9S1": 4,
+        "HIX_1907151LIB/FB_FADD_3_3": 15,
+        "HIX_1907151LIB/FB_NOR2B1_15_9": 4,
+        "HIX_1907151SUB/S_DFN_3X3_4": 4,
+        "HIX_1907151SUB/S_DFN_3X3_4S1": 1
+      },
+      "selected_instances": [
+        {
+          "name": "MI181",
+          "lib": "HIX_1907151SUB",
+          "cell": "S_DFN_3X3_4",
+          "terms": {
+            "CP": "CPN",
+            "CPN": "CP",
+            "D": "net62",
+            "GS": "GS",
+            "Q": "net40",
+            "QN": "QN<3>",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI180",
+          "lib": "HIX_1907151SUB",
+          "cell": "S_DFN_3X3_4",
+          "terms": {
+            "CP": "CPN",
+            "CPN": "CP",
+            "D": "net63",
+            "GS": "GS",
+            "Q": "net42",
+            "QN": "QN<1>",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI178",
+          "lib": "HIX_1907151SUB",
+          "cell": "S_DFN_3X3_4",
+          "terms": {
+            "CP": "CPN",
+            "CPN": "CP",
+            "D": "net61",
+            "GS": "GS",
+            "Q": "net41",
+            "QN": "QN<2>",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI177",
+          "lib": "HIX_1907151SUB",
+          "cell": "S_DFN_3X3_4",
+          "terms": {
+            "CP": "CPN",
+            "CPN": "CP",
+            "D": "net64",
+            "GS": "GS",
+            "Q": "net43",
+            "QN": "QN<0>",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "MI179",
+          "lib": "HIX_1907151SUB",
+          "cell": "S_DFN_3X3_4S1",
+          "terms": {
+            "CP": "CP",
+            "CPN": "CPN",
+            "D": "net52",
+            "GS": "GS",
+            "Q": "net56",
+            "VS": "VS"
+          },
+          "saved_params": {}
+        }
+      ]
+    },
+    "CTRL_3": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/CTRL_3/schematic/sch.oa",
+      "source_sha256_before": "622abb373860a5ea0a86c18f746184b81df4c7f088a8fda35b4ac9bc8fb5f9a6",
+      "source_sha256_after": "622abb373860a5ea0a86c18f746184b81df4c7f088a8fda35b4ac9bc8fb5f9a6",
+      "instance_count": 41,
+      "pins": [
+        "Z2N",
+        "Z2",
+        "Z1N",
+        "Z1",
+        "X24588_ZN",
+        "X24569_ZN",
+        "X24499_ZN",
+        "X24496_ZN",
+        "X24410_ZN",
+        "X24404_ZN",
+        "X24163_Z",
+        "X24132_Z",
+        "X23962_ZN",
+        "X23636_Z",
+        "X23611_Z",
+        "X23603_Z",
+        "X22409_ZN",
+        "X22271_ZN",
+        "X21498_Z",
+        "X21451_Z",
+        "X21379_Z",
+        "X21158_ZN",
+        "X13454_A1N",
+        "VS",
+        "P15102_S",
+        "GS"
+      ],
+      "master_counts": {
+        "HIX_1907151LIB/FA_NOR2B1_19_13": 1,
+        "HIX_1907151LIB/FA_DIFINVF_40_20D2S1": 3,
+        "HIX_1907151LIB/FA_INV_20_14D2": 7,
+        "HIX_1907151LIB/FB_AND2_13_9": 1,
+        "HIX_1907151LIB/FB_INV_13_9": 24,
+        "HIX_1907151LIB/FB_NOR2_14_9": 1,
+        "HIX_1907151LIB/FB_OR2_13_9": 4
+      }
+    },
+    "DAC_CELL_2": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/DAC_CELL_2/schematic/sch.oa",
+      "source_sha256_before": "206e1efcf5c9026a2c70cbc92042da88ceec700b4140bcde89a3b28d8f413984",
+      "source_sha256_after": "206e1efcf5c9026a2c70cbc92042da88ceec700b4140bcde89a3b28d8f413984",
+      "instance_count": 14,
+      "pins": [
+        "VS",
+        "VO2",
+        "VO1",
+        "VI",
+        "S2N",
+        "S2",
+        "S1N",
+        "S1",
+        "PVB1",
+        "NVB2",
+        "NVB1",
+        "GS"
+      ],
+      "selected_instances": [
+        {
+          "name": "N15113",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "VO2",
+            "G": "S2",
+            "B": "GS",
+            "S": "net29"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N15112",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "VO1",
+            "G": "S1N",
+            "B": "GS",
+            "S": "net29"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N15172",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net33",
+            "G": "NVB2",
+            "B": "GS",
+            "S": "net34"
+          },
+          "saved_params": {
+            "totalW": "8.000u",
+            "fingerW": "4.000u",
+            "l": "16.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N15142",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net29",
+            "G": "NVB1",
+            "B": "GS",
+            "S": "net34"
+          },
+          "saved_params": {
+            "totalW": "2.000u",
+            "fingerW": "1.000u",
+            "l": "1.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15187",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net32",
+            "G": "PVB1",
+            "S": "net30"
+          },
+          "saved_params": {
+            "totalW": "2.000u",
+            "fingerW": "1.000u",
+            "l": "1.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15157",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net32",
+            "G": "VI",
+            "S": "net31"
+          },
+          "saved_params": {
+            "totalW": "8.000u",
+            "fingerW": "4.000u",
+            "l": "16.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15211",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "VO1",
+            "G": "S2N",
+            "S": "net30"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P15210",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "VO2",
+            "G": "S1",
+            "S": "net30"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "R18596",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "net33",
+            "PLUS": "GS"
+          },
+          "saved_params": {
+            "r": "510",
+            "l": "25.5u",
+            "w": "500.0n"
+          }
+        },
+        {
+          "name": "R18595",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "VS",
+            "PLUS": "net31"
+          },
+          "saved_params": {
+            "r": "510",
+            "l": "25.5u",
+            "w": "500.0n"
+          }
+        },
+        {
+          "name": "R18566",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "VS",
+            "PLUS": "VS"
+          },
+          "saved_params": {
+            "r": "51",
+            "l": "25.5u",
+            "w": "500.0n"
+          }
+        },
+        {
+          "name": "R18565",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "VS",
+            "PLUS": "VS"
+          },
+          "saved_params": {
+            "r": "51",
+            "l": "25.5u",
+            "w": "500.0n"
+          }
+        },
+        {
+          "name": "R18564",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "GS",
+            "PLUS": "GS"
+          },
+          "saved_params": {
+            "r": "51",
+            "l": "25.5u",
+            "w": "500.0n"
+          }
+        },
+        {
+          "name": "R18563",
+          "lib": "HIX_1907151DEV",
+          "cell": "RTF",
+          "terms": {
+            "MINUS": "GS",
+            "PLUS": "GS"
+          },
+          "saved_params": {
+            "r": "51",
+            "l": "25.5u",
+            "w": "500.0n"
+          }
+        }
+      ]
+    },
+    "DAC_CELL_1": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/DAC_CELL_1/schematic/sch.oa",
+      "source_sha256_before": "9fc22e11685b00c0ee1052f66cb694285634b4deeec4607ae54a19d0509cf615",
+      "source_sha256_after": "9fc22e11685b00c0ee1052f66cb694285634b4deeec4607ae54a19d0509cf615",
+      "instance_count": 14,
+      "pins": [
+        "VS",
+        "VO2",
+        "VO1",
+        "PVB2",
+        "PVB1",
+        "NVB2",
+        "NVB1",
+        "GS",
+        "A"
+      ],
+      "selected_instances": [
+        {
+          "name": "X21593",
+          "lib": "HIX_1907151LIB",
+          "cell": "FB_BUF2_21_8",
+          "terms": {
+            "A": "A",
+            "GS": "GS",
+            "VS": "VS",
+            "Z": "X21593_Z",
+            "ZN": "net29"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "X24253",
+          "lib": "HIX_1907151LIB",
+          "cell": "FB_TRIGATE_21_7",
+          "terms": {
+            "A": "net29",
+            "GS": "GS",
+            "OE": "VS",
+            "OEN": "GS",
+            "VS": "VS",
+            "Z": "net19"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "P18910",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net32",
+            "G": "PVB1",
+            "S": "net30"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "4.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P18909",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net30",
+            "G": "PVB1",
+            "S": "net31"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "4.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P18908",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net31",
+            "G": "PVB1",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "4.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P18855",
+          "lib": "gf018hv_green",
+          "cell": "pmos_3p3",
+          "terms": {
+            "B": "VS",
+            "D": "net32",
+            "G": "PVB2",
+            "S": "net25"
+          },
+          "saved_params": {
+            "totalW": "2.000u",
+            "fingerW": "1.000u",
+            "l": "1.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P18874",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "net25",
+            "D": "VO2",
+            "G": "X21593_Z",
+            "S": "net25"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.90u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P18873",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "net25",
+            "D": "VO1",
+            "G": "net19",
+            "S": "net25"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.90u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19504",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net22",
+            "G": "NVB1",
+            "B": "GS",
+            "S": "net33"
+          },
+          "saved_params": {
+            "totalW": "2.000u",
+            "fingerW": "1.000u",
+            "l": "1.000u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19419",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net33",
+            "G": "NVB2",
+            "B": "GS",
+            "S": "net34"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "4.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19418",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net34",
+            "G": "NVB2",
+            "B": "GS",
+            "S": "net35"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "4.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19417",
+          "lib": "gf018hv_green",
+          "cell": "nmos_3p3",
+          "terms": {
+            "D": "net35",
+            "G": "NVB2",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "4.000u",
+            "fingerW": "4.000u",
+            "l": "4.000u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19469",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "VO1",
+            "G": "net19",
+            "B": "GS",
+            "S": "net22"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.00u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19468",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "VO2",
+            "G": "X21593_Z",
+            "B": "GS",
+            "S": "net22"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.00u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        }
+      ]
+    },
+    "ADC_CELL_1": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/ADC_CELL_1/schematic/sch.oa",
+      "source_sha256_before": "aafc99d6dc92a476d6ec9829ae9de7031e0be551a29f868f0363b71f9e6979c5",
+      "source_sha256_after": "aafc99d6dc92a476d6ec9829ae9de7031e0be551a29f868f0363b71f9e6979c5",
+      "instance_count": 29,
+      "pins": [
+        "Z",
+        "VS",
+        "VI3",
+        "VI2_2",
+        "VI2_1",
+        "VI1_2",
+        "VI1_1",
+        "S2",
+        "S1N",
+        "S1",
+        "S0N",
+        "S0",
+        "GS",
+        "ENP2",
+        "ENP1",
+        "ENN2",
+        "ENN1",
+        "CTRL"
+      ],
+      "selected_instances": [
+        {
+          "name": "X21704_M2",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net41",
+            "G": "net57",
+            "S": "net45"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.0u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P20795",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net57",
+            "G": "ENP1",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.60u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P20081",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net60",
+            "G": "net41",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.60u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P20080",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net61",
+            "G": "net57",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.60u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P20047",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net51",
+            "G": "ENN2",
+            "S": "net60"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "P20046",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net52",
+            "G": "ENN2",
+            "S": "net61"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.80u",
+            "l": "0.15u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "X21704_M1",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net57",
+            "G": "net41",
+            "S": "net45"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.0u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "X21704_M0",
+          "lib": "HIX_1907151DEV",
+          "cell": "pmos_3p3_EX",
+          "terms": {
+            "B": "VS",
+            "D": "net45",
+            "G": "S1",
+            "S": "VS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.5u",
+            "l": "0.15u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "X21704_M6",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net41",
+            "G": "net57",
+            "B": "GS",
+            "S": "net46"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.0u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "X21704_M4",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net46",
+            "G": "S1N",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.5u",
+            "l": "0.15u",
+            "nf": "2",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N24896",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "VI3",
+            "G": "S2",
+            "B": "GS",
+            "S": "net39"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.40u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N24895",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "VI3",
+            "G": "S2",
+            "B": "GS",
+            "S": "net40"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.40u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N20812",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net41",
+            "G": "CTRL",
+            "B": "GS",
+            "S": "net57"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.00u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19968",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net52",
+            "G": "ENP2",
+            "B": "GS",
+            "S": "net62"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.60u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19967",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net62",
+            "G": "net57",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.60u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19966",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net63",
+            "G": "net41",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.60u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19965",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net51",
+            "G": "ENP2",
+            "B": "GS",
+            "S": "net63"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.60u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N19964",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net41",
+            "G": "ENN1",
+            "B": "GS",
+            "S": "GS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "0.60u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "X21704_M5",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net57",
+            "G": "net41",
+            "B": "GS",
+            "S": "net46"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.0u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "X21727",
+          "lib": "HIX_1907151LIB",
+          "cell": "FB_INVF_15_6",
+          "terms": {
+            "A": "net51",
+            "GS": "GS",
+            "GS1": "GS",
+            "VS": "VS",
+            "ZN": "net59"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "X21726",
+          "lib": "HIX_1907151LIB",
+          "cell": "FB_INVF_15_6",
+          "terms": {
+            "A": "net52",
+            "GS": "GS",
+            "GS1": "GS",
+            "VS": "VS",
+            "ZN": "Z"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "X24271",
+          "lib": "HIX_1907151LIB",
+          "cell": "FB_TRIGATE_3_3",
+          "terms": {
+            "A": "net39",
+            "GS": "GS",
+            "OE": "S0N",
+            "OEN": "S0",
+            "VS": "VS",
+            "Z": "net41"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "X24270",
+          "lib": "HIX_1907151LIB",
+          "cell": "FB_TRIGATE_3_3",
+          "terms": {
+            "A": "net40",
+            "GS": "GS",
+            "OE": "S0N",
+            "OEN": "S0",
+            "VS": "VS",
+            "Z": "net57"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "X24309",
+          "lib": "HIX_1907151LIB",
+          "cell": "FB_TRIGATE_3_3S1",
+          "terms": {
+            "A": "net37",
+            "GS": "GS",
+            "OE": "S1N",
+            "OEN": "S1",
+            "VS": "VS",
+            "Z": "VI2_2"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "X24308",
+          "lib": "HIX_1907151LIB",
+          "cell": "FB_TRIGATE_3_3S1",
+          "terms": {
+            "A": "net37",
+            "GS": "GS",
+            "OE": "S0N",
+            "OEN": "S0",
+            "VS": "VS",
+            "Z": "VI1_2"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "X24307",
+          "lib": "HIX_1907151LIB",
+          "cell": "FB_TRIGATE_3_3S1",
+          "terms": {
+            "A": "net38",
+            "GS": "GS",
+            "OE": "S0N",
+            "OEN": "S0",
+            "VS": "VS",
+            "Z": "VI1_1"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "X24306",
+          "lib": "HIX_1907151LIB",
+          "cell": "FB_TRIGATE_3_3S1",
+          "terms": {
+            "A": "net38",
+            "GS": "GS",
+            "OE": "S1N",
+            "OEN": "S1",
+            "VS": "VS",
+            "Z": "VI2_1"
+          },
+          "saved_params": {}
+        },
+        {
+          "name": "C18603",
+          "lib": "HIX_1907151DEV",
+          "cell": "mim_1p0fF_EX",
+          "terms": {
+            "BOT": "net39",
+            "TOP": "net37"
+          },
+          "saved_params": {
+            "c": "38.8p",
+            "l": "9.70u",
+            "w": "4.00u",
+            "m": "1"
+          }
+        },
+        {
+          "name": "C18602",
+          "lib": "HIX_1907151DEV",
+          "cell": "mim_1p0fF_EX",
+          "terms": {
+            "BOT": "net40",
+            "TOP": "net38"
+          },
+          "saved_params": {
+            "c": "38.8p",
+            "l": "9.70u",
+            "w": "4.00u",
+            "m": "1"
+          }
+        }
+      ]
+    },
+    "CAP_SWITCH_5": {
+      "library": "HIX_1907151SUB",
+      "view": "schematic",
+      "source_relative_path": "libraries/HIX_1907151SUB/CAP_SWITCH_5/schematic/sch.oa",
+      "source_sha256_before": "aaee8a82ca5b7b591eb949fb3970766b7483ae6240d0dce9ddc2b7c0fa9ee0db",
+      "source_sha256_after": "aaee8a82ca5b7b591eb949fb3970766b7483ae6240d0dce9ddc2b7c0fa9ee0db",
+      "instance_count": 11,
+      "pins": [
+        "PLUS",
+        "MINUS",
+        "GS",
+        "ADJ5",
+        "ADJ4",
+        "ADJ3",
+        "ADJ2",
+        "ADJ1",
+        "ADJ0"
+      ],
+      "selected_instances": [
+        {
+          "name": "N15416",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net21",
+            "G": "ADJ5",
+            "B": "GS",
+            "S": "PLUS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.00u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N15407",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net22",
+            "G": "ADJ4",
+            "B": "GS",
+            "S": "PLUS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.00u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N15406",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "MINUS",
+            "G": "ADJ1",
+            "B": "GS",
+            "S": "net22"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.00u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N15405",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net23",
+            "G": "ADJ0",
+            "B": "GS",
+            "S": "MINUS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.00u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N15404",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "PLUS",
+            "G": "ADJ3",
+            "B": "GS",
+            "S": "net23"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.00u",
+            "l": "0.15u",
+            "nf": "1",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "N15403",
+          "lib": "HIX_1907151DEV",
+          "cell": "nmos_3p3_EX",
+          "terms": {
+            "D": "net21",
+            "G": "ADJ2",
+            "B": "GS",
+            "S": "MINUS"
+          },
+          "saved_params": {
+            "totalW": "360n",
+            "fingerW": "1.00u",
+            "l": "0.15u",
+            "nf": "3",
+            "m": "1",
+            "w": "iPar(\\\\\"totalW\\\\\")"
+          }
+        },
+        {
+          "name": "C18726",
+          "lib": "gf018hv_green",
+          "cell": "mim_1p0fF",
+          "terms": {
+            "BOT": "PLUS",
+            "TOP": "MINUS"
+          },
+          "saved_params": {
+            "c": "2.123565p",
+            "l": "69.500u",
+            "w": "30.00u",
+            "m": "1"
+          }
+        },
+        {
+          "name": "C18725",
+          "lib": "gf018hv_green",
+          "cell": "mim_1p0fF",
+          "terms": {
+            "BOT": "PLUS",
+            "TOP": "net22"
+          },
+          "saved_params": {
+            "c": "2.123565p",
+            "l": "69.500u",
+            "w": "30.00u",
+            "m": "1"
+          }
+        },
+        {
+          "name": "C18711",
+          "lib": "gf018hv_green",
+          "cell": "mim_1p0fF",
+          "terms": {
+            "BOT": "PLUS",
+            "TOP": "net23"
+          },
+          "saved_params": {
+            "c": "2.123565p",
+            "l": "69.500u",
+            "w": "30.00u",
+            "m": "2"
+          }
+        },
+        {
+          "name": "C18709",
+          "lib": "gf018hv_green",
+          "cell": "mim_1p0fF",
+          "terms": {
+            "BOT": "PLUS",
+            "TOP": "net21"
+          },
+          "saved_params": {
+            "c": "2.123565p",
+            "l": "69.500u",
+            "w": "30.00u",
+            "m": "2"
+          }
+        },
+        {
+          "name": "C18708",
+          "lib": "gf018hv_green",
+          "cell": "mim_1p0fF",
+          "terms": {
+            "BOT": "PLUS",
+            "TOP": "net21"
+          },
+          "saved_params": {
+            "c": "2.123565p",
+            "l": "69.500u",
+            "w": "30u",
+            "m": "4"
+          }
+        }
+      ]
+    }
+  },
+  "top_selected_instances": [
+    {
+      "name": "N15955",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "INP",
+        "G": "X21176_ZN",
+        "B": "GND",
+        "S": "net707"
+      },
+      "saved_params": {
+        "totalW": "100.000u",
+        "fingerW": "10.000u",
+        "l": "0.600u",
+        "nf": "10",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15954",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "INM",
+        "G": "X21176_ZN",
+        "B": "GND",
+        "S": "net708"
+      },
+      "saved_params": {
+        "totalW": "100.000u",
+        "fingerW": "10.000u",
+        "l": "0.600u",
+        "nf": "10",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "R19136",
+      "lib": "gf018hv_green",
+      "cell": "npolyf_u",
+      "terms": {
+        "SUB": "GND",
+        "PLUS": "INM",
+        "MINUS": "net709"
+      },
+      "saved_params": {
+        "r": "169.8247",
+        "w": "6.00u",
+        "l": "3.000u",
+        "m": "1"
+      }
+    },
+    {
+      "name": "R19135",
+      "lib": "gf018hv_green",
+      "cell": "npolyf_u",
+      "terms": {
+        "SUB": "GND",
+        "PLUS": "net702",
+        "MINUS": "INP"
+      },
+      "saved_params": {
+        "r": "169.8247",
+        "w": "6.00u",
+        "l": "3.000u",
+        "m": "1"
+      }
+    },
+    {
+      "name": "R24650",
+      "lib": "HIX_1907151DEV",
+      "cell": "RTF",
+      "terms": {
+        "MINUS": "INM",
+        "PLUS": "N18976_D"
+      },
+      "saved_params": {
+        "r": "882.353m",
+        "l": "1.5u",
+        "w": "1.7u"
+      }
+    },
+    {
+      "name": "R24649",
+      "lib": "HIX_1907151DEV",
+      "cell": "RTF",
+      "terms": {
+        "MINUS": "N18975_D",
+        "PLUS": "INP"
+      },
+      "saved_params": {
+        "r": "882.353m",
+        "l": "1.5u",
+        "w": "1.7u"
+      }
+    },
+    {
+      "name": "D19060",
+      "lib": "gf018hv_green",
+      "cell": "dnwpw_3p3",
+      "terms": {
+        "POS": "GND",
+        "NEG": "INM"
+      },
+      "saved_params": {
+        "w": "1.20u",
+        "l": "25.000u",
+        "m": "15"
+      }
+    },
+    {
+      "name": "D19059",
+      "lib": "gf018hv_green",
+      "cell": "dnwpw_3p3",
+      "terms": {
+        "POS": "GND",
+        "NEG": "INP"
+      },
+      "saved_params": {
+        "w": "1.20u",
+        "l": "25.000u",
+        "m": "15"
+      }
+    },
+    {
+      "name": "D19080",
+      "lib": "gf018hv_green",
+      "cell": "pn_3p3",
+      "terms": {
+        "MINUS": "RX_SUP",
+        "PLUS": "INM"
+      },
+      "saved_params": {
+        "w": "1.2u",
+        "l": "25.000u",
+        "m": "15"
+      }
+    },
+    {
+      "name": "D19079",
+      "lib": "gf018hv_green",
+      "cell": "pn_3p3",
+      "terms": {
+        "MINUS": "RX_SUP",
+        "PLUS": "INP"
+      },
+      "saved_params": {
+        "w": "1.2u",
+        "l": "25.000u",
+        "m": "15"
+      }
+    },
+    {
+      "name": "N20855",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net720",
+        "G": "X21158_ZN",
+        "B": "GND",
+        "S": "net721"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "7.00u",
+        "l": "0.15u",
+        "nf": "3",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "X24242",
+      "lib": "HIX_1907151LIB",
+      "cell": "FB_TRIGATEF_50L3X6_31L3X2",
+      "terms": {
+        "A": "net714",
+        "GS": "GND",
+        "OE": "X22402_ZN",
+        "OEN": "X22136_ZN",
+        "VS": "X13454_VS",
+        "Z": "net719"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI4",
+      "lib": "HIX_1907151SUB",
+      "cell": "AMP_BLOCK",
+      "terms": {
+        "ADJ1": "X24464_ZN",
+        "ADJ2": "X24627_ZN",
+        "CTRL1_1": "X24485_ZN",
+        "CTRL1_2": "X24462_ZN",
+        "CTRL2_1": "X24424_ZN",
+        "CTRL2_2": "X24529_ZN",
+        "CTRLO": "X21458_Z",
+        "ENP": "X22409_ZN",
+        "GS": "GND",
+        "NIB1": "P14115_D",
+        "NIB2": "P14142_D",
+        "NIB3": "P14145_D",
+        "NIB4": "P13807_D",
+        "S0": "X24467_ZN",
+        "S1": "X22311_ZN",
+        "S10": "X13454_A1N",
+        "S11": "X24504_ZN",
+        "S12": "X24444_ZN",
+        "S2": "X24481_ZN",
+        "S3": "X24438_ZN",
+        "S4": "X22243_ZN",
+        "S5": "X22315_ZN",
+        "S6": "X24407_ZN",
+        "S7": "X24423_ZN",
+        "S8": "X24594_ZN",
+        "S9": "X24620_ZN",
+        "VI1_1": "net822",
+        "VI1_2": "net765",
+        "VI2_1": "net766",
+        "VI2_2": "net767",
+        "VI3_1": "net768",
+        "VI3_2": "net769",
+        "VI4": "P14069_D",
+        "VO1_1": "net820",
+        "VO1_2": "net821",
+        "VO2_1": "net718",
+        "VO2_2": "net719",
+        "VS": "X13454_VS"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI140",
+      "lib": "HIX_1907151SUB",
+      "cell": "BIAS_3",
+      "terms": {
+        "CTRL10<1>": "X24604_ZN",
+        "CTRL10<2>": "X24419_ZN",
+        "CTRL11<1>": "X24505_ZN",
+        "CTRL11<2>": "X24473_ZN",
+        "CTRL1<1>": "X24422_ZN",
+        "CTRL1<2>": "X24495_ZN",
+        "CTRL2<1>": "X24566_ZN",
+        "CTRL2<2>": "X24591_ZN",
+        "CTRL3<1>": "X24618_ZN",
+        "CTRL3<2>": "X24459_ZN",
+        "CTRL4<1>": "X24466_ZN",
+        "CTRL4<2>": "X24471_ZN",
+        "CTRL5<1>": "X21961_ZN",
+        "CTRL5<2>": "X24544_ZN",
+        "CTRL6<1>": "X24446_ZN",
+        "CTRL6<2>": "X24447_ZN",
+        "CTRL7<1>": "X24434_ZN",
+        "CTRL7<2>": "X24587_ZN",
+        "CTRL8<1>": "X24436_ZN",
+        "CTRL8<2>": "X24513_ZN",
+        "CTRL9<1>": "X24617_ZN",
+        "CTRL9<2>": "X24582_ZN",
+        "GS": "GND",
+        "PIBO1": "P14088_D",
+        "PIBO10": "P14148_D",
+        "PIBO11": "P14151_D",
+        "PIBO12": "P13823_D",
+        "PIBO13": "P13806_D",
+        "PIBO14": "P13807_D",
+        "PIBO2": "P14097_D",
+        "PIBO3": "P14100_D",
+        "PIBO4": "P14106_D",
+        "PIBO5": "P14130_D",
+        "PIBO6": "N14028_D",
+        "PIBO7": "P14115_D",
+        "PIBO8": "P14142_D",
+        "PIBO9": "P14145_D",
+        "PVB1": "net825",
+        "PVB2": "net824",
+        "UN_CTRL1<1>": "X24510_ZN",
+        "UN_CTRL1<2>": "X24431_ZN",
+        "UN_CTRL2<1>": "X24550_ZN",
+        "UN_CTRL2<2>": "X24492_ZN",
+        "VS": "X13454_VS"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI175",
+      "lib": "HIX_1907151SUB",
+      "cell": "DAC_1",
+      "terms": {
+        "A<14:0>": "net832<0:14>",
+        "GS": "GND",
+        "NVB1": "P17823_D",
+        "NVB2": "N18271_G",
+        "PVB1": "P16689_S",
+        "PVB2": "P16689_G",
+        "VO1": "net766",
+        "VO2": "net767",
+        "VS": "X13454_VS",
+        "VS1": "X13488_VS"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI185",
+      "lib": "HIX_1907151SUB",
+      "cell": "MX21_15BX4",
+      "terms": {
+        "A<14:0>": "net832<0:14>",
+        "GS": "GND",
+        "S<0>": "net781",
+        "S<1>": "net782",
+        "S<2>": "net783",
+        "S<3>": "net784",
+        "SN<0>": "net777",
+        "SN<1>": "net778",
+        "SN<2>": "net779",
+        "SN<3>": "net780",
+        "VS": "X13488_VS",
+        "Z<14:0>": "net833<0:14>"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI199",
+      "lib": "HIX_1907151SUB",
+      "cell": "VOL_GEN_1",
+      "terms": {
+        "ENN": "net722",
+        "ENP1": "X21118_ZN",
+        "ENP2": "X21458_Z",
+        "GS": "GND",
+        "NIB": "P14106_D",
+        "VI1": "net721",
+        "VI2": "P14069_D",
+        "VO": "net822",
+        "VS": "X13454_VS",
+        "VS1": "RX_SUP"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI188",
+      "lib": "HIX_1907151SUB",
+      "cell": "VOL_GEN_1",
+      "terms": {
+        "ENN": "net722",
+        "ENP1": "X21118_ZN",
+        "ENP2": "X21458_Z",
+        "GS": "GND",
+        "NIB": "P14148_D",
+        "VI1": "net720",
+        "VI2": "P14069_D",
+        "VO": "net765",
+        "VS": "X13454_VS",
+        "VS1": "RX_SUP"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI219",
+      "lib": "HIX_1907151SUB",
+      "cell": "ADC_1",
+      "terms": {
+        "CTRL": "X21892_ZN",
+        "ENN": "X21722_ZN",
+        "ENP1": "X22409_ZN",
+        "ENP2": "X21723_ZN",
+        "GS": "GND",
+        "S0": "X21891_ZN",
+        "S0N": "X21890_ZN",
+        "S1": "X21894_ZN",
+        "S1N": "X21893_ZN",
+        "S2": "X21896_ZN",
+        "VI1_1": "net820",
+        "VI1_2": "net821",
+        "VI2_1": "P16618_D",
+        "VI2_2": "P16619_D",
+        "VI3": "P14069_D",
+        "VS": "X13488_VS",
+        "Z<14:0>": "net832<0:14>"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI267",
+      "lib": "HIX_1907151SUB",
+      "cell": "DAC_3",
+      "terms": {
+        "A<14:0>": "net833<0:14>",
+        "CPN": "X21895_ZN",
+        "GS": "GND",
+        "NVB1": "P17721_S",
+        "NVB2": "P16685_D",
+        "PVB1": "P16620_G",
+        "PVB2": "P16687_D",
+        "VO1": "net768",
+        "VO2": "net769",
+        "VS": "X13454_VS"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI306",
+      "lib": "HIX_1907151SUB",
+      "cell": "S_TRIGATE_50L4X6_30L4X2",
+      "terms": {
+        "A": "net713",
+        "GS": "GND",
+        "OE": "X22402_ZN",
+        "OEN": "X22136_ZN",
+        "VS": "X13454_VS",
+        "Z": "net717"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI311",
+      "lib": "HIX_1907151SUB",
+      "cell": "SWITCHED_RC_FILTER",
+      "terms": {
+        "A0": "X13493_Z",
+        "A1": "X13498_Z",
+        "A2": "X13494_Z",
+        "A3": "X13502_Z",
+        "A4": "X13501_Z",
+        "A5": "X13496_Z",
+        "A6": "X13500_Z",
+        "A7": "X13497_Z",
+        "GS": "GND",
+        "S1": "X22271_ZN",
+        "S2": "X24614_ZN",
+        "VIN1": "net713",
+        "VIN2": "net714",
+        "VOUT1": "net829",
+        "VOUT2": "net761",
+        "VS": "X13454_VS",
+        "VS1": "P15102_S"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI313",
+      "lib": "HIX_1907151SUB",
+      "cell": "S_TRIGATE_50_50D8",
+      "terms": {
+        "A": "net761",
+        "GS": "GND",
+        "OE": "X21261_ZN",
+        "OEN": "X21260_ZN",
+        "VS": "X13454_VS",
+        "Z": "net720"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI312",
+      "lib": "HIX_1907151SUB",
+      "cell": "S_TRIGATE_50_50D8",
+      "terms": {
+        "A": "net829",
+        "GS": "GND",
+        "OE": "X21261_ZN",
+        "OEN": "X21260_ZN",
+        "VS": "X13454_VS",
+        "Z": "net721"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI337",
+      "lib": "HIX_1907151SUB",
+      "cell": "RC_CELL_2",
+      "terms": {
+        "ADJ0": "X21165_ZN",
+        "ADJ1": "X21164_ZN",
+        "ADJ10": "X21172_ZN",
+        "ADJ11": "X21170_ZN",
+        "ADJ12": "X21174_ZN",
+        "ADJ13": "X21175_ZN",
+        "ADJ14": "X21173_ZN",
+        "ADJ2": "X21163_ZN",
+        "ADJ3": "X21162_ZN",
+        "ADJ4": "X21161_ZN",
+        "ADJ5": "X21166_ZN",
+        "ADJ6": "X21167_ZN",
+        "ADJ7": "X21168_ZN",
+        "ADJ8": "X21169_ZN",
+        "ADJ9": "X21171_ZN",
+        "GS": "GND",
+        "MINUS": "net707",
+        "PLUS": "net714",
+        "S0": "X21151_ZN",
+        "S1": "X21116_ZN",
+        "S2": "X21157_ZN",
+        "S3": "X21156_ZN",
+        "S4": "X21155_ZN",
+        "S5": "X21154_ZN",
+        "S6": "X21153_ZN",
+        "S7": "X21152_ZN"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI336",
+      "lib": "HIX_1907151SUB",
+      "cell": "RC_CELL_2",
+      "terms": {
+        "ADJ0": "X21165_ZN",
+        "ADJ1": "X21164_ZN",
+        "ADJ10": "X21172_ZN",
+        "ADJ11": "X21170_ZN",
+        "ADJ12": "X21174_ZN",
+        "ADJ13": "X21175_ZN",
+        "ADJ14": "X21173_ZN",
+        "ADJ2": "X21163_ZN",
+        "ADJ3": "X21162_ZN",
+        "ADJ4": "X21161_ZN",
+        "ADJ5": "X21166_ZN",
+        "ADJ6": "X21167_ZN",
+        "ADJ7": "X21168_ZN",
+        "ADJ8": "X21169_ZN",
+        "ADJ9": "X21171_ZN",
+        "GS": "GND",
+        "MINUS": "net708",
+        "PLUS": "net713",
+        "S0": "X21151_ZN",
+        "S1": "X21116_ZN",
+        "S2": "X21157_ZN",
+        "S3": "X21156_ZN",
+        "S4": "X21155_ZN",
+        "S5": "X21154_ZN",
+        "S6": "X21153_ZN",
+        "S7": "X21152_ZN"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI413",
+      "lib": "HIX_1907151SUB",
+      "cell": "BUF_BLOCK",
+      "terms": {
+        "A0_0": "X24450_ZN",
+        "A0_1": "X24480_ZN",
+        "A0_2": "X24486_ZN",
+        "A1_0": "X24598_ZN",
+        "A1_1": "X24416_ZN",
+        "A1_2": "X24593_ZN",
+        "A2": "X24418_ZN",
+        "A3": "X24135_Z",
+        "GS": "GND",
+        "S": "X24437_ZN",
+        "VS": "X13454_VS",
+        "VS1": "P15102_S",
+        "Z0": "X21172_ZN",
+        "Z0N": "X21175_ZN",
+        "Z1": "X21177_ZN",
+        "Z1N": "X21184_ZN",
+        "Z2": "X21179_ZN",
+        "Z2N": "X21182_ZN",
+        "Z3": "X21170_ZN",
+        "Z3N": "X21173_ZN",
+        "Z4": "X21178_ZN",
+        "Z4N": "X21183_ZN",
+        "Z5": "X21171_ZN",
+        "Z5N": "X21174_ZN",
+        "Z6": "X21180_ZN",
+        "Z6N": "X21181_ZN",
+        "Z7N": "X21176_ZN"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI495",
+      "lib": "HIX_1907151SUB",
+      "cell": "DAC_2",
+      "terms": {
+        "A0": "X24415_ZN",
+        "A1": "X24503_ZN",
+        "A2": "X24602_ZN",
+        "A3": "X24615_ZN",
+        "GS": "GND",
+        "NVB1": "N15142_G",
+        "NVB2": "N15172_G",
+        "PVB1": "P15187_G",
+        "S": "X24432_ZN",
+        "VI": "P15157_G",
+        "VO1": "net707",
+        "VO2": "net708",
+        "VS": "X13454_VS"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI498",
+      "lib": "HIX_1907151SUB",
+      "cell": "COUNT_4B_1",
+      "terms": {
+        "CP": "X21722_ZN",
+        "CPN": "X21723_ZN",
+        "D<14:0>": "net832<0:14>",
+        "ENN": "X24162_Z",
+        "GS": "GND",
+        "Q<0>": "net777",
+        "Q<1>": "net778",
+        "Q<2>": "net779",
+        "Q<3>": "net780",
+        "QN<0>": "net781",
+        "QN<1>": "net782",
+        "QN<2>": "net783",
+        "QN<3>": "net784",
+        "SUM<0>": "X13515_Z",
+        "SUM<1>": "X13540_Z",
+        "SUM<2>": "X13539_Z",
+        "SUM<3>": "X13527_Z",
+        "VS": "X13488_VS"
+      },
+      "saved_params": {}
+    },
+    {
+      "name": "MI499",
+      "lib": "HIX_1907151SUB",
+      "cell": "AMP_6",
+      "terms": {
+        "ADJ1_0": "X21180_ZN",
+        "ADJ1_1": "X21179_ZN",
+        "ADJ1_2": "X21178_ZN",
+        "ADJ1_3": "X21177_ZN",
+        "ADJ2_0": "X21181_ZN",
+        "ADJ2_1": "X21182_ZN",
+        "ADJ2_2": "X21183_ZN",
+        "ADJ2_3": "X21184_ZN",
+        "ENN": "X24132_Z",
+        "GS": "GND",
+        "NIB": "P14100_D",
+        "P14069_D": "P14069_D",
+        "VM": "net708",
+        "VOM": "net714",
+        "VOP": "net713",
+        "VP": "net707",
+        "VS": "X13454_VS",
+        "X24435_ZN": "X24435_ZN",
+        "X24441_ZN": "X24441_ZN",
+        "X24500_ZN": "X24500_ZN",
+        "X24590_ZN": "X24590_ZN"
+      },
+      "saved_params": {}
+    }
+  ],
+  "amp6_selected_instances": [
+    {
+      "name": "P15760",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "P15342_G",
+        "G": "P15342_G",
+        "S": "net157"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15759",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net157",
+        "G": "P15342_G",
+        "S": "net158"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15758",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net159",
+        "G": "P15342_G",
+        "S": "net158"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15757",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net159",
+        "G": "P15342_G",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15755",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "P15342_G",
+        "G": "VS",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "8.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15754",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "P15342_G",
+        "G": "X22466_ZN",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "5.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15753",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net73",
+        "G": "P15342_G",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "40.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "10",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15751",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net73",
+        "G": "P15751_G",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "40.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "10",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15738",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net79",
+        "G": "VP",
+        "S": "net73"
+      },
+      "saved_params": {
+        "totalW": "448.000u",
+        "fingerW": "14.000u",
+        "l": "2.000u",
+        "nf": "32",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15737",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net78",
+        "G": "VM",
+        "S": "net73"
+      },
+      "saved_params": {
+        "totalW": "448.000u",
+        "fingerW": "14.000u",
+        "l": "2.000u",
+        "nf": "32",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15669",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net60",
+        "G": "net119",
+        "S": "P15669_S"
+      },
+      "saved_params": {
+        "totalW": "15.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "3",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15668",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net161",
+        "G": "P15342_G",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "8.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15667",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net60",
+        "G": "P15342_G",
+        "S": "net161"
+      },
+      "saved_params": {
+        "totalW": "8.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15450",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net89",
+        "G": "P14069_D",
+        "S": "net83"
+      },
+      "saved_params": {
+        "totalW": "5.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15448",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net89",
+        "G": "VP",
+        "S": "net83"
+      },
+      "saved_params": {
+        "totalW": "10.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15446",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net87",
+        "G": "VM",
+        "S": "net83"
+      },
+      "saved_params": {
+        "totalW": "10.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15445",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net83",
+        "G": "P14069_D",
+        "S": "net87"
+      },
+      "saved_params": {
+        "totalW": "5.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15424",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net83",
+        "G": "P15342_G",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "12.000u",
+        "fingerW": "3.000u",
+        "l": "2.000u",
+        "nf": "4",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15393",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net98",
+        "G": "net98",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "4.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15390",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net92",
+        "G": "net92",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "4.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15388",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net98",
+        "G": "X22464_ZN",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "5.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15387",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net92",
+        "G": "X22464_ZN",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "5.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15386",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "VOP",
+        "G": "net92",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "16.000u",
+        "fingerW": "4.000u",
+        "l": "0.600u",
+        "nf": "4",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15385",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "VOM",
+        "G": "net98",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "16.000u",
+        "fingerW": "4.000u",
+        "l": "0.600u",
+        "nf": "4",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15356",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net162",
+        "G": "P15342_G",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15355",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net162",
+        "G": "P15342_G",
+        "S": "net163"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15354",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net163",
+        "G": "P15342_G",
+        "S": "net164"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15353",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net164",
+        "G": "P15342_G",
+        "S": "P15353_S"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15342",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "VS",
+        "G": "P15342_G",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "60.000u",
+        "fingerW": "3.000u",
+        "l": "3.000u",
+        "nf": "20",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N25224",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net89",
+        "G": "X22399_ZN",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "5.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N25219",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net78",
+        "G": "X22399_ZN",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "5.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N25218",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net79",
+        "G": "X22399_ZN",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "5.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15939",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net71",
+        "G": "net79",
+        "B": "GS",
+        "S": "net167"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "2.000u",
+        "l": "0.600u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15938",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net71",
+        "G": "net78",
+        "B": "GS",
+        "S": "net168"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "2.000u",
+        "l": "0.600u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15929",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net89",
+        "G": "net78",
+        "B": "GS",
+        "S": "N15868_D"
+      },
+      "saved_params": {
+        "totalW": "10.000u",
+        "fingerW": "5.000u",
+        "l": "0.400u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15928",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net169",
+        "G": "net79",
+        "B": "GS",
+        "S": "N15868_D"
+      },
+      "saved_params": {
+        "totalW": "10.000u",
+        "fingerW": "5.000u",
+        "l": "0.400u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15927",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net170",
+        "G": "net78",
+        "B": "GS",
+        "S": "N15866_D"
+      },
+      "saved_params": {
+        "totalW": "10.000u",
+        "fingerW": "5.000u",
+        "l": "0.400u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15926",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net87",
+        "G": "net79",
+        "B": "GS",
+        "S": "N15866_D"
+      },
+      "saved_params": {
+        "totalW": "10.000u",
+        "fingerW": "5.000u",
+        "l": "0.400u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15868",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "N15868_D",
+        "G": "net89",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "12.000u",
+        "fingerW": "6.000u",
+        "l": "1.400u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15866",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "N15866_D",
+        "G": "net87",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "12.000u",
+        "fingerW": "6.000u",
+        "l": "1.400u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15860",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "VOP",
+        "G": "net89",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "48.000u",
+        "fingerW": "6.000u",
+        "l": "1.400u",
+        "nf": "8",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15859",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "VOM",
+        "G": "net87",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "48.000u",
+        "fingerW": "6.000u",
+        "l": "1.400u",
+        "nf": "8",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15838",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net71",
+        "G": "VP",
+        "B": "GS",
+        "S": "net79"
+      },
+      "saved_params": {
+        "totalW": "213.600u",
+        "fingerW": "17.800u",
+        "l": "8.000u",
+        "nf": "12",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15836",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net78",
+        "G": "VM",
+        "B": "GS",
+        "S": "net71"
+      },
+      "saved_params": {
+        "totalW": "213.600u",
+        "fingerW": "17.800u",
+        "l": "8.000u",
+        "nf": "12",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15835",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "P15342_G",
+        "G": "P14069_D",
+        "B": "GS",
+        "S": "net48"
+      },
+      "saved_params": {
+        "totalW": "10.000u",
+        "fingerW": "10.000u",
+        "l": "2.000u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15833",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net48",
+        "G": "GS",
+        "B": "GS",
+        "S": "net179"
+      },
+      "saved_params": {
+        "totalW": "2.000u",
+        "fingerW": "1.000u",
+        "l": "4.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15832",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net48",
+        "G": "net46",
+        "B": "GS",
+        "S": "net180"
+      },
+      "saved_params": {
+        "totalW": "2.000u",
+        "fingerW": "1.000u",
+        "l": "4.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15829",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "NIB",
+        "G": "net46",
+        "B": "GS",
+        "S": "net181"
+      },
+      "saved_params": {
+        "totalW": "2.000u",
+        "fingerW": "1.000u",
+        "l": "4.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15828",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "NIB",
+        "G": "GS",
+        "B": "GS",
+        "S": "net182"
+      },
+      "saved_params": {
+        "totalW": "2.000u",
+        "fingerW": "1.000u",
+        "l": "4.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15825",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "NIB",
+        "G": "net44",
+        "B": "GS",
+        "S": "net183"
+      },
+      "saved_params": {
+        "totalW": "2.000u",
+        "fingerW": "1.000u",
+        "l": "4.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15778",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net87",
+        "G": "X22399_ZN",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "5.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15775",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net119",
+        "G": "X22095_ZN",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "5.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15881",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net98",
+        "G": "P15353_S",
+        "B": "GS",
+        "S": "net169"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "2.00u",
+        "l": "0.15u",
+        "nf": "12",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15880",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net92",
+        "G": "P15353_S",
+        "B": "GS",
+        "S": "net170"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "2.00u",
+        "l": "0.15u",
+        "nf": "12",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15824",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net46",
+        "G": "X22466_ZN",
+        "B": "GS",
+        "S": "NIB"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "5.00u",
+        "l": "0.15u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15792",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net118",
+        "G": "ADJ2_0",
+        "B": "GS",
+        "S": "VOM"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "0.60u",
+        "l": "0.15u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15790",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net116",
+        "G": "ADJ2_1",
+        "B": "GS",
+        "S": "VOM"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "0.60u",
+        "l": "0.15u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15788",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net108",
+        "G": "ADJ2_2",
+        "B": "GS",
+        "S": "VOM"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "0.60u",
+        "l": "0.15u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15787",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net107",
+        "G": "ADJ2_3",
+        "B": "GS",
+        "S": "VOM"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "0.60u",
+        "l": "0.15u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15785",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net114",
+        "G": "ADJ2_0",
+        "B": "GS",
+        "S": "VOP"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "0.60u",
+        "l": "0.15u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15783",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net112",
+        "G": "ADJ2_1",
+        "B": "GS",
+        "S": "VOP"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "0.60u",
+        "l": "0.15u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15781",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net110",
+        "G": "ADJ2_2",
+        "B": "GS",
+        "S": "VOP"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "0.60u",
+        "l": "0.15u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15780",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net109",
+        "G": "ADJ2_3",
+        "B": "GS",
+        "S": "VOP"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "0.60u",
+        "l": "0.15u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15973",
+      "lib": "HIX_1907151DEV",
+      "cell": "pmos_3p3_EX",
+      "terms": {
+        "B": "P15342_G",
+        "D": "net160",
+        "G": "X22334_ZN",
+        "S": "P15342_G"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "5.00u",
+        "l": "0.15u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "C18757",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOP",
+        "TOP": "net112"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.20u",
+        "m": "1"
+      }
+    },
+    {
+      "name": "C18753",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOM",
+        "TOP": "net116"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.20u",
+        "m": "1"
+      }
+    },
+    {
+      "name": "C18749",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOP",
+        "TOP": "net114"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.20u",
+        "m": "2"
+      }
+    },
+    {
+      "name": "C18748",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOP",
+        "TOP": "net112"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.2u",
+        "m": "6"
+      }
+    },
+    {
+      "name": "C18747",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOP",
+        "TOP": "net110"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.2u",
+        "m": "3"
+      }
+    },
+    {
+      "name": "C18746",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOP",
+        "TOP": "net109"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.20u",
+        "m": "2"
+      }
+    },
+    {
+      "name": "C18745",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOP",
+        "TOP": "net103"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.20u",
+        "m": "2"
+      }
+    },
+    {
+      "name": "C18744",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOP",
+        "TOP": "net114"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.2u",
+        "m": "4"
+      }
+    },
+    {
+      "name": "C18741",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOM",
+        "TOP": "net118"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.20u",
+        "m": "2"
+      }
+    },
+    {
+      "name": "C18740",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOM",
+        "TOP": "net116"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.2u",
+        "m": "6"
+      }
+    },
+    {
+      "name": "C18739",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOM",
+        "TOP": "net108"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.2u",
+        "m": "3"
+      }
+    },
+    {
+      "name": "C18738",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOM",
+        "TOP": "net107"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.20u",
+        "m": "2"
+      }
+    },
+    {
+      "name": "C18737",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOM",
+        "TOP": "net101"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.20u",
+        "m": "2"
+      }
+    },
+    {
+      "name": "C18736",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "VOM",
+        "TOP": "net118"
+      },
+      "saved_params": {
+        "c": "0.42939948p",
+        "l": "20.200u",
+        "w": "20.2u",
+        "m": "4"
+      }
+    },
+    {
+      "name": "R25222",
+      "lib": "HIX_1907151DEV",
+      "cell": "RTF",
+      "terms": {
+        "MINUS": "net101",
+        "PLUS": "net78"
+      },
+      "saved_params": {
+        "r": "909.091m",
+        "l": "3.00u",
+        "w": "3.3u"
+      }
+    },
+    {
+      "name": "R20452",
+      "lib": "HIX_1907151DEV",
+      "cell": "RTF",
+      "terms": {
+        "MINUS": "net103",
+        "PLUS": "net79"
+      },
+      "saved_params": {
+        "r": "909.091m",
+        "l": "3.00u",
+        "w": "3.3u"
+      }
+    },
+    {
+      "name": "R18763",
+      "lib": "HIX_1907151DEV",
+      "cell": "RTF",
+      "terms": {
+        "MINUS": "net119",
+        "PLUS": "VOP"
+      },
+      "saved_params": {
+        "r": "471.429",
+        "l": "33.00u",
+        "w": "700.0n"
+      }
+    },
+    {
+      "name": "R18762",
+      "lib": "HIX_1907151DEV",
+      "cell": "RTF",
+      "terms": {
+        "MINUS": "net119",
+        "PLUS": "VOM"
+      },
+      "saved_params": {
+        "r": "471.429",
+        "l": "33.00u",
+        "w": "700.0n"
+      }
+    },
+    {
+      "name": "C25221",
+      "lib": "HIX_1907151DEV",
+      "cell": "mim_1p0fF_EX",
+      "terms": {
+        "BOT": "net119",
+        "TOP": "VOP"
+      },
+      "saved_params": {
+        "c": "16p",
+        "l": "4.00u",
+        "w": "4.00u",
+        "m": "1"
+      }
+    },
+    {
+      "name": "C25220",
+      "lib": "HIX_1907151DEV",
+      "cell": "mim_1p0fF_EX",
+      "terms": {
+        "BOT": "VOM",
+        "TOP": "net119"
+      },
+      "saved_params": {
+        "c": "16p",
+        "l": "4.00u",
+        "w": "4.00u",
+        "m": "1"
+      }
+    }
+  ],
+  "amp6_bias_cm_neighborhood": [
+    {
+      "name": "P15751",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net73",
+        "G": "P15751_G",
+        "S": "VS"
+      },
+      "saved_params": {
+        "totalW": "40.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "10",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15670",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net60",
+        "G": "P14069_D",
+        "S": "net59"
+      },
+      "saved_params": {
+        "totalW": "15.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "3",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15669",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net60",
+        "G": "net119",
+        "S": "P15669_S"
+      },
+      "saved_params": {
+        "totalW": "15.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "3",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "P15667",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net60",
+        "G": "P15342_G",
+        "S": "net161"
+      },
+      "saved_params": {
+        "totalW": "8.000u",
+        "fingerW": "4.000u",
+        "l": "2.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15945",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net165",
+        "G": "P15669_S",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "2.000u",
+        "l": "1.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15944",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "N15868_D",
+        "G": "P15669_S",
+        "B": "GS",
+        "S": "net165"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "2.000u",
+        "l": "1.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15943",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net166",
+        "G": "P15669_S",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "2.000u",
+        "l": "1.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15942",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "N15866_D",
+        "G": "P15669_S",
+        "B": "GS",
+        "S": "net166"
+      },
+      "saved_params": {
+        "totalW": "4.000u",
+        "fingerW": "2.000u",
+        "l": "1.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15852",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "P15669_S",
+        "G": "P14069_D",
+        "B": "GS",
+        "S": "net174"
+      },
+      "saved_params": {
+        "totalW": "3.000u",
+        "fingerW": "3.000u",
+        "l": "0.400u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15835",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "P15342_G",
+        "G": "P14069_D",
+        "B": "GS",
+        "S": "net48"
+      },
+      "saved_params": {
+        "totalW": "10.000u",
+        "fingerW": "10.000u",
+        "l": "2.000u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15833",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net48",
+        "G": "GS",
+        "B": "GS",
+        "S": "net179"
+      },
+      "saved_params": {
+        "totalW": "2.000u",
+        "fingerW": "1.000u",
+        "l": "4.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15832",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net48",
+        "G": "net46",
+        "B": "GS",
+        "S": "net180"
+      },
+      "saved_params": {
+        "totalW": "2.000u",
+        "fingerW": "1.000u",
+        "l": "4.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15829",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "NIB",
+        "G": "net46",
+        "B": "GS",
+        "S": "net181"
+      },
+      "saved_params": {
+        "totalW": "2.000u",
+        "fingerW": "1.000u",
+        "l": "4.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15828",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "NIB",
+        "G": "GS",
+        "B": "GS",
+        "S": "net182"
+      },
+      "saved_params": {
+        "totalW": "2.000u",
+        "fingerW": "1.000u",
+        "l": "4.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15825",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "NIB",
+        "G": "net44",
+        "B": "GS",
+        "S": "net183"
+      },
+      "saved_params": {
+        "totalW": "2.000u",
+        "fingerW": "1.000u",
+        "l": "4.000u",
+        "nf": "2",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15776",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "P15669_S",
+        "G": "X22095_ZN",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "5.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15775",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net119",
+        "G": "X22095_ZN",
+        "B": "GS",
+        "S": "GS"
+      },
+      "saved_params": {
+        "totalW": "5.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "N15824",
+      "lib": "HIX_1907151DEV",
+      "cell": "nmos_3p3_EX",
+      "terms": {
+        "D": "net46",
+        "G": "X22466_ZN",
+        "B": "GS",
+        "S": "NIB"
+      },
+      "saved_params": {
+        "totalW": "360n",
+        "fingerW": "5.00u",
+        "l": "0.15u",
+        "nf": "1",
+        "m": "1",
+        "w": "iPar(\\\\\"totalW\\\\\")"
+      }
+    },
+    {
+      "name": "R25223",
+      "lib": "HIX_1907151DEV",
+      "cell": "RTF",
+      "terms": {
+        "MINUS": "net68",
+        "PLUS": "P15669_S"
+      },
+      "saved_params": {
+        "r": "30",
+        "l": "39.00u",
+        "w": "1.3u"
+      }
+    },
+    {
+      "name": "R18763",
+      "lib": "HIX_1907151DEV",
+      "cell": "RTF",
+      "terms": {
+        "MINUS": "net119",
+        "PLUS": "VOP"
+      },
+      "saved_params": {
+        "r": "471.429",
+        "l": "33.00u",
+        "w": "700.0n"
+      }
+    },
+    {
+      "name": "R18762",
+      "lib": "HIX_1907151DEV",
+      "cell": "RTF",
+      "terms": {
+        "MINUS": "net119",
+        "PLUS": "VOM"
+      },
+      "saved_params": {
+        "r": "471.429",
+        "l": "33.00u",
+        "w": "700.0n"
+      }
+    },
+    {
+      "name": "C25221",
+      "lib": "HIX_1907151DEV",
+      "cell": "mim_1p0fF_EX",
+      "terms": {
+        "BOT": "net119",
+        "TOP": "VOP"
+      },
+      "saved_params": {
+        "c": "16p",
+        "l": "4.00u",
+        "w": "4.00u",
+        "m": "1"
+      }
+    },
+    {
+      "name": "C25220",
+      "lib": "HIX_1907151DEV",
+      "cell": "mim_1p0fF_EX",
+      "terms": {
+        "BOT": "VOM",
+        "TOP": "net119"
+      },
+      "saved_params": {
+        "c": "16p",
+        "l": "4.00u",
+        "w": "4.00u",
+        "m": "1"
+      }
+    }
+  ],
+  "filter_storage_instances": [
+    {
+      "name": "C18695",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "net44",
+        "TOP": "net52"
+      },
+      "saved_params": {
+        "c": "4.21707483p",
+        "l": "64.700u",
+        "w": "64.7u",
+        "m": "6"
+      }
+    },
+    {
+      "name": "C18694",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "net46",
+        "TOP": "net54"
+      },
+      "saved_params": {
+        "c": "4.21707483p",
+        "l": "64.700u",
+        "w": "64.7u",
+        "m": "6"
+      }
+    },
+    {
+      "name": "C18693",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "net48",
+        "TOP": "net56"
+      },
+      "saved_params": {
+        "c": "4.21707483p",
+        "l": "64.700u",
+        "w": "64.7u",
+        "m": "6"
+      }
+    },
+    {
+      "name": "C18692",
+      "lib": "gf018hv_green",
+      "cell": "mim_1p0fF",
+      "terms": {
+        "BOT": "net50",
+        "TOP": "net58"
+      },
+      "saved_params": {
+        "c": "4.21707483p",
+        "l": "64.700u",
+        "w": "64.7u",
+        "m": "6"
+      }
+    }
+  ],
+  "new_images": [
+    {
+      "cell": "VOL_GEN_1",
+      "path": "VOL_GEN_1.png",
+      "sha256": "74ad5e60d60c40b0efd76e04063f693812246adeb29988ad37fafe50eddfdea0",
+      "bytes": 589107,
+      "method": "native hiExportImage, entireDesign, width 6400, read mode"
+    },
+    {
+      "cell": "AMP_BLOCK",
+      "path": "AMP_BLOCK.png",
+      "sha256": "e8db407743fe266ad41ff2c169017f0ab6bda4457666e06dcdcd04120aad2d2b",
+      "bytes": 403033,
+      "method": "native hiExportImage, entireDesign, width 6400, read mode"
+    },
+    {
+      "cell": "AMP_1",
+      "path": "AMP_1.png",
+      "sha256": "3b83b59078439f4f8ced0a18c046d25fee77050a94fca74934858907aa1c00ad",
+      "bytes": 437931,
+      "method": "native hiExportImage, entireDesign, width 6400, read mode"
+    },
+    {
+      "cell": "AMP_2",
+      "path": "AMP_2.png",
+      "sha256": "d561f4564877724610cd541f42d8a3ccf6d36d7827a0e62463f58627db4c602c",
+      "bytes": 450034,
+      "method": "native hiExportImage, entireDesign, width 6400, read mode"
+    },
+    {
+      "cell": "AMP_3",
+      "path": "AMP_3.png",
+      "sha256": "2146db34ec44e7f5d7f9661542cc6508662847428a99acdcac835c98f364ba96",
+      "bytes": 536971,
+      "method": "native hiExportImage, entireDesign, width 6400, read mode"
+    },
+    {
+      "cell": "DAC_1",
+      "path": "DAC_1.png",
+      "sha256": "978c0dc53c72142933c84e2400ec5ecf9f63e6bb7c26ccade288b52d304e3f38",
+      "bytes": 1564953,
+      "method": "native hiExportImage, entireDesign, width 6400, read mode"
+    },
+    {
+      "cell": "COUNT_4B_1",
+      "path": "COUNT_4B_1.png",
+      "sha256": "bb881500013c829d411f80dc0743c7f35ce25ad926123dcc2a1c57b1a9e20dc2",
+      "bytes": 482616,
+      "method": "native hiExportImage, entireDesign, width 6400, read mode"
+    }
+  ]
+}

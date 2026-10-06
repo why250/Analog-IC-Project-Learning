@@ -3,10 +3,14 @@
 ## 目标与读者
 
 - 用户是熟练模拟 IC 工程师，使用实际 Virtuoso 工程学习。中文授课，保留专业术语与准确的 library/cell/view 名称。
-- 当前教材为 `cadence_verification`；从 SAR ADC 开始，PLL 后续展开。
-- 用户希望逐步构建课程。每次优先推进一个可验收的问题，不预先生成大量未经验证的章节。
+- 教材包括 `cadence_verification` 与 AFE4404 反向工程；原 SAR ADC/PLL 进度与 AFE 学习分支分别记录。
+- 用户于 2026-10-03 明确希望学习 SAR ADC 与基础 PLL 的电路，优先使用 `courses/00-circuit-foundations`：采样/自举、比较器、CDAC、SAR 控制，以及 PFD/CP/filter/VCO/divider 与环路；verification 章节作配套实验，Fractional-N/DSM 后续选修。
+- 用户于 2026-10-03 明确要求生成完整课程，完整课文与记录模板已准备。授课和工程实验仍每次优先推进一个可验收的问题；未运行章节标为待验证，不因课文齐全而认定流程已跑通。
+- 用户于 2026-10-04 要求定位服务器 AFE 反向工程、建课并查看关键电路结构。已找到 AFE4404，课程在 `courses/04-afe4404`，实际原图与结构在 `schematics.md`，来源在 `docs/afe4404-map.md`。独立 afe_course 会话已只读确认 AMP_6、RC_CELL_2 反馈与 TX 的 AMP_5/SWITCH_BLOCK，导出 14 张原图；没有 AFE 新仿真。下一步沿 P15737/P15738 和相连 NMOS 追踪 bias/差分电流；学员预测与理解待验收，不把 cell 名称认作功能证明，不沿用 adc_course 为 AFE 会话。
 
 ## 续学与授课
+
+- AFE 后续要求：2026-10-04 用户希望完整理解信号链关键电路，已扩为九篇主课与六篇结构课，路线为 `courses/04-afe4404/signal-chain-guide.md`，共有 21 张原图。新增证据确认 FILTER→VOL_GEN_1→AMP_BLOCK→ADC，以及 ADC 总线→DAC_1→AMP_BLOCK 返回路径；完整转换算法、相位、最终码格式与新仿真仍待验证。当前课 A01a，只验收输入支路电流；P15751_G 的驱动在已读邻接中未定位，须查实际连接，不自行补 bias。
 
 1. 开始先读 README.md、progress.md、当前课与笔记，再检查工作树。
 2. 请用户先预测，随后通过电路、配置、网表或波形检验；按“问题—预测—实验—证据—设计判断”推进。

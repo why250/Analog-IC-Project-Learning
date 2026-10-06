@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-04",
+  "live_bridge_read": true,
+  "new_simulation_run": false,
+  "profile": "precision_adc_course",
+  "parents": [
+    {
+      "library": "HIX_2012210_SUB",
+      "cell": "COMP_2",
+      "source_relative_path": "ads8681_reverse_engineering/libraries/HIX_2012210_SUB/COMP_2/schematic/sch.oa",
+      "source_sha256_before": "9684e9713fbcb29a957726f6302228a1a32b50750a4d87099f9ae8c59717fa6c",
+      "source_sha256_after": "9684e9713fbcb29a957726f6302228a1a32b50750a4d87099f9ae8c59717fa6c",
+      "instances": [
+        {
+          "name": "MI198",
+          "lib": "HIX_2012210_SUB",
+          "cell": "BOOTSTRAP",
+          "terms": {
+            "AGND": "AGND",
+            "AVDD": "AVDD",
+            "CLK": "CLK",
+            "Z": "C8856_MINUS"
+          }
+        }
+      ]
+    },
+    {
+      "library": "HIX_2012210_SUB",
+      "cell": "COMP_2S1",
+      "source_relative_path": "ads8681_reverse_engineering/libraries/HIX_2012210_SUB/COMP_2S1/schematic/sch.oa",
+      "source_sha256_before": "df81c4f738ab3774ca2ee774901fc5b80a2c0a0b1121036743b0a98b270fac73",
+      "source_sha256_after": "df81c4f738ab3774ca2ee774901fc5b80a2c0a0b1121036743b0a98b270fac73",
+      "instances": [
+        {
+          "name": "MI197",
+          "lib": "HIX_2012210_SUB",
+          "cell": "BOOTSTRAP",
+          "terms": {
+            "AGND": "AGND",
+            "AVDD": "AVDD",
+            "CLK": "X4134_Z",
+            "Z": "C940_MINUS"
+          }
+        }
+      ]
+    }
+  ]
+}

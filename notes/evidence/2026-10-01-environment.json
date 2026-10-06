@@ -1,0 +1,440 @@
+{
+  "checked_at": "2026-10-01T13:36:57.295925+08:00",
+  "ssh_alias": "IC_Server",
+  "server_hostname": "xunipc",
+  "evidence_kind": "filesystem_and_live_schematic_read_only",
+  "new_simulation_run": false,
+  "eda_versions": {
+    "virtuoso": "IC25.1-64b.38",
+    "spectre": "25.1.0.054"
+  },
+  "bridge": {
+    "server_commit": "168943ca917e592c492a0db1b70aca0544f311c0",
+    "windows_commit": "a04d33552d06ccb95078c895cdfe826a72cc1c12",
+    "active_runtime": "server .venv invoked via Windows SSH",
+    "active_profile": "adc_course",
+    "daemon_port": 65379,
+    "channel_check_result": "1+2 -> 3"
+  },
+  "archives": {
+    "originals/adc_verification_v5.0_001.tar.gz": "d2d30077c9d2243b86b2addc207ae8089468a2f7707d0812eab516d6bd2b2095",
+    "originals/pll_verification_ws_v1.0_001.tar.gz": "278739de1cdf9263ee7b3714cd5ce03b93a818155a3be3c65a27f80a895cb016"
+  },
+  "working_files": [
+    {
+      "package_relative_path": "WORK/saradc/cds.lib",
+      "archive_sha256": "9f3d4b047704eb44bde198102926480e6ee09b7a6c1f2b7112af80dc3427f297",
+      "current_sha256": "9f3d4b047704eb44bde198102926480e6ee09b7a6c1f2b7112af80dc3427f297",
+      "same_bytes": true
+    },
+    {
+      "package_relative_path": "WORK/saradc/common.lib",
+      "archive_sha256": "9aeda3caf607a0ab6be30c070d3cfef08932f3edd8f2af9597ef18899a2586b4",
+      "current_sha256": "9aeda3caf607a0ab6be30c070d3cfef08932f3edd8f2af9597ef18899a2586b4",
+      "same_bytes": true
+    },
+    {
+      "package_relative_path": "WORK/saradc/.cdsinit",
+      "archive_sha256": "fb60e1fcca99d25dec0a0ae26cded690fa445db45419cb9a89c471b42dc68ddb",
+      "current_sha256": "fb60e1fcca99d25dec0a0ae26cded690fa445db45419cb9a89c471b42dc68ddb",
+      "same_bytes": true
+    },
+    {
+      "package_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_ADC_TB_new/schematic/sch.oa",
+      "archive_sha256": "8a52426fa39aca7c248a7a740e580d0b72f5075958b47bd04edb18b2d8fa1576",
+      "current_sha256": "8a52426fa39aca7c248a7a740e580d0b72f5075958b47bd04edb18b2d8fa1576",
+      "same_bytes": true
+    },
+    {
+      "package_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_ADC_TB_new/maestro/maestro.sdb",
+      "archive_sha256": "725b7d5a318c69be40903d09771c1d75dfaccc802c0d9a4c3ecfdef962c62237",
+      "current_sha256": "2877194c579366e58bf3d3233dda89cca68a6df5b5b16ab00fc68d782fb3ae5b",
+      "same_bytes": false
+    },
+    {
+      "package_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_ADC_TB_new/maestro/active.state",
+      "archive_sha256": "6b0f274f6f1a14954b203970bcd1e6ac1377344072afe1e777328b05e14e05b7",
+      "current_sha256": "80aba1f83143b6e8cd573dd0d7458ddc523ff687d846a7fa40ebf3f4e56ce49d",
+      "same_bytes": false
+    }
+  ],
+  "saved_active_test_variables": {
+    "ron_sample": "100",
+    "VDD": "1.2",
+    "fsample": "100M",
+    "numberofbits": "10",
+    "tone": "503",
+    "tr": "10p",
+    "numPoints": "1024",
+    "delay": "400n",
+    "percentFullScale": "840m",
+    "trise": "tr",
+    "VCM": "VDD/2",
+    "fclk": "(numberofbits+2)*fsample",
+    "quanta": "VDD/(2**numberofbits)",
+    "tsample": "1/fsample",
+    "fin": "(fsample/numPoints)*tone",
+    "fnyquist": "fsample/2",
+    "fullInputScale": "VDD/2",
+    "vin": "percentFullScale*fullInputScale",
+    "TSTOP": "(4+numPoints)*tsample",
+    "tclk": "1/fclk",
+    "f_fftbin": "fnyquist/128",
+    "scaleInput": "(percentFullScale/200)*fullInputScale",
+    "TSTOP_tran": "TSTOP+40n"
+  },
+  "active_test_variables_equal_archive": true,
+  "backup": {
+    "path": "/home/userone/.local/state/analog-ic-project-learning/2026-10-01-environment/pre-session-oa.tar.gz",
+    "sha256": "3c774a1112b9dab99765ac817977ccd2c9ad9dcbd3315dd159cd6629b9d8aef0",
+    "scope": "DESIGNS/GPDK045/SARADC/oa and WORK/saradc/{cds.lib,common.lib,.cdsinit}; excludes historical simulation results"
+  },
+  "live_top_instances": [
+    {
+      "name": "I0",
+      "lib": "saradcII",
+      "cell": "10bit_adc_core_w_split_dac_ld1_msb",
+      "params": {},
+      "terms": {
+        "vcm": "net04",
+        "VDD": "vdda!",
+        "VSS": "vssa!",
+        "DR": "data_ready",
+        "CLK": "CLK",
+        "out<9:0>": "out<0:9>",
+        "SC": "SC",
+        "vrefn": "net06",
+        "vrefp": "net05",
+        "vin": "vin",
+        "vip": "vip"
+      }
+    },
+    {
+      "name": "V14",
+      "lib": "analogLib",
+      "cell": "vdc",
+      "params": {
+        "FNpairs": "0",
+        "vdc": "0.6*VDD",
+        "srcType": "dc",
+        "srcTypeDC": "dc"
+      },
+      "terms": {
+        "PLUS": "net06",
+        "MINUS": "gnd!"
+      }
+    },
+    {
+      "name": "V5",
+      "lib": "analogLib",
+      "cell": "vdc",
+      "params": {
+        "FNpairs": "0",
+        "vdc": "0.8*VDD",
+        "srcType": "dc",
+        "srcTypeDC": "dc"
+      },
+      "terms": {
+        "PLUS": "net22",
+        "MINUS": "gnd!"
+      }
+    },
+    {
+      "name": "V15",
+      "lib": "analogLib",
+      "cell": "vdc",
+      "params": {
+        "FNpairs": "0",
+        "vdc": "0.5*VDD",
+        "srcType": "dc",
+        "srcTypeDC": "dc"
+      },
+      "terms": {
+        "PLUS": "net04",
+        "MINUS": "gnd!"
+      }
+    },
+    {
+      "name": "V2",
+      "lib": "analogLib",
+      "cell": "vpulse",
+      "params": {
+        "FNpairs": "0",
+        "v1": "0",
+        "v2": "VDD",
+        "per": "1/fclk",
+        "td": "0",
+        "tr": "1p",
+        "tf": "1p",
+        "pw": "(1/(2*fclk))-tr",
+        "srcType": "pulse",
+        "srcTypePULSE": "pulse"
+      },
+      "terms": {
+        "PLUS": "CLK",
+        "MINUS": "gnd!"
+      }
+    },
+    {
+      "name": "V1",
+      "lib": "analogLib",
+      "cell": "vpulse",
+      "params": {
+        "FNpairs": "0",
+        "v1": "0",
+        "v2": "VDD",
+        "per": "1",
+        "td": "10n",
+        "tr": "tr",
+        "tf": "tr",
+        "pw": "900.0m",
+        "srcType": "pulse",
+        "srcTypePULSE": "pulse"
+      },
+      "terms": {
+        "PLUS": "SC",
+        "MINUS": "gnd!"
+      }
+    },
+    {
+      "name": "V7",
+      "lib": "analogLib",
+      "cell": "vsin",
+      "params": {
+        "FNpairs": "0",
+        "vdc": "0",
+        "vo": "0",
+        "va": "0.95*vin/2",
+        "sinephase": "180",
+        "freq": "fin",
+        "filenums": "none",
+        "srcType": "sine",
+        "srcTypeSINE": "sine"
+      },
+      "terms": {
+        "PLUS": "vin",
+        "MINUS": "net22"
+      }
+    },
+    {
+      "name": "V6",
+      "lib": "analogLib",
+      "cell": "vsin",
+      "params": {
+        "FNpairs": "0",
+        "vdc": "0",
+        "td": "0",
+        "vo": "0",
+        "va": "0.95*vin/2",
+        "sinephase": "0",
+        "freq": "fin",
+        "filenums": "none",
+        "srcType": "sine",
+        "srcTypeSINE": "sine"
+      },
+      "terms": {
+        "PLUS": "vip",
+        "MINUS": "net22"
+      }
+    }
+  ],
+  "live_dut_selected_instances": [
+    {
+      "name": "I56",
+      "lib": "saradc",
+      "cell": "10Bit_ADC_logic",
+      "params": {},
+      "terms": {
+        "bit<0:9>": "bit<0:9>",
+        "CLK": "clk",
+        "sample": "sample",
+        "sample_clkb": "sample_clkb",
+        "DR": "DR",
+        "out<9:0>": "out<9:0>",
+        "SC": "SC",
+        "outp": "outp",
+        "sample_B": "sample_B"
+      }
+    },
+    {
+      "name": "I55",
+      "lib": "saradcII",
+      "cell": "comparator",
+      "params": {},
+      "terms": {
+        "out": "outn",
+        "outb": "outp",
+        "clk": "sample_clkb",
+        "Din-": "sumn",
+        "Din+": "sump"
+      }
+    },
+    {
+      "name": "I43",
+      "lib": "saradc",
+      "cell": "clockPhaseGenerator",
+      "params": {},
+      "terms": {
+        "CLK": "sample",
+        "phi2d": "phi2d",
+        "phi2": "phi2",
+        "phi1d": "phi1d",
+        "phi1": "phi1"
+      }
+    }
+  ],
+  "dut_available_views": [
+    "symbol",
+    "schematic"
+  ],
+  "binding_status": "Schematic master references verified; simulator view binding awaits a new netlist.",
+  "remote_evidence_root": "/home/userone/.local/state/analog-ic-project-learning/2026-10-01-environment",
+  "startup_warning": "Cannot find IC251 tools.lnx86/dfII/etc/tools/dpt directory to load environment variables; impact not determined.",
+  "live_logic_selected_instances": [
+    {
+      "name": "I22",
+      "lib": "saradc",
+      "cell": "controller_baseline",
+      "params": {
+        "sWait": "0",
+        "sSample": "1",
+        "sConv": "2",
+        "sDone": "3",
+        "vth": "VDD/2",
+        "tr": "1e-11",
+        "td": "1e-11",
+        "vhi": "VDD"
+      },
+      "terms": {
+        "valid": "DR",
+        "result<9:0>": "out<0:9>",
+        "sample": "sample2",
+        "value<9:0>": "bit<0:9>",
+        "clk": "clk_dly",
+        "go": "SC",
+        "comp_out": "outp"
+      }
+    },
+    {
+      "name": "I36",
+      "lib": "saradc",
+      "cell": "inv",
+      "params": {
+        "vhi": "VDD",
+        "vlo": "0",
+        "vthresh": "VDD/2",
+        "tplh": "tr/2",
+        "tphl": "tr/2",
+        "tr": "tr/2",
+        "tf": "tr/2"
+      },
+      "terms": {
+        "A": "clk!",
+        "Y": "clk_dly"
+      }
+    },
+    {
+      "name": "I33",
+      "lib": "saradc",
+      "cell": "inv",
+      "params": {
+        "vhi": "VDD",
+        "vlo": "0",
+        "vthresh": "VDD/2",
+        "tplh": "tr/2",
+        "tphl": "tr/2",
+        "tr": "tr/2",
+        "tf": "tr/2"
+      },
+      "terms": {
+        "A": "clk",
+        "Y": "clk!"
+      }
+    },
+    {
+      "name": "I49",
+      "lib": "saradc",
+      "cell": "inv",
+      "params": {
+        "vhi": "VDD",
+        "vlo": "0",
+        "vthresh": "VDD/2",
+        "tplh": "tr/2",
+        "tphl": "tr/2",
+        "tr": "tr/2",
+        "tf": "tr/2"
+      },
+      "terms": {
+        "A": "sample",
+        "Y": "net10"
+      }
+    },
+    {
+      "name": "I47",
+      "lib": "saradc",
+      "cell": "and2",
+      "params": {
+        "vhi": "VDD",
+        "vlo": "0",
+        "vthresh": "VDD/2",
+        "tplh": "tr/2",
+        "tphl": "tr/2",
+        "tr": "tr/2",
+        "tf": "tr/2"
+      },
+      "terms": {
+        "A": "clk!",
+        "B": "net10",
+        "Y": "sample_clkb"
+      }
+    },
+    {
+      "name": "I38",
+      "lib": "saradc",
+      "cell": "or2",
+      "params": {
+        "vhi": "VDD",
+        "vlo": "0",
+        "vthresh": "VDD/2",
+        "tplh": "tr/2",
+        "tphl": "tr/2",
+        "tr": "tr/2",
+        "tf": "tr/2"
+      },
+      "terms": {
+        "A": "DR",
+        "B": "sample2",
+        "Y": "sample"
+      }
+    }
+  ],
+  "controller_source": {
+    "package_relative_path": "DESIGNS/GPDK045/SARADC/oa/saradc/controller_baseline/veriloga/veriloga.va",
+    "current_sha256": "fd5fa51e5ef26187f89163f42a1693bd6914cd2ba71150e180522f07c34b941c",
+    "archive_sha256": "fd5fa51e5ef26187f89163f42a1693bd6914cd2ba71150e180522f07c34b941c",
+    "same_bytes": true,
+    "evidence_kind": "saved_Verilog_A_source_not_a_new_netlist",
+    "relevant_lines": {
+      "go_rising_sets_convert": 46,
+      "clk_rising_state_machine": 48,
+      "last_decision_latch_and_sample_start": 51,
+      "end_sample_and_start_first_trial": 145,
+      "second_sample_interval": 152
+    },
+    "available_views": [
+      "symbol",
+      "veriloga"
+    ]
+  },
+  "derived_controller_behavior": {
+    "assumption": "Controller source is selected in simulation; steady-state operation; propagation delays ignored for cycle counts.",
+    "SC_role": "Rising go crossing sets convert=1; inspected source has no go-falling clear.",
+    "period_in_clk_cycles": 12,
+    "sample_high_in_clk_cycles": 2,
+    "decisions_per_conversion": 10,
+    "sample_high_duration_seconds": 1.6666666666666667e-09,
+    "conversion_period_seconds": 1e-08,
+    "measured": false
+  }
+}
+

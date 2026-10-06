@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AFE4404 · 关键电路原图</title>
+<style>
+:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color:#223344;background:#f2f5f8}*{box-sizing:border-box}body{margin:0}header{padding:16px 24px;background:#122c40;color:white;display:flex;align-items:center;justify-content:space-between;gap:18px}h1{font-size:20px;margin:0}header p{font-size:12px;margin:6px 0 0;color:#c6d9e5}.layout{display:grid;grid-template-columns:260px minmax(0,1fr);height:calc(100vh - 81px)}aside{overflow:auto;padding:16px;background:white;border-right:1px solid #d7e0e8}aside p{font-size:12px;color:#617384;line-height:1.7;margin:0 0 14px}.nav{width:100%;text-align:left;background:white;border:1px solid #dde5ec;border-radius:6px;padding:10px 12px;margin-bottom:7px;cursor:pointer;color:#223344}.nav.active{background:#e8f3fa;border-color:#2e7fae;box-shadow:inset 3px 0 #2e7fae}.nav b,.nav small{display:block}.nav b{font-size:13px}.nav small{font-size:11px;color:#667a89;margin-top:4px}main{min-width:0;display:flex;flex-direction:column;overflow:hidden}.info{padding:16px 22px;background:#fff;border-bottom:1px solid #dde5ec}h2{font-size:19px;margin:0 0 7px}.source{font:12px ui-monospace,Consolas,monospace;color:#547186;overflow-wrap:anywhere}.hint{font-size:13px;line-height:1.65;margin:9px 0 0}.tools{display:flex;flex-wrap:wrap;align-items:center;gap:7px;padding:10px 20px;border-bottom:1px solid #d7e0e8}button,.tools a{font:13px inherit;border:1px solid #c5d3df;border-radius:5px;background:white;padding:7px 11px;color:#204863;cursor:pointer;text-decoration:none}.tools span{font-size:12px;color:#5d7486;margin:0 8px}#stage{flex:1;min-height:200px;overflow:auto;background:#dbe3e9;cursor:grab;padding:16px}#stage.dragging{cursor:grabbing}#circuit{display:block;background:white;box-shadow:0 2px 12px #0002;max-width:none;user-select:none}footer{font-size:11px;color:#526b7f;padding:9px 20px;background:#fff}#error{display:none;color:#b12828;padding:18px;background:#fff}kbd{background:#e7eef3;border-radius:3px;padding:2px 5px}
+@media(max-width:800px){header{padding:12px 16px}.layout{grid-template-columns:170px minmax(0,1fr)}aside{padding:10px}.info{padding:12px}.nav{padding:9px}.hint{font-size:12px}.tools{padding:8px}.tools a{font-size:11px}footer{padding:8px}}
+</style>
+<header><div><h1>AFE4404 · 关键电路原图</h1><p>Virtuoso 原生导出 · 只读结构已查 · 仿真待验证</p></div><div style="font-size:12px;color:#bfd4e2">2026-10-04</div></header>
+<div class="layout"><aside><p>先看 TIA 输入级，再看反馈网络。选择模块后可放大、拖动；“原图”可单独打开。白底黑线由 CAD 导出，保留原图标签。</p><div id="nav"></div></aside><main>
+<div class="info"><h2 id="title"></h2><div class="source" id="source"></div><p class="hint" id="hint"></p></div>
+<div class="tools"><button id="fit">适应窗口</button><button id="one">100%</button><button id="minus">−</button><button id="plus">＋</button><span id="scale">加载中</span><a id="original" target="_blank" rel="noopener">打开原图 ↗</a></div>
+<div id="error" role="alert">图片无法加载，请确认图册与 notes/evidence/afe4404 在同一课程仓库中。</div>
+<div id="stage"><img id="circuit" alt="" draggable="false"></div><footer>拖动查看局部；Ctrl + 滚轮缩放。原图部分器件标签重叠，尺寸与连接请对照结构记录；电压、增益、噪声尚未实测。</footer>
+</main></div>
+<script>
+const items=[
+["AMP_6_input","TIA 输入级 · 放大图","AMP_6","局部原图，周边连接超出此视野。可定位 P15737/P15738 的 PMOS 输入对，共源 net73；图中另有受 VP/VM 控制的器件，完整工作区和噪声贡献需后续分析。"],
+["AMP_6","TIA · 完整晶体管图","AMP_6","顶层 MI499：VP/VM 接 net707/net708，VOP/VOM 接 net713/net714。共有 173 个实例；先区分输入支路、偏置、输出及图中 UNUSED 区。"],
+["RC_CELL_2","TIA 反馈 · R/C 并联","RC_CELL_2","RES_ADJ_3 和 CAP_SWITCH_5 跨同一 PLUS/MINUS。顶层 MI336/MI337 分别从差分输出返回另一侧输入；控制位配置待核对。"],
+["CAP_SWITCH_5","反馈电容 · 开关支路","CAP_SWITCH_5","5 个 MIM 电容与 6 个 NMOS 实例。一个电容直接跨 PLUS/MINUS；其余支路含开关。不要把静态配置开关直接认作周期性 SC 积分。"],
+["RES_ADJ_3","反馈电阻 · 选择网络","RES_ADJ_3","8 个 RES_ADJ_8 及变体子块，共用 PLUS/MINUS；各支路控制和等效 Rf 仍需下降一层核对。"],
+["SWITCHED_RC_FILTER","接收链 · switched RC","SWITCHED_RC_FILTER","顶层 MI311 的 VIN1/VIN2 接 TIA 输出 net713/net714，VOUT1/VOUT2 为 net829/net761。控制与相位身份尚无新波形。"],
+["DAC_2","TIA 输入 · cancellation 候选","DAC_2","顶层 MI495 的 VO1/VO2 接 net707/net708，与 TIA 输入共节点。内部 15 个 DAC_CELL_2；码步、符号和产品位字段对应未验证。"],
+["DAC_CELL_2","DAC · 单元晶体管图","DAC_CELL_2","14 个实例；通过 VO1/VO2、S1/S2 与 bias 端口追踪电流选择。实际电流值与方向待工作点和控制条件证明。"],
+["ADC_1","ADC · 比较/读出阵列","ADC_1","17 个 ADC_CELL_1 与 15 路输出 buffer，Z<14:0>。15-bit 局部总线不能当成产品最终 24-bit word；完整编码链仍待追踪。"],
+["ADC_CELL_1","ADC · 单元晶体管图","ADC_CELL_1","可见输入选择、两只电容、交叉耦合再生与输出支路。它是 ADC_1 的实际子块；单个 cell 不能证明整个 ADC 为 SAR。"],
+["VOL_GEN_1","滤波后接口 · 局部反馈","VOL_GEN_1","MI199/MI188 接收滤波后的交接节点，输出接 AMP_BLOCK.VI1。P25107/P15100 分别接输入与 VO，构成局部反馈的结构入口；工作点和传输未测。"],
+["AMP_BLOCK","转换前模块 · 多路径与反馈","AMP_BLOCK","包含 AMP_1、两个 AMP_2、AMP_3 和开关电容/RC。VI1 接 VOL_GEN_1，VI2 接 DAC_1 返回，VO1 接 ADC_1；转换算法待相位证明。"],
+["AMP_1","AMP_BLOCK · 输出放大器","AMP_1","MI83 的输出直接接 AMP_BLOCK.VO1_1/VO1_2，其 VP/VM 接 VI2_2/VI2_1；输出通过 RC_CELL_1 返回输入。工作点未验证。"],
+["AMP_2","AMP_BLOCK · 电容网络放大器","AMP_2","AMP_BLOCK 中 MI3/MI5，输入输出与 CAP_SWITCH_1/1S1 和电阻网络相连。控制相位与状态保存待追踪。"],
+["AMP_3","AMP_BLOCK · 多端输出模块","AMP_3","MI315 含 AMP_7 与 CAP_SWITCH_4，具有两组差分输出。拓扑与相位要结合上层连接证明，不能由输出数猜阶数。"],
+["DAC_1","ADC 状态 · 模拟返回 DAC","DAC_1","顶层 A<14:0> 接 ADC_1 输出总线 net832<0:14>，VO1/VO2 接 AMP_BLOCK.VI2_1/VI2_2。返回权重、位序和更新时刻待查。"],
+["COUNT_4B_1","读出入口 · 状态与 clock","COUNT_4B_1","32 个实例，D 接 ADC 局部总线；Q/QN/SUM 的状态规则和最终接口映射待追踪。名称不能代替功能验证。"],
+["LDO_1","LDO · 晶体管与反馈","LDO_1","62 个实例，含 MOS、反馈/选择及控制子块。输出用途、参考、负载和稳定性还需逐条追踪，未测供电性能。"],
+["AMP_5","TX 路径 · 放大模块","AMP_5","顶层 MI152：VM=net770，VO=net830，VS=TX_SUP，与 SWITCH_BLOCK 相连。这是实际 TX 路径入口，供电与工作点待验证。"],
+["SWITCH_BLOCK","TX1–TX3 · 驱动开关阵列","SWITCH_BLOCK","顶层 MI341 直接连接 TX1/TX2/TX3，VI=net830、VO=net770；内部 64 个 SWITCH_CELL_1。LED 电流码和相位仍待审计。"],
+["TOP_HIER","顶层 · 完整层级图","TOP_HIER","226 个实例、363 个端口，包含很多暴露内部节点。全图用于定位模块；这些端口不能当成封装 pin，也不能证明工程已可作完整芯片仿真。"]
+];
+const image=document.querySelector("#circuit"),stage=document.querySelector("#stage"),nav=document.querySelector("#nav");
+let zoom=1,active=0,drag=null;
+function renderZoom(){image.style.width=Math.round(image.naturalWidth*zoom)+"px";document.querySelector("#scale").textContent=Math.round(zoom*100)+"% · "+image.naturalWidth+" × "+image.naturalHeight;}
+function setZoom(next){if(!image.complete||!image.naturalWidth)return;const old=zoom,x=stage.scrollLeft+stage.clientWidth/2,y=stage.scrollTop+stage.clientHeight/2;zoom=Math.max(0.03,Math.min(5,next));renderZoom();stage.scrollLeft=x*zoom/old-stage.clientWidth/2;stage.scrollTop=y*zoom/old-stage.clientHeight/2;}
+function fit(){if(!image.naturalWidth)return;zoom=Math.min((stage.clientWidth-32)/image.naturalWidth,(stage.clientHeight-32)/image.naturalHeight,1);renderZoom();stage.scrollLeft=stage.scrollTop=0;}
+function select(index){active=index;const item=items[index],src="../../notes/evidence/afe4404/"+item[0]+".png";document.querySelector("#title").textContent=item[1];document.querySelector("#source").textContent=(item[2]==="TOP_HIER"?"HIX_1907151TOP/":"HIX_1907151SUB/")+item[2]+"/schematic";document.querySelector("#hint").textContent=item[3];document.querySelector("#original").href=src;document.querySelector("#scale").textContent="加载中";document.querySelector("#error").style.display="none";for(const [i,b] of [...nav.children].entries()){b.classList.toggle("active",i===index);b.setAttribute("aria-pressed",i===index?"true":"false");}image.alt=item[1]+"，来源 "+item[2]+"/schematic";image.src=src;}
+items.forEach((item,index)=>{const button=document.createElement("button");button.className="nav";const b=document.createElement("b"),small=document.createElement("small");b.textContent=item[1];small.textContent=item[0];button.append(b,small);button.addEventListener("click",()=>select(index));nav.append(button);});
+image.addEventListener("load",fit);image.addEventListener("error",()=>{document.querySelector("#error").style.display="block";document.querySelector("#scale").textContent="加载失败";});
+document.querySelector("#fit").onclick=fit;document.querySelector("#one").onclick=()=>setZoom(1);document.querySelector("#plus").onclick=()=>setZoom(zoom*1.4);document.querySelector("#minus").onclick=()=>setZoom(zoom/1.4);
+stage.addEventListener("wheel",event=>{if(event.ctrlKey){event.preventDefault();setZoom(zoom*(event.deltaY<0?1.15:1/1.15));}},{passive:false});
+stage.addEventListener("pointerdown",event=>{if(event.button!==0)return;drag={x:event.clientX,y:event.clientY,left:stage.scrollLeft,top:stage.scrollTop};stage.setPointerCapture(event.pointerId);stage.classList.add("dragging");});
+stage.addEventListener("pointermove",event=>{if(drag){stage.scrollLeft=drag.left-(event.clientX-drag.x);stage.scrollTop=drag.top-(event.clientY-drag.y);}});
+function stopDrag(){drag=null;stage.classList.remove("dragging");}stage.addEventListener("pointerup",stopDrag);stage.addEventListener("pointercancel",stopDrag);
+select(0);
+</script>
+</html>

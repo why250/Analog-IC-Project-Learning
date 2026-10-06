@@ -1,0 +1,151 @@
+{
+  "checked_at": "2026-10-03T20:27:04.758806+08:00",
+  "ssh_alias": "IC_Server",
+  "evidence_kind": "read_only_filesystem_entry_and_README_check",
+  "new_simulation_run": false,
+  "live_OA_or_ADE_inspection_this_session": false,
+  "specification_numeric_requirements_audited": false,
+  "entries": [
+    {
+      "library": "saradc",
+      "cell": "10Bit_ADC_TB_new",
+      "package_relative_path": "adc_verification_v5.0_001/DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_ADC_TB_new",
+      "views_with_master_tag": [
+        "maestro",
+        "schematic"
+      ]
+    },
+    {
+      "library": "saradc",
+      "cell": "10Bit_ADC_TB_noise",
+      "package_relative_path": "adc_verification_v5.0_001/DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_ADC_TB_noise",
+      "views_with_master_tag": [
+        "maestro",
+        "schematic"
+      ]
+    },
+    {
+      "library": "saradc",
+      "cell": "10Bit_ADC_Run_Plan",
+      "package_relative_path": "adc_verification_v5.0_001/DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_ADC_Run_Plan",
+      "views_with_master_tag": [
+        "maestro",
+        "schematic"
+      ]
+    },
+    {
+      "library": "saradc",
+      "cell": "10Bit_capdac_TB_new",
+      "package_relative_path": "adc_verification_v5.0_001/DESIGNS/GPDK045/SARADC/oa/saradc/10Bit_capdac_TB_new",
+      "views_with_master_tag": [
+        "maestro",
+        "maestro_mc",
+        "schematic"
+      ]
+    },
+    {
+      "library": "saradc",
+      "cell": "clockPhaseGenerator_TB_new",
+      "package_relative_path": "adc_verification_v5.0_001/DESIGNS/GPDK045/SARADC/oa/saradc/clockPhaseGenerator_TB_new",
+      "views_with_master_tag": [
+        "maestro",
+        "schematic"
+      ]
+    },
+    {
+      "library": "saradc",
+      "cell": "clockPhaseGenerator_dc2dc_TB_new",
+      "package_relative_path": "adc_verification_v5.0_001/DESIGNS/GPDK045/SARADC/oa/saradc/clockPhaseGenerator_dc2dc_TB_new",
+      "views_with_master_tag": [
+        "maestro",
+        "schematic"
+      ]
+    },
+    {
+      "library": "saradc",
+      "cell": "comparator_noise_TB_new",
+      "package_relative_path": "adc_verification_v5.0_001/DESIGNS/GPDK045/SARADC/oa/saradc/comparator_noise_TB_new",
+      "views_with_master_tag": [
+        "maestro",
+        "schematic"
+      ]
+    },
+    {
+      "library": "saradc",
+      "cell": "comparator_offset_TB_new",
+      "package_relative_path": "adc_verification_v5.0_001/DESIGNS/GPDK045/SARADC/oa/saradc/comparator_offset_TB_new",
+      "views_with_master_tag": [
+        "maestro",
+        "schematic"
+      ]
+    },
+    {
+      "library": "saradc",
+      "cell": "comparator_tran_noise_TB",
+      "package_relative_path": "adc_verification_v5.0_001/DESIGNS/GPDK045/SARADC/oa/saradc/comparator_tran_noise_TB",
+      "views_with_master_tag": [
+        "maestro",
+        "schematic"
+      ]
+    },
+    {
+      "library": "zambezi45",
+      "cell": "pll",
+      "package_relative_path": "pll_verification_ws_v1.0_001/DESIGNS/GPDK045/FRACNPLL/oa/zambezi45/pll",
+      "views_with_master_tag": [
+        "physConfig",
+        "schematic",
+        "symbol"
+      ]
+    },
+    {
+      "library": "zambezi45_sim",
+      "cell": "pll_sim",
+      "package_relative_path": "pll_verification_ws_v1.0_001/DESIGNS/GPDK045/FRACNPLL/oa/zambezi45_sim/pll_sim",
+      "views_with_master_tag": [
+        "ams_function",
+        "ams_function_post_layout",
+        "ams_plllock_TR",
+        "ams_powerup1",
+        "config_function",
+        "config_function_post_layout",
+        "config_plllock_TR",
+        "config_powerup1",
+        "readme",
+        "schematic"
+      ]
+    }
+  ],
+  "source_files": [
+    {
+      "relative_path": "adc_verification_v5.0_001/README.txt",
+      "exists": true,
+      "sha256": "03d2d21dfb34cefe2a15511d18ff795d7593ddce71cb789765cd07453404638a",
+      "content_read_for_course": true
+    },
+    {
+      "relative_path": "pll_verification_ws_v1.0_001/README.txt",
+      "exists": true,
+      "sha256": "c9d50f65390a981d29b578308bcde6081cb651665eadd32c5b3b9de3cdcb7ac1",
+      "content_read_for_course": true
+    },
+    {
+      "relative_path": "pll_verification_ws_v1.0_001/DESIGNS/GPDK045/FRACNPLL/docs/Specification/Cadence_Zambezi_Synthesizer_Macro_Spec_Ver_1.0.pdf",
+      "exists": true,
+      "sha256": "f20bc114c5c9548dadf14fedd8144270b0778ac8a965ad6119146da36ba728cd",
+      "content_read_for_course": false
+    },
+    {
+      "relative_path": "pll_verification_ws_v1.0_001/DESIGNS/GPDK045/FRACNPLL/docs/Simulation_Description/Zambezi_SimulationTestbenches_2008-01-31.doc",
+      "exists": true,
+      "sha256": "5f7c66a10444d2635d6156d1a373669a6b569db3d69722370c337c113f33af8e",
+      "content_read_for_course": false
+    },
+    {
+      "relative_path": "pll_verification_ws_v1.0_001/DESIGNS/GPDK045/FRACNPLL/docs/Simulation_Description/Zambezi_Top-Level_SimPlan_2008-01-30.xls",
+      "exists": true,
+      "sha256": "ffb31bc0c9b6e9b77e8db2a47211c6042d6a60e03eeb161274dc2589dda88b43",
+      "content_read_for_course": false
+    }
+  ]
+}

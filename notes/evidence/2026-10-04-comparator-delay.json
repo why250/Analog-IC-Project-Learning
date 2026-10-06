@@ -1,0 +1,411 @@
+{
+  "date": "2026-10-04",
+  "VDD_V": 1.2,
+  "model_section": "tt",
+  "fclk_Hz": 1200000000.0,
+  "maxstep_s": 2E-12,
+  "stop_s": 1E-08,
+  "random_noise": false,
+  "output_load": "unchanged comparator_noise_TB_new; intrinsic buffers/SR latch, no added load",
+  "source_files_sha256": {
+    "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_noise_TB_new/schematic/sch.oa": "c71d267fbde9d7cecbd47bf1130cb5f5b6992b30e3f988c68a41892550cbf5e5",
+    "DESIGNS/GPDK045/SARADC/oa/saradcII/comparator/schematic/sch.oa": "38fccbde0301bb477463a173c03937007f9b364732e1500541adf5688d7ea21c",
+    "DESIGNS/GPDK045/SARADC/oa/saradcII/latchonly_updated/schematic/sch.oa": "0be0d58a8eba3b0da5d58634bc325f86203661bbecdd98bc7e572c55ec754120",
+    "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_offset_TB_new/maestro/active.state": "f9ebe05ef081a15af1e54a59fdd58970957df543a18dfac5bea1bc3410f2e801",
+    "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_offset_TB_new/maestro/maestro.sdb": "ec086393f3b666681cde5de27e39c477cc01b7892eca5ed0297c1c6d0b923d34"
+  },
+  "source_files_unchanged": {
+    "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_noise_TB_new/schematic/sch.oa": true,
+    "DESIGNS/GPDK045/SARADC/oa/saradcII/comparator/schematic/sch.oa": true,
+    "DESIGNS/GPDK045/SARADC/oa/saradcII/latchonly_updated/schematic/sch.oa": true,
+    "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_offset_TB_new/maestro/active.state": true,
+    "DESIGNS/GPDK045/SARADC/oa/saradc/comparator_offset_TB_new/maestro/maestro.sdb": true
+  },
+  "points": [
+    {
+      "vin_expression": "1m",
+      "history": "ExplorerRun.0",
+      "callback_status": "done",
+      "spectre_summary": "spectre completes with 0 errors, 2 warnings, and 7 notices.",
+      "netlist_sha256": "98912e9ff804534fcc039ff14ddb1eff7f2e87993897c4ba4cf6135be50153a1",
+      "simulation_path": "WORK/saradc/simulation/saradc/course_cmp_delay_20261004/maestro/results/maestro/ExplorerRun.0/1/saradc:course_cmp_delay_20261004:1",
+      "archive_directory": "point_1m",
+      "warnings": [
+        "WARNING (CMI-2426): I9.I0.I10.NM3: `Pdiblc2' = -1.46371e-09 is negative."
+      ],
+      "input_differential_V": 0.0010000000000000009,
+      "input_common_mode_V": 0.6000000000000001,
+      "measurement": "core clock rising 0.6 V to expected signed (sb-rb) reaching 1.08 V; 5 cycles after 3 startup cycles",
+      "cycles": [
+        {
+          "core_rise_s": 2.985062262690138E-09,
+          "top_clock_to_core_clock_ps": 63.39559602509756,
+          "evaluate_width_ps": 446.01551817855113,
+          "decision_delay_ps": 189.73356377331925,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": 1.2174489720549964,
+          "final_diff_at_end_V": 1.1999993350585685,
+          "raw_reset_diff_V": 1.4155907458518553E-07,
+          "reset_sb_V": 1.2047766468277041,
+          "reset_rb_V": 1.2047765052686294
+        },
+        {
+          "core_rise_s": 3.81839581020363E-09,
+          "top_clock_to_core_clock_ps": 63.39581020298077,
+          "evaluate_width_ps": 446.0155987620013,
+          "decision_delay_ps": 189.7326320551334,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": 1.217443949199676,
+          "final_diff_at_end_V": 1.1999993371246176,
+          "raw_reset_diff_V": 1.418383668408889E-07,
+          "reset_sb_V": 1.2047763652406094,
+          "reset_rb_V": 1.2047762234022426
+        },
+        {
+          "core_rise_s": 4.6517315487200105E-09,
+          "top_clock_to_core_clock_ps": 63.398215390735736,
+          "evaluate_width_ps": 446.0126105726431,
+          "decision_delay_ps": 189.72968492455416,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": 1.2174406444962644,
+          "final_diff_at_end_V": 1.1999993384074723,
+          "raw_reset_diff_V": 1.4178417259267063E-07,
+          "reset_sb_V": 1.2047737639148335,
+          "reset_rb_V": 1.2047736221306609
+        },
+        {
+          "core_rise_s": 5.485062082292321E-09,
+          "top_clock_to_core_clock_ps": 63.395415627661706,
+          "evaluate_width_ps": 446.01515950869447,
+          "decision_delay_ps": 189.72957063670643,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": 1.2174411925623447,
+          "final_diff_at_end_V": 1.1999993372076059,
+          "raw_reset_diff_V": 1.3544167400250572E-07,
+          "reset_sb_V": 1.2047868843630207,
+          "reset_rb_V": 1.2047867489213466
+        },
+        {
+          "core_rise_s": 6.318393062981188E-09,
+          "top_clock_to_core_clock_ps": 63.39306298227945,
+          "evaluate_width_ps": 446.01773496390064,
+          "decision_delay_ps": 189.73344651286936,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": 1.2174436037675709,
+          "final_diff_at_end_V": 1.1999993357141558,
+          "raw_reset_diff_V": 1.408094468135708E-07,
+          "reset_sb_V": 1.204779594655046,
+          "reset_rb_V": 1.2047794538455991
+        }
+      ],
+      "mean_raw_delay_ps": 189.73177958051653,
+      "delay_range_ps": [
+        189.72957063670643,
+        189.73356377331925
+      ],
+      "measurement_errors": [],
+      "waveform_sha256": {
+        "clk": "5c8002c5b2b60b4341df6e772a32c59e9cb62fd6d6abcd874d739e280598da78",
+        "core_clk": "3687cca709f4bad904df347ffd6e90102d51ad6057725dee66723b17d6f121ff",
+        "x": "81bf74b448f8be90e3f959e086ef21e1b1f362056233b11a7cacc8453c25129f",
+        "y": "f9728e716fd21c00e3255e98bb4626e2223a282903547c966b4149e4ee8f1667",
+        "sb": "3b38d72afcedda9dec8bbe9807891768aac08a2c10d483ca8e03acaff04be597",
+        "rb": "5685fd6b12d51fb1a87dbcd735ee261a60f541509cf9e441569863b39eb63ba3",
+        "out": "586a08ba3d5bbbe00a6f417b61325e89ebac4f196a777ea0fe998afb5ec40bff",
+        "outb": "3e187797df58ef64f8b3c71852f5e332778c7057e033472649ccff87358dba77",
+        "inp": "08c52f2aad886624f343f5d9db28b159667ed539eb72d593c5168914f5311bce",
+        "inn": "d19e61b889a518764c06d3d62ef4dbd785e40c39a986efc3382a3c228cf95f63"
+      }
+    },
+    {
+      "vin_expression": "-1m",
+      "history": "ExplorerRun.0",
+      "callback_status": "done",
+      "spectre_summary": "spectre completes with 0 errors, 2 warnings, and 7 notices.",
+      "netlist_sha256": "7fec0ef8c521f7c3b9510f65737d3632ff3c26e46c1a00d7e12d1ad33b9f9145",
+      "simulation_path": "WORK/saradc/simulation/saradc/course_cmp_delay_20261004/maestro/results/maestro/ExplorerRun.0/1/saradc:course_cmp_delay_20261004:1",
+      "archive_directory": "point_neg_1m",
+      "warnings": [
+        "WARNING (CMI-2426): I9.I0.I10.NM3: `Pdiblc2' = -1.46371e-09 is negative."
+      ],
+      "input_differential_V": -0.0010000000000000009,
+      "input_common_mode_V": 0.6000000000000001,
+      "measurement": "core clock rising 0.6 V to expected signed (sb-rb) reaching 1.08 V; 5 cycles after 3 startup cycles",
+      "cycles": [
+        {
+          "core_rise_s": 2.9850632658368226E-09,
+          "top_clock_to_core_clock_ps": 63.39659917081529,
+          "evaluate_width_ps": 446.01585105863114,
+          "decision_delay_ps": 189.7416433222031,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": -1.2174399034538523,
+          "final_diff_at_end_V": -1.199919820835023,
+          "raw_reset_diff_V": -1.4165087489018805E-07,
+          "reset_sb_V": 1.204776717667889,
+          "reset_rb_V": 1.204776859318764
+        },
+        {
+          "core_rise_s": 3.8183958639015174E-09,
+          "top_clock_to_core_clock_ps": 63.395863901625425,
+          "evaluate_width_ps": 446.0146243814215,
+          "decision_delay_ps": 189.7415388361379,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": -1.2174485334210499,
+          "final_diff_at_end_V": -1.199919838412167,
+          "raw_reset_diff_V": -1.428256875609905E-07,
+          "reset_sb_V": 1.2047774940023595,
+          "reset_rb_V": 1.204777636828047
+        },
+        {
+          "core_rise_s": 4.651729427299705E-09,
+          "top_clock_to_core_clock_ps": 63.396093969259425,
+          "evaluate_width_ps": 446.01477454001855,
+          "decision_delay_ps": 189.7415985065311,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": -1.2174530310204281,
+          "final_diff_at_end_V": -1.1999198282032078,
+          "raw_reset_diff_V": -1.4116280450983502E-07,
+          "reset_sb_V": 1.2047781298171234,
+          "reset_rb_V": 1.204778270979928
+        },
+        {
+          "core_rise_s": 5.485067441368225E-09,
+          "top_clock_to_core_clock_ps": 63.40077469909842,
+          "evaluate_width_ps": 446.01011638723315,
+          "decision_delay_ps": 189.73811228890085,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": -1.217448956376466,
+          "final_diff_at_end_V": -1.1999198227069843,
+          "raw_reset_diff_V": -1.4113477893813985E-07,
+          "reset_sb_V": 1.20479201253542,
+          "reset_rb_V": 1.2047921536701989
+        },
+        {
+          "core_rise_s": 6.318396876994417E-09,
+          "top_clock_to_core_clock_ps": 63.396876994826954,
+          "evaluate_width_ps": 446.0158039328604,
+          "decision_delay_ps": 189.7409449455564,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": -1.2174437457740492,
+          "final_diff_at_end_V": -1.1999198338205943,
+          "raw_reset_diff_V": -1.4104686737722543E-07,
+          "reset_sb_V": 1.2047809041959519,
+          "reset_rb_V": 1.2047810452428191
+        }
+      ],
+      "mean_raw_delay_ps": 189.74076757986586,
+      "delay_range_ps": [
+        189.73811228890085,
+        189.7416433222031
+      ],
+      "measurement_errors": [],
+      "waveform_sha256": {
+        "clk": "e4d24df2eb57d681dd1e7dadfc035ff8bdc812660ee8cf74dd2119af9c2720b3",
+        "core_clk": "5b9ced021ae687a03767db4010003facd66fce06be5299b6923090e8f23a6be0",
+        "x": "a7cbe042bfcc21b21f20635d29bdcfc117df88cb384b636cf714445b4a0a7655",
+        "y": "91ad60c464930b5a86e427f332d2ce104fcbfe94f6ae6ccb5441353d520ba1e1",
+        "sb": "884b1653339ffa1e2152cf351aa77e64d5bfd170bfb39e9cc03ddf11c9c6398d",
+        "rb": "f6b8adf10b494171d122ebf48de30d209606db9175a29442a9fa38fc0d7dd642",
+        "out": "188e76bbf16a2226cf1a0e1b13c784eb7db5ff4a4a6f50d7336403504f196d71",
+        "outb": "5198fec68780d0c1398382840a5fec3d52df3fd8c1964c9ae9494849b44c5ae7",
+        "inp": "baf211b3a5765853c54e515bbfb34d894526f332808941fe6073471799dee678",
+        "inn": "3f216c709ceec3387740a01e1c94da2d32dfc2639c0eef0464051c28c2211a58"
+      }
+    },
+    {
+      "vin_expression": "100u",
+      "history": "ExplorerRun.0",
+      "callback_status": "done",
+      "spectre_summary": "spectre completes with 0 errors, 2 warnings, and 7 notices.",
+      "netlist_sha256": "d0fef1400f2b1a5be81e61e3591edddcae28778757fb4b0516dcf71832d3a373",
+      "simulation_path": "WORK/saradc/simulation/saradc/course_cmp_delay_20261004/maestro/results/maestro/ExplorerRun.0/1/saradc:course_cmp_delay_20261004:1",
+      "archive_directory": "point_100u",
+      "warnings": [
+        "WARNING (CMI-2426): I9.I0.I10.NM3: `Pdiblc2' = -1.46371e-09 is negative."
+      ],
+      "input_differential_V": 9.999999999998899E-05,
+      "input_common_mode_V": 0.6,
+      "measurement": "core clock rising 0.6 V to expected signed (sb-rb) reaching 1.08 V; 5 cycles after 3 startup cycles",
+      "cycles": [
+        {
+          "core_rise_s": 2.985063453582515E-09,
+          "top_clock_to_core_clock_ps": 63.396786917089564,
+          "evaluate_width_ps": 446.00373913973056,
+          "decision_delay_ps": 198.23303524901033,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": 1.2169147830740514,
+          "final_diff_at_end_V": 1.199999333461691,
+          "raw_reset_diff_V": 1.3841580437849804E-08,
+          "reset_sb_V": 1.2047800875843317,
+          "reset_rb_V": 1.2047800737427512
+        },
+        {
+          "core_rise_s": 3.818396316580235E-09,
+          "top_clock_to_core_clock_ps": 63.39631657799822,
+          "evaluate_width_ps": 446.00440488058985,
+          "decision_delay_ps": 198.23313202420994,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": 1.2169173878031543,
+          "final_diff_at_end_V": 1.1999993371664777,
+          "raw_reset_diff_V": 1.416029312153367E-08,
+          "reset_sb_V": 1.2047783672655314,
+          "reset_rb_V": 1.2047783531052385
+        },
+        {
+          "core_rise_s": 4.651729934831023E-09,
+          "top_clock_to_core_clock_ps": 63.39660149548729,
+          "evaluate_width_ps": 446.00364971046264,
+          "decision_delay_ps": 198.23142618951724,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": 1.2169275881388548,
+          "final_diff_at_end_V": 1.199999344668495,
+          "raw_reset_diff_V": 1.3217533712107006E-08,
+          "reset_sb_V": 1.20477691105766,
+          "reset_rb_V": 1.2047768978401263
+        },
+        {
+          "core_rise_s": 5.485059305562945E-09,
+          "top_clock_to_core_clock_ps": 63.39263889851379,
+          "evaluate_width_ps": 446.00706813139465,
+          "decision_delay_ps": 198.23260674969956,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": 1.2169285990627197,
+          "final_diff_at_end_V": 1.1999993360949166,
+          "raw_reset_diff_V": 1.4034925551347065E-08,
+          "reset_sb_V": 1.2047768330278807,
+          "reset_rb_V": 1.204776818992955
+        },
+        {
+          "core_rise_s": 6.318397098096207E-09,
+          "top_clock_to_core_clock_ps": 63.39709809908303,
+          "evaluate_width_ps": 446.00403560876873,
+          "decision_delay_ps": 198.2329310674481,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": 1.2169160211906287,
+          "final_diff_at_end_V": 1.199999344244287,
+          "raw_reset_diff_V": 1.4087730264512466E-08,
+          "reset_sb_V": 1.204777597440479,
+          "reset_rb_V": 1.2047775833527488
+        }
+      ],
+      "mean_raw_delay_ps": 198.23262625597704,
+      "delay_range_ps": [
+        198.23142618951724,
+        198.23313202420994
+      ],
+      "measurement_errors": [],
+      "waveform_sha256": {
+        "clk": "69aea90dc9b5d85734b4577ec5d3bbf3de948019703272f1a82d3db3c2b397b8",
+        "core_clk": "a63f37a1eaca1d0a6e87627387ba8aa0fe8628af82b727bed2a5c1f935feaa79",
+        "x": "0354d194bffb7c13e699984b27489582c18bb927adb3eec19a53005ef71d47af",
+        "y": "ef5be6f82b8cd391a82217624b2ff730b060579e65005a56690519a24ce03bee",
+        "sb": "2ceedaf7804b025ea6b830fb195e47e80d4259a2cfd1df999dcf844d1a975523",
+        "rb": "170e411d79453152bab05b297b93eb3b7e516ec426ae71ff9c30a2680c4753bf",
+        "out": "18ae229f116d0c5e2e1570f48b2036635ed023cbd92eab6d09abfdab09330ffa",
+        "outb": "d6b78f1109095083916f82ce80e050e39e4b80f9ff2a0c653512f80f0fba2f6b",
+        "inp": "3e93f5bad8ea7b38ce4fedb1bb818bf8c75b21f17ef5eaa5dfd6319f76f32217",
+        "inn": "225ced36f6d358f3e92a76bc3cf65cb89a500d458aee6e021681bc76e500c028"
+      }
+    },
+    {
+      "vin_expression": "-100u",
+      "history": "ExplorerRun.0",
+      "callback_status": "done",
+      "spectre_summary": "spectre completes with 0 errors, 2 warnings, and 7 notices.",
+      "netlist_sha256": "de91e73f1fddb358f7c2d7cd2691eb06bf8a895d20c39cfb0147f9f50a4575ea",
+      "simulation_path": "WORK/saradc/simulation/saradc/course_cmp_delay_20261004/maestro/results/maestro/ExplorerRun.0/1/saradc:course_cmp_delay_20261004:1",
+      "archive_directory": "point_neg_100u",
+      "warnings": [
+        "WARNING (CMI-2426): I9.I0.I10.NM3: `Pdiblc2' = -1.46371e-09 is negative."
+      ],
+      "input_differential_V": -9.999999999998899E-05,
+      "input_common_mode_V": 0.6,
+      "measurement": "core clock rising 0.6 V to expected signed (sb-rb) reaching 1.08 V; 5 cycles after 3 startup cycles",
+      "cycles": [
+        {
+          "core_rise_s": 2.9850621828389387E-09,
+          "top_clock_to_core_clock_ps": 63.39551617547575,
+          "evaluate_width_ps": 446.0044245714237,
+          "decision_delay_ps": 198.23491793789626,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": -1.2169215929006307,
+          "final_diff_at_end_V": -1.1999123207049276,
+          "raw_reset_diff_V": -1.3157512082488247E-08,
+          "reset_sb_V": 1.2047764357119437,
+          "reset_rb_V": 1.204776448869456
+        },
+        {
+          "core_rise_s": 3.818395786641466E-09,
+          "top_clock_to_core_clock_ps": 63.3957866379344,
+          "evaluate_width_ps": 446.00344877808277,
+          "decision_delay_ps": 198.23486613331076,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": -1.2169221261781058,
+          "final_diff_at_end_V": -1.1999123210954448,
+          "raw_reset_diff_V": -1.4064176391249562E-08,
+          "reset_sb_V": 1.2047765223847284,
+          "reset_rb_V": 1.204776536448905
+        },
+        {
+          "core_rise_s": 4.651729988298845E-09,
+          "top_clock_to_core_clock_ps": 63.39665496759365,
+          "evaluate_width_ps": 446.0037812942351,
+          "decision_delay_ps": 198.23477688523758,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": -1.2169146669802764,
+          "final_diff_at_end_V": -1.1999123202037856,
+          "raw_reset_diff_V": -1.4202394146667324E-08,
+          "reset_sb_V": 1.2047770084432345,
+          "reset_rb_V": 1.2047770226456287
+        },
+        {
+          "core_rise_s": 5.485063777664666E-09,
+          "top_clock_to_core_clock_ps": 63.39711100067364,
+          "evaluate_width_ps": 446.0028421694786,
+          "decision_delay_ps": 198.23469679673718,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": -1.216918878841254,
+          "final_diff_at_end_V": -1.1999123199076802,
+          "raw_reset_diff_V": -1.3364244735606784E-08,
+          "reset_sb_V": 1.2047772090274425,
+          "reset_rb_V": 1.204777222391687
+        },
+        {
+          "core_rise_s": 6.31839270472449E-09,
+          "top_clock_to_core_clock_ps": 63.392704725153195,
+          "evaluate_width_ps": 446.00877349322127,
+          "decision_delay_ps": 198.2327638249195,
+          "raw_decision_retained": true,
+          "raw_diff_at_end_V": -1.216919870273599,
+          "final_diff_at_end_V": -1.1999122430022267,
+          "raw_reset_diff_V": -1.3725356481942105E-08,
+          "reset_sb_V": 1.2047879149843013,
+          "reset_rb_V": 1.2047879287096577
+        }
+      ],
+      "mean_raw_delay_ps": 198.23440431562025,
+      "delay_range_ps": [
+        198.2327638249195,
+        198.23491793789626
+      ],
+      "measurement_errors": [],
+      "waveform_sha256": {
+        "clk": "9001a439df7bdf432154cd04be911fe8cc5181b4ff60e08849e131cee1dd6a48",
+        "core_clk": "8751a8eadf9a3d58513df01c8a3b0aab26c9a97a9592c21bca153f67df0bca01",
+        "x": "12dd6eb2fff49618300df876126b8033769f15ef4198571b6b1faf54b704c8da",
+        "y": "d4b81fbd9ae08ac38e8c7c8488e2af1f5dce399d0d77057bb9e348d814344816",
+        "sb": "cc7d3ce2231102f1c04ebfbdb652c9ce5a57691ab6455a5f3aece74a094c9d9b",
+        "rb": "d678ef3039f94d5e6808445e1f4946a5d30d94af18d2201060c0c3ae3af227f8",
+        "out": "be293678bce3b360497ce5018ea5778349336caaffc95c1917e056185db427c3",
+        "outb": "5e55c5439c364e5bd3a55c45e5b69505f5c5fd4006b1573b15899841889b47ee",
+        "inp": "1f281a1c24a1adcedee51b21342790d9cd308c4b64003e2285833ac53fe3c872",
+        "inn": "3cbadccbf5ca42f7288d870f8258fcf27897d761ba58794e65fee0404f930c2c"
+      }
+    }
+  ],
+  "bridge_commit": "168943ca917e592c492a0db1b70aca0544f311c0",
+  "target_profile": "adc_course",
+  "virtuoso": "IC25.1-64b",
+  "spectre": "25.1.0",
+  "remote_evidence_directory": "COURSE_REMOTE_ROOT/2026-10-04-comparator-delay"
+}

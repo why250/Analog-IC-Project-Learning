@@ -1,0 +1,246 @@
+{
+  "ads8681_reverse_engineering": {
+    "model_candidate_files": [],
+    "view_directory_counts": {
+      "schematic": 378,
+      "symbol": 410,
+      "auCdl": 44,
+      "ams": 31,
+      "spectreS": 31,
+      "hspiceD": 31,
+      "UltraSim": 31,
+      "spectre": 31,
+      "auLvs": 31,
+      "cdsSpice": 31,
+      "hspiceS": 31
+    },
+    "device_examples": {
+      "NMOS4": {
+        "views": [
+          "symbol",
+          "ams",
+          "spectreS",
+          "hspiceD",
+          "UltraSim",
+          "spectre",
+          "auLvs",
+          "auCdl",
+          "cdsSpice",
+          "hspiceS"
+        ],
+        "small_text_files": {
+          "symbol/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "ams/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectreS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceD/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "UltraSim/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectre/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auLvs/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auCdl/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "cdsSpice/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n"
+        }
+      },
+      "PMOS4": {
+        "views": [
+          "symbol",
+          "ams",
+          "spectreS",
+          "hspiceD",
+          "UltraSim",
+          "spectre",
+          "auLvs",
+          "auCdl",
+          "cdsSpice",
+          "hspiceS"
+        ],
+        "small_text_files": {
+          "symbol/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "ams/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectreS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceD/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "UltraSim/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectre/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auLvs/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auCdl/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "cdsSpice/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n"
+        }
+      },
+      "POLYCAP": {
+        "views": [
+          "symbol",
+          "ams",
+          "spectreS",
+          "hspiceD",
+          "UltraSim",
+          "spectre",
+          "auLvs",
+          "auCdl",
+          "cdsSpice",
+          "hspiceS"
+        ],
+        "small_text_files": {
+          "symbol/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "ams/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectreS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceD/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "UltraSim/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectre/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auLvs/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auCdl/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "cdsSpice/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n"
+        }
+      },
+      "RNPOLY": {
+        "views": [
+          "symbol",
+          "ams",
+          "spectreS",
+          "hspiceD",
+          "UltraSim",
+          "spectre",
+          "auLvs",
+          "auCdl",
+          "cdsSpice",
+          "hspiceS"
+        ],
+        "small_text_files": {
+          "symbol/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "ams/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectreS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceD/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "UltraSim/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectre/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auLvs/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auCdl/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "cdsSpice/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n"
+        }
+      }
+    }
+  },
+  "ads1248_reverse_engineering": {
+    "model_candidate_files": [],
+    "view_directory_counts": {
+      "schematic": 358,
+      "symbol": 384,
+      "auCdl": 41,
+      "ams": 25,
+      "spectreS": 25,
+      "hspiceD": 25,
+      "UltraSim": 25,
+      "spectre": 25,
+      "auLvs": 25,
+      "cdsSpice": 25,
+      "hspiceS": 25
+    },
+    "device_examples": {
+      "NMOS4": {
+        "views": [
+          "symbol",
+          "ams",
+          "spectreS",
+          "hspiceD",
+          "UltraSim",
+          "spectre",
+          "auLvs",
+          "auCdl",
+          "cdsSpice",
+          "hspiceS"
+        ],
+        "small_text_files": {
+          "symbol/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "ams/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectreS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceD/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "UltraSim/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectre/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auLvs/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auCdl/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "cdsSpice/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n"
+        }
+      },
+      "PMOS4": {
+        "views": [
+          "symbol",
+          "ams",
+          "spectreS",
+          "hspiceD",
+          "UltraSim",
+          "spectre",
+          "auLvs",
+          "auCdl",
+          "cdsSpice",
+          "hspiceS"
+        ],
+        "small_text_files": {
+          "symbol/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "ams/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectreS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceD/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "UltraSim/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectre/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auLvs/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auCdl/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "cdsSpice/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n"
+        }
+      },
+      "POLYCAP": {
+        "views": [
+          "symbol",
+          "ams",
+          "spectreS",
+          "hspiceD",
+          "UltraSim",
+          "spectre",
+          "auLvs",
+          "auCdl",
+          "cdsSpice",
+          "hspiceS"
+        ],
+        "small_text_files": {
+          "symbol/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "ams/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectreS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceD/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "UltraSim/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectre/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auLvs/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auCdl/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "cdsSpice/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n"
+        }
+      },
+      "RNPOLY": {
+        "views": [
+          "symbol",
+          "ams",
+          "spectreS",
+          "hspiceD",
+          "UltraSim",
+          "spectre",
+          "auLvs",
+          "auCdl",
+          "cdsSpice",
+          "hspiceS"
+        ],
+        "small_text_files": {
+          "symbol/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "ams/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectreS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceD/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "UltraSim/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "spectre/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auLvs/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "auCdl/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "cdsSpice/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n",
+          "hspiceS/master.tag": "-- Master.tag File, Rev:1.0\nsymbol.oa\n"
+        }
+      }
+    }
+  }
+}

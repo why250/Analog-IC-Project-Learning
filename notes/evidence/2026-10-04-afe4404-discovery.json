@@ -1,0 +1,813 @@
+{
+  "checked_at_utc": "2026-10-04T06:22:58.746042+00:00",
+  "host": "xunipc",
+  "method": "SSH read-only filesystem inventory and pdftotext; no OA session or simulation",
+  "roots": {
+    "AFE4404_ROOT": "/home/userone/AAAIC/afe_projects/afe4404",
+    "AFE4404_WORKSPACE": "/home/userone/AAAIC/workspaces/afe4404",
+    "AFE4404_PDK_ROOT": "/home/userone/AAAIC/pdks/gf018hv_green"
+  },
+  "source_files": [
+    {
+      "path": "originals/afe4404.7z",
+      "size_bytes": 3769587,
+      "sha256": "e21f8ec458ab36723817ce742423bcf755628b68be3da3165d69d2c5e88d42b2"
+    },
+    {
+      "path": "docs/afe4404.pdf",
+      "size_bytes": 1352382,
+      "sha256": "6704bbac93ec071ab807387bcc8f3cfc389d6efab8ff42774f0a8d34faaab8e4"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 790,
+      "sha256": "496a280b2c29ae89b1f1c55b67a8e26505300abc3f888b19860a91ba3cdb0fb4"
+    }
+  ],
+  "workspace_files": [
+    {
+      "path": "cds.lib",
+      "size_bytes": 1343,
+      "sha256": "995600f4f253490787bfff2554a14f6ca1b263e36ea6e2d8f84393e4d3e42699"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 593,
+      "sha256": "8ca6111000064aaaab4553a4a6f6297e9d03277636eee53886b1f5d152531276"
+    }
+  ],
+  "libraries": {
+    "HIX_1907151DEV": {
+      "cell_count": 13,
+      "schematic_count": 0,
+      "view_counts": {
+        "schematic": 0,
+        "layout": 8,
+        "symbol": 13,
+        "spectre": 12,
+        "maestro": 0,
+        "adexl": 0,
+        "config": 0,
+        "veriloga": 0
+      }
+    },
+    "HIX_1907151INT": {
+      "cell_count": 115,
+      "schematic_count": 115,
+      "view_counts": {
+        "schematic": 115,
+        "layout": 0,
+        "symbol": 115,
+        "spectre": 0,
+        "maestro": 0,
+        "adexl": 0,
+        "config": 0,
+        "veriloga": 0
+      }
+    },
+    "HIX_1907151LIB": {
+      "cell_count": 134,
+      "schematic_count": 134,
+      "view_counts": {
+        "schematic": 134,
+        "layout": 0,
+        "symbol": 134,
+        "spectre": 0,
+        "maestro": 0,
+        "adexl": 0,
+        "config": 0,
+        "veriloga": 0
+      }
+    },
+    "HIX_1907151SUB": {
+      "cell_count": 136,
+      "schematic_count": 136,
+      "view_counts": {
+        "schematic": 136,
+        "layout": 0,
+        "symbol": 136,
+        "spectre": 0,
+        "maestro": 0,
+        "adexl": 0,
+        "config": 0,
+        "veriloga": 0
+      },
+      "schematics": [
+        {
+          "path": "libraries/HIX_1907151SUB/ADC_1/schematic/sch.oa",
+          "size_bytes": 76324,
+          "sha256": "2fd1f94b6b329e86fc8d7441ecdbf2f373db371a39a2e9990e984ee77e2de453"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/ADC_CELL_1/schematic/sch.oa",
+          "size_bytes": 43428,
+          "sha256": "aafc99d6dc92a476d6ec9829ae9de7031e0be551a29f868f0363b71f9e6979c5"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/AMP_1/schematic/sch.oa",
+          "size_bytes": 62060,
+          "sha256": "690aff207d12edafe09ccf7b38b2ec2d9768b257a184dda4d23664d9eec5ad77"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/AMP_2/schematic/sch.oa",
+          "size_bytes": 79948,
+          "sha256": "5259ace02a96f09f6fef1d7d2faaf87dfb021893c1bd388d241e23b5251c545e"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/AMP_3/schematic/sch.oa",
+          "size_bytes": 117204,
+          "sha256": "4ca14f5d455b97de60e279b3ae064fed6765a61be65945ff784684481ddb751c"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/AMP_4/schematic/sch.oa",
+          "size_bytes": 74892,
+          "sha256": "7927fa141dd0f2d30e2af56066afbfdeae4f12eb4b2681f3a00e9bced8473319"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/AMP_5/schematic/sch.oa",
+          "size_bytes": 64532,
+          "sha256": "f89c5b3c6b7e632cd66eb3630ed77c3723ecfc7f2cc0101f0b312c03ebdef9f0"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/AMP_6/schematic/sch.oa",
+          "size_bytes": 123260,
+          "sha256": "b2ea8623d173dad25451bee4d909f9d376ce62fb9e643e611d6ad8ff91830e0c"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/AMP_7/schematic/sch.oa",
+          "size_bytes": 30244,
+          "sha256": "f987523c3d4e37ac6225c42ff01dead6417eb30d0dfb9989f96c581e82d19c45"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/AMP_BLOCK/schematic/sch.oa",
+          "size_bytes": 71708,
+          "sha256": "071fdb042978df236e418cdb5f77c62e6674b3abd73f01af6b09109d6c3b8550"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/AND2_16B/schematic/sch.oa",
+          "size_bytes": 36084,
+          "sha256": "815e100734ffd7307c37b404390362680d224b39cfe1024f77c573d2d8edaab4"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/AND2_18B/schematic/sch.oa",
+          "size_bytes": 46804,
+          "sha256": "a4b5f20b1f8bcd94838b61621950055ab0d62d6e9cd8c599878349768684515a"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BIAS_1/schematic/sch.oa",
+          "size_bytes": 40268,
+          "sha256": "975815ee64275dc173136aef54c3ff5ba96eca35280ab90478d192fb9924f60f"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BIAS_2/schematic/sch.oa",
+          "size_bytes": 40628,
+          "sha256": "ecdafef5659ee5ef838437ef7f51dbf5370ecd2fbf6605e922c559aa9fc2774b"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BIAS_3/schematic/sch.oa",
+          "size_bytes": 64124,
+          "sha256": "d6fbf7236b7bfbb14cd505fb7d9b6aff3edfd6708d790165dd10d6b0c340e48d"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BIAS_4/schematic/sch.oa",
+          "size_bytes": 72492,
+          "sha256": "76a5adfca05fee39929bf95d955810f479ea9961c82b490bc8c73d1d5309f8e7"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BLOCK_1/schematic/sch.oa",
+          "size_bytes": 53428,
+          "sha256": "47dc198b25efa797f9e5dbe8e4bb6b7092d51f17125fc21634f3091748a94f42"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BLOCK_2/schematic/sch.oa",
+          "size_bytes": 55740,
+          "sha256": "60787ee7960103994ede68bdda34dc46226d2855c27b67daf53085290b964fac"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BLOCK_2S1/schematic/sch.oa",
+          "size_bytes": 54660,
+          "sha256": "99d4b0e730eae933b38ed101655ce62e16ae6a6a02793201d68859da007ac36e"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BUFF_1/schematic/sch.oa",
+          "size_bytes": 39732,
+          "sha256": "4b7a8d0f5bde0b3dc21e555ddf1bb4ff11e60fa4ae79ba357eeeca3733237301"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BUFF_16B_1/schematic/sch.oa",
+          "size_bytes": 35980,
+          "sha256": "85f7d2026779b3cd17974ce83e416d0dd423cae9d8b5b5e195fc049b4c86e8fb"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BUFF_16B_1S1/schematic/sch.oa",
+          "size_bytes": 35308,
+          "sha256": "de485e2d273afb0f99f9a147d84e972edab53f21d59c3f7cfbdb957c01d4c338"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BUFF_2/schematic/sch.oa",
+          "size_bytes": 30204,
+          "sha256": "4775e62109c3ef32eb2c2f27389815c8b188616ec77d8b3879aaf282a77e2af7"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BUF_1/schematic/sch.oa",
+          "size_bytes": 97988,
+          "sha256": "35ed1afa7ae4a7287b8b38b3922c91484cb34427332315242c6ed23185cabda0"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BUF_2/schematic/sch.oa",
+          "size_bytes": 72612,
+          "sha256": "963e02790a7d46cb05e9677ad39c167ef677fc89cb93487f5a4a607014b4d22e"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BUF_3/schematic/sch.oa",
+          "size_bytes": 74068,
+          "sha256": "97cc8398bff6e65e44748c2e70785c7139c79922f46f72787e2b2abe1fbe50ba"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BUF_4/schematic/sch.oa",
+          "size_bytes": 59332,
+          "sha256": "bf273366725204fceb6f953dcc89ccee09b9e32fd503e7fbfe1dfe278e9d2408"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BUF_5/schematic/sch.oa",
+          "size_bytes": 40780,
+          "sha256": "82cc5c169cdf442682b975c3ee5078311fcd0d2f6ac8b0dc5b451e04917aab4c"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BUF_6/schematic/sch.oa",
+          "size_bytes": 46060,
+          "sha256": "927711aedab47b5400767b00be3b4d0a7e714aeb72e270e9d2f08afb44e6faf5"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BUF_8B/schematic/sch.oa",
+          "size_bytes": 30236,
+          "sha256": "69fcdfad7df78be68138a2b628c0acaccb91698c4ec384b3edb53ccd95e973a2"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/BUF_BLOCK/schematic/sch.oa",
+          "size_bytes": 60604,
+          "sha256": "aa315fa81d16d00db4de30f04ca0a430d25d9ad7e0feb6384f9111fdc83e9944"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CAP_SWITCH_1/schematic/sch.oa",
+          "size_bytes": 35028,
+          "sha256": "04c958c51ddd2dd5b42d33914e908c0a0eba4d45090ef50d87b47f6890c07db0"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CAP_SWITCH_1S1/schematic/sch.oa",
+          "size_bytes": 35036,
+          "sha256": "502ef426b6d24c7ccc3322212d4019bc7bbbbf3ab466038d99f8a779b451c996"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CAP_SWITCH_2/schematic/sch.oa",
+          "size_bytes": 33708,
+          "sha256": "686381ff89553e8434a12293502d740b127a8cf76f368b016c6601415e3e5dca"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CAP_SWITCH_3/schematic/sch.oa",
+          "size_bytes": 33428,
+          "sha256": "8e74710b5b6500977480d77dc60c564870a8ddec3fc8b1303796f25e1ed44427"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CAP_SWITCH_4/schematic/sch.oa",
+          "size_bytes": 33532,
+          "sha256": "260a5f0ffdb3bbb18f5175d059006ed77c6aa2ad27017369a79e3151c432bf4a"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CAP_SWITCH_5/schematic/sch.oa",
+          "size_bytes": 32156,
+          "sha256": "aaee8a82ca5b7b591eb949fb3970766b7483ae6240d0dce9ddc2b7c0fa9ee0db"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/COMP_1/schematic/sch.oa",
+          "size_bytes": 48996,
+          "sha256": "7b0ce2b4b80a3f87fd404d156af68a1af9bef11fa09576f5712129dd3d812a11"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/COUNT_4B_1/schematic/sch.oa",
+          "size_bytes": 52676,
+          "sha256": "a11992b3a4d77e90a0f5df805ebfd06a9dc9bd3647dfb9e7e8d7f6ab2d5c86d4"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CTRL_1/schematic/sch.oa",
+          "size_bytes": 37620,
+          "sha256": "17598c1ce08a24cfc4ac4d58eb78350be8e19e12e068e9818492836ca1c569b9"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CTRL_2/schematic/sch.oa",
+          "size_bytes": 93796,
+          "sha256": "aa338b9a27a9f684a71b5190d1512ee3ec800c446f3bc9c2a4c4b213b3f3ee6c"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CTRL_3/schematic/sch.oa",
+          "size_bytes": 46732,
+          "sha256": "622abb373860a5ea0a86c18f746184b81df4c7f088a8fda35b4ac9bc8fb5f9a6"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CTRL_4/schematic/sch.oa",
+          "size_bytes": 38468,
+          "sha256": "67dfdedced2a76881b61879b0d9e817e830d2061de2409422b33e30052e307bb"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CTRL_5/schematic/sch.oa",
+          "size_bytes": 54988,
+          "sha256": "6a0f411282a816fc7fc69cd67b0ab0ea7570ba5db284eb80d2f26c03a0d52b8f"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CTRL_6/schematic/sch.oa",
+          "size_bytes": 78420,
+          "sha256": "c423a6b737b45dacd491f553abe234380281983230bb87c65516a253434a73c2"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/CTRL_7/schematic/sch.oa",
+          "size_bytes": 60044,
+          "sha256": "1f982c6fde321b63e7372df240896fe872a54d5b9509e12639eef819bfc65f0f"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DAC_1/schematic/sch.oa",
+          "size_bytes": 67220,
+          "sha256": "1d081c21561b84905b2ac0aa552afa94df0a41ce5fcc1e710b0750996ec9bfa5"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DAC_2/schematic/sch.oa",
+          "size_bytes": 61468,
+          "sha256": "9084c193e51a1d789859c6fe9137f89fa81aadbe02fb8bbf0e234be674507bab"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DAC_3/schematic/sch.oa",
+          "size_bytes": 87356,
+          "sha256": "6c0d78429802b45f3679cae563c8d22e9c8a06d329f387cd56930d8ace3e5457"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DAC_CELL_1/schematic/sch.oa",
+          "size_bytes": 34556,
+          "sha256": "9fc22e11685b00c0ee1052f66cb694285634b4deeec4607ae54a19d0509cf615"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DAC_CELL_2/schematic/sch.oa",
+          "size_bytes": 33548,
+          "sha256": "206e1efcf5c9026a2c70cbc92042da88ceec700b4140bcde89a3b28d8f413984"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DAC_CELL_3/schematic/sch.oa",
+          "size_bytes": 41196,
+          "sha256": "c8d4a865efb390d48454650ec741400ec5d9a23835a8026809f0267a99571738"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DAC_CELL_3S1/schematic/sch.oa",
+          "size_bytes": 40444,
+          "sha256": "61c90b1857706cc00d5f7a13946b9e414e2c017f15f8172963f1d685c07cbc96"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DECODER_BLOCK_1/schematic/sch.oa",
+          "size_bytes": 246516,
+          "sha256": "70c27e90dd00c40044dcba4892696d8db87f99bc6ae45f0c5ce8534232897ac0"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DEC_3B_1S1/schematic/sch.oa",
+          "size_bytes": 55932,
+          "sha256": "b718da9f5e03cddd12e1b6f14cf195792375f27e7f298c18210247613225bd74"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DEC_3B_2/schematic/sch.oa",
+          "size_bytes": 33060,
+          "sha256": "ba2d41fb08a1ccf9794aaa5d4d4782cf368ed1e2488211ddbb014c427f7cd48b"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DEC_4B/schematic/sch.oa",
+          "size_bytes": 50124,
+          "sha256": "fca3ff7fe7d8f0400d486b447cbc3425c366c9c65712cc02a977ae173880c209"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DEC_4B_1/schematic/sch.oa",
+          "size_bytes": 49076,
+          "sha256": "e6ac17766592fc282f7bc97779d551254337bf8d25e1b3ea32b607f6e4633c1e"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DEC_4B_2/schematic/sch.oa",
+          "size_bytes": 51388,
+          "sha256": "6a7443575d1e8cc5a3043954f88c8163733c902d4b119e771ee53b602f1fdb0d"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DEC_6B_2/schematic/sch.oa",
+          "size_bytes": 64964,
+          "sha256": "8be5a2507e3784b3c67c8159b1bda740dc7a1354e2f62c98fbd2210dce0665a2"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DIFBUF_21B/schematic/sch.oa",
+          "size_bytes": 68892,
+          "sha256": "9ea3466fa62339e5975d70ebad9345cc6d4011f3c871c67dabfe5c7eeb52d57b"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DIFINV_1/schematic/sch.oa",
+          "size_bytes": 30588,
+          "sha256": "e7e37859b9d509a9d8fae33a1344e19fe2d9504d7c500d51170dcd156e1030c7"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DIFINV_5B/schematic/sch.oa",
+          "size_bytes": 39996,
+          "sha256": "e9fec1a09e670f5b5bf9c745840534c5ad72dd7b8fc25952ed6a658b601f65bf"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DIFINV_8B/schematic/sch.oa",
+          "size_bytes": 35924,
+          "sha256": "3f7193b783594f6a7187c53b5daecef84c2edfa346bdac228fa38cf9623942e8"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DIFINV_9B/schematic/sch.oa",
+          "size_bytes": 40020,
+          "sha256": "72b4d0d8f0c7c5fd39a5f051853e1411ff71ff2e50eddf1d009441d5a5d05f6a"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DRIVER_1/schematic/sch.oa",
+          "size_bytes": 43436,
+          "sha256": "0038654f5bccb15a324b66931d23adef80ba4d4d7431d864edd2a9443d85fb0e"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/DRIVER_2/schematic/sch.oa",
+          "size_bytes": 42652,
+          "sha256": "5a264d56e3695de2d6e94bcda233d66953ef7ea3ce1cdf6346ab9301d97abbf3"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/FREQ_BLOCK_1/schematic/sch.oa",
+          "size_bytes": 56628,
+          "sha256": "cc5160e75c28b8041222ab10c88f1ad37b4eec3a5f644cd2acc98ad1031d6c2a"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/FREQ_DIV_1/schematic/sch.oa",
+          "size_bytes": 72364,
+          "sha256": "907e7f349058cd96d98e7765a6f98c05db565ce43b513ae2173b3878cb7ae75a"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/FREQ_DIV_2/schematic/sch.oa",
+          "size_bytes": 34308,
+          "sha256": "f9f0768071916ee29e8b5b1b65a3761a2c1ac4aa5f5bdcfc06ffca156d88304d"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/LDO_1/schematic/sch.oa",
+          "size_bytes": 63652,
+          "sha256": "af5b2ac8d638867c0e36fc06b077de9c218504063e12ba1da540f84667fb89b8"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/LDO_2/schematic/sch.oa",
+          "size_bytes": 61052,
+          "sha256": "d4eb2e180e7bc912944ccf2a0b9718556dfb823902238d6f813480f7952657e5"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/LSQU_CELL_1/schematic/sch.oa",
+          "size_bytes": 44788,
+          "sha256": "4fada9bfd5f0ab9e280d1b617c400385325e5e85855efca7f2b66cf651f7fcda"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/MUX_1/schematic/sch.oa",
+          "size_bytes": 42268,
+          "sha256": "bbe202deb729405db111d2a66c48f7e53c4760a2db0e9c491f5999ae391fe524"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/MX21_15BX4/schematic/sch.oa",
+          "size_bytes": 92436,
+          "sha256": "b3b3965bf28bc78745621d32958e98462875b0a6bf5735585bebf1b0cf87a5fc"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/NMOS_CELL_1/schematic/sch.oa",
+          "size_bytes": 26268,
+          "sha256": "0f888a9889a8d20131d645da7893bcb39da73e20aef802dce5d2e5cee9dfdc79"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/OSC_1/schematic/sch.oa",
+          "size_bytes": 77932,
+          "sha256": "89ddbb6de8caf341850e9a9fc1c02319303d3fe7627ab23756c2d8bc26085876"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/OSC_2/schematic/sch.oa",
+          "size_bytes": 99052,
+          "sha256": "61ae5b16affef86b1a931c711ce41f7bb44e098a762a833580f96a9490bcc9cf"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/OSC_3/schematic/sch.oa",
+          "size_bytes": 74188,
+          "sha256": "2bd3545d4e858b4e1954f3a46e1d9c65b3c3b987dbe251661f2f30918375ec50"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/PAD_ESD/schematic/sch.oa",
+          "size_bytes": 29236,
+          "sha256": "8894a3baec5ca88c3ecbe11338c0e15d6e6d853854406182bb1b1cc91cd16725"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/PAD_IO_1/schematic/sch.oa",
+          "size_bytes": 35924,
+          "sha256": "19cbd09af12a31dfa43dfc48ebfde4c7b9309c6b1e8434f4e7a56617cb68492b"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/PAD_IO_1S1/schematic/sch.oa",
+          "size_bytes": 35708,
+          "sha256": "c14aa3ab90a1d398792c1373a84aa3e4dfd10d7a76a853d4c31e184b683888a9"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/PAD_IO_2/schematic/sch.oa",
+          "size_bytes": 36788,
+          "sha256": "1db18ea6038f6ab2d997d7c692b93a8d1ea8690bc883a5ffb84772c9f622a454"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/PAD_IO_3/schematic/sch.oa",
+          "size_bytes": 36148,
+          "sha256": "943d91b4274aaa657a96d14fb4dde1e000007a3e45c1a9205af9013f21aa263f"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/PAD_IO_4/schematic/sch.oa",
+          "size_bytes": 59204,
+          "sha256": "ff26f779986c1d65d05fd478e2a0c66b281a43552dd0df43a151a085f56967ba"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/PMOS_CELL_1/schematic/sch.oa",
+          "size_bytes": 26684,
+          "sha256": "7d65f105d23e2b98ab9f597a61f4741dc1373dd01968ebec99e02c219daf1398"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/POWER_CAP/schematic/sch.oa",
+          "size_bytes": 31348,
+          "sha256": "bea25912636ea4761299b7626501d8dfaca6dbb7d97f0a1365035dbcf2d94552"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RC_CELL_1/schematic/sch.oa",
+          "size_bytes": 30868,
+          "sha256": "f47eefa06a714e0c90de93a67a6146afb08044220649fd1bb592b866d75f3738"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RC_CELL_2/schematic/sch.oa",
+          "size_bytes": 32740,
+          "sha256": "df962098560031287f2b627ed0228b859a9071eb5af3716b6e3b6cdeb436f67a"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RC_SWITCH/schematic/sch.oa",
+          "size_bytes": 32036,
+          "sha256": "0d201873114e7698e351e424534baeedc672521044f8cef1ff40cbc37ff8e482"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_1/schematic/sch.oa",
+          "size_bytes": 66972,
+          "sha256": "29d0e7bfca52139032af827f44adbbaf4d39e5478048ca38615d770ed67ba443"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_2/schematic/sch.oa",
+          "size_bytes": 43180,
+          "sha256": "65e71c0327c6b1566841669a58e99e88692f77338bef1a9358c1bbd29992ab0d"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_3/schematic/sch.oa",
+          "size_bytes": 40412,
+          "sha256": "eea3c739b8e67387ec60d54efd53c6191cb8d540978efc671ba06542c83b3eaf"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_4/schematic/sch.oa",
+          "size_bytes": 97284,
+          "sha256": "a75757917726ac103112a1a1b477b5475584bbf93f846d9d925f6dcc0c055e79"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_5/schematic/sch.oa",
+          "size_bytes": 168428,
+          "sha256": "95da21fd96d27de8e24a2cf51dfad71907081e606d51d718ad8442ae4c8586f0"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_6/schematic/sch.oa",
+          "size_bytes": 41460,
+          "sha256": "d43ff92199d07ef2fe1358e3719920015b727d53a9c9fa428109158991ed20da"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_7/schematic/sch.oa",
+          "size_bytes": 37900,
+          "sha256": "cb2e6cde509c61d479eecf6bc668323e9bb4c0e2caf48f41e0f6ffe477d96f51"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_8/schematic/sch.oa",
+          "size_bytes": 35756,
+          "sha256": "0d31dcc8b2c6e23272f2d9759772aa2d6db9bec4c6b7e3479aa9dc1801482f7d"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_8S1/schematic/sch.oa",
+          "size_bytes": 35292,
+          "sha256": "74726965907e224b40b862c8496ab379d6048c405af156e074f2516eb73ef1be"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_8S2/schematic/sch.oa",
+          "size_bytes": 35524,
+          "sha256": "47d531bc9fab5889f030f921798ea2c71990d7410c9f852eabd706ced86d6213"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_8S3/schematic/sch.oa",
+          "size_bytes": 35556,
+          "sha256": "52a434bfeecaf436aedc55789a829cb0dd3ca1314a226dca9fd883dd5941bc02"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_8S4/schematic/sch.oa",
+          "size_bytes": 35332,
+          "sha256": "f82d4274806af854ace35b07e4ce19217598b5517111d55c99a5997a2b553f90"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_8S5/schematic/sch.oa",
+          "size_bytes": 35428,
+          "sha256": "719a45ea41cc5ebd2a94909f9c48b9c190f857870f4edca3cc88cc12cd2ca3dc"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_8S6/schematic/sch.oa",
+          "size_bytes": 35420,
+          "sha256": "7f909841d7a6763aa242c5b1eeef20529464cf8c9b9a7face033c986bb9d5dcf"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_ADJ_8S7/schematic/sch.oa",
+          "size_bytes": 35460,
+          "sha256": "a54213392edee881bdb1d243eec5f10c4f3f75222cb1c05fbd361068481aa7ea"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_CELL_1/schematic/sch.oa",
+          "size_bytes": 26212,
+          "sha256": "2b90ef381440e31d04861c323282274632eae624bee6fadc359778b24fb351c1"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_CELL_2/schematic/sch.oa",
+          "size_bytes": 26172,
+          "sha256": "808b2e750c31ea301482dc2d74b50bcdf2b8b0dbd3a667435a936c27e950eb2d"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/RES_DIV_1/schematic/sch.oa",
+          "size_bytes": 50668,
+          "sha256": "cc33416ce91aee9f6f1da4a223364f2c047e63eed8a03de927fddeb51213e3ae"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/SMBUF_1/schematic/sch.oa",
+          "size_bytes": 36116,
+          "sha256": "f774b6cbd9a4e5e32fd9d24583ea3082499c5f67a7170c59a6001c31d4459060"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/SWITCHED_RC_FILTER/schematic/sch.oa",
+          "size_bytes": 68068,
+          "sha256": "db312aab2fe522c43a67f20c4fd9564f8262f9b59c529606713e1ae934d55b4c"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/SWITCH_1/schematic/sch.oa",
+          "size_bytes": 32764,
+          "sha256": "2a71db389709fdc2812d41f2bebf81153aa0a5c05ad87cec786f3582d27b473e"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/SWITCH_BLOCK/schematic/sch.oa",
+          "size_bytes": 118860,
+          "sha256": "a725f32b79c9a02e397bee4dcca6ba1b33a0393ea267cc334f2c08e931c34b09"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/SWITCH_CELL_1/schematic/sch.oa",
+          "size_bytes": 31692,
+          "sha256": "da6398fc4bf127c0aa76dbae2887493575fcc69aaced10fc08ab46eb748c1835"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_DFN_3X3_4/schematic/sch.oa",
+          "size_bytes": 32292,
+          "sha256": "cb7142d0be36624ae160102ccbf3d6f16c265ead498376b8f6934b7a4358d610"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_DFN_3X3_4S1/schematic/sch.oa",
+          "size_bytes": 31996,
+          "sha256": "c591a438a76eb9ecf0a764d1f5f2b6976579c200f97f1f304cf0ec4d564e0ff8"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_INV_120_42/schematic/sch.oa",
+          "size_bytes": 24932,
+          "sha256": "9ed44acdd65f6aaf77b8c5506db5d943fcad52db4ba96257373e064cd651dfe7"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_INV_150_50D2/schematic/sch.oa",
+          "size_bytes": 25092,
+          "sha256": "77c9e046cb2e757be5cbf9f90458d30c462416d5670410d3417c8b5285e6b119"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_INV_160_56D12/schematic/sch.oa",
+          "size_bytes": 25100,
+          "sha256": "13076861a1a5d51978c64a97e517aba34ac336647454dcd3226c849d3c21f00e"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_INV_160_56D3/schematic/sch.oa",
+          "size_bytes": 25012,
+          "sha256": "62402f7d86bdcc2b6c1058914fb42a338f7e318d66055bb6e033a46fe20357c6"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_INV_76_24D4/schematic/sch.oa",
+          "size_bytes": 25084,
+          "sha256": "c2c261b674e27423438e185a5d6722e1cf987e57decf581af1f6be42feafba19"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_TRIGATE_30X4_30/schematic/sch.oa",
+          "size_bytes": 28124,
+          "sha256": "44adb1b2d7ff8935512a22d9b5a35291c85023eecd93c4a93b6dbb7641376d57"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_TRIGATE_48_12/schematic/sch.oa",
+          "size_bytes": 28124,
+          "sha256": "d746652f8785a4f9d3ee8f56c014625e0cb0f11d4168f3c7da6f1a1bb98a88f0"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_TRIGATE_50L4X6_30L4X2/schematic/sch.oa",
+          "size_bytes": 28316,
+          "sha256": "d12621bda8cd96631e5e864b484872067de5a2cf0d831dc76aa79b5ad45bf759"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_TRIGATE_50_50/schematic/sch.oa",
+          "size_bytes": 28116,
+          "sha256": "ce0b25682158fc0738ba4b78dfc6da2d162af3b5653355f65cecfece57c17311"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_TRIGATE_50_50D8/schematic/sch.oa",
+          "size_bytes": 27932,
+          "sha256": "11d73cd7668e419fd6131af35f8a0a959af915e380efe82d8fe4170a8604fd91"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/S_TRIGATE_80_80D6/schematic/sch.oa",
+          "size_bytes": 28236,
+          "sha256": "edcb218542fa16ca9a183d5d7c2e87a9b4abe037f6ed65a99b80f7e8655f71e3"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/UNUSED_1/schematic/sch.oa",
+          "size_bytes": 109548,
+          "sha256": "80fd5725ae79a4fe72812d122da1375e8aef335e19e3c926471cc47908391a5f"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/UNUSED_2/schematic/sch.oa",
+          "size_bytes": 87580,
+          "sha256": "edb2f52d39412055181a807497c2546af1c8b647176bd625e23c929e65eef42a"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/UNUSED_3/schematic/sch.oa",
+          "size_bytes": 53820,
+          "sha256": "339b1a030ad1cd5342ef24f2864aae76c3c0b43cd46d8d55290b9277c7268a59"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/UNUSED_4/schematic/sch.oa",
+          "size_bytes": 54324,
+          "sha256": "3aee3f2e93fc0a04dd135776827bce8b2c5a39a893ad313eedbeba09789a5bda"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/UNUSED_5/schematic/sch.oa",
+          "size_bytes": 40420,
+          "sha256": "5390f952630f0a7f6119069f3447fe2d4ad36ce4f9898486e06ec8198c4ff1aa"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/VOL_GEN_1/schematic/sch.oa",
+          "size_bytes": 85140,
+          "sha256": "13ea964b3e50103cebcce07b00e9122be359f2cd41b9ea68f5826b4da53d5448"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/VOL_GEN_2/schematic/sch.oa",
+          "size_bytes": 71444,
+          "sha256": "4e633f35cf57838ff3fc434130f94e38f82d4cd7cfccafb73f47eb54f83f4d73"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/VOL_GEN_3/schematic/sch.oa",
+          "size_bytes": 79012,
+          "sha256": "cb2d9289fd271c7f9ec2506c278646cca3e383829694827c2bc2cefae9f35fae"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/VOL_GEN_4/schematic/sch.oa",
+          "size_bytes": 107452,
+          "sha256": "accdbd56f45684831edf0ccc534dea585a176bdf5ef4f38a32038d0def4e76c2"
+        },
+        {
+          "path": "libraries/HIX_1907151SUB/VREF_1/schematic/sch.oa",
+          "size_bytes": 107716,
+          "sha256": "ee60999e2d8b17db0a6f6fda147b194f6591b7d55dd1ae36fabdd710c0cf575a"
+        }
+      ]
+    },
+    "HIX_1907151TOP": {
+      "cell_count": 2,
+      "schematic_count": 2,
+      "view_counts": {
+        "schematic": 2,
+        "layout": 0,
+        "symbol": 2,
+        "spectre": 0,
+        "maestro": 0,
+        "adexl": 0,
+        "config": 0,
+        "veriloga": 0
+      },
+      "schematics": [
+        {
+          "path": "libraries/HIX_1907151TOP/TOP_FLAT/schematic/sch.oa",
+          "size_bytes": 7614988,
+          "sha256": "9999dd61661be3ed69a93986283643f31ca882596e92159446096e8cc973953c"
+        },
+        {
+          "path": "libraries/HIX_1907151TOP/TOP_HIER/schematic/sch.oa",
+          "size_bytes": 373756,
+          "sha256": "9e6d4f4a5f687931d2da3aa99d85a326a867ab81f0202fa8e38949220733904f"
+        }
+      ]
+    }
+  },
+  "pdk_candidate_model_files": [],
+  "limits": [
+    "No OA connectivity read",
+    "No live library resolution",
+    "No model/CDF binding audit",
+    "No new netlist or simulation",
+    "Cell names are candidate entry points only"
+  ]
+}

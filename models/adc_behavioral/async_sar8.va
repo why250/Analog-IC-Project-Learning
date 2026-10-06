@@ -1,0 +1,133 @@
+// Teaching model: module boundaries are explicit; not a drop-in OA netlist.
+// Differential input range [-fspan,+fspan); conventional unsigned bits[7:0].
+// No device noise, mismatch, supply sensitivity or charge-conserving sampling.
+`include "constants.vams"
+`include "disciplines.vams"
+
+module learn_sh(vip,vin,sample,hp,hn,gnd);
+  input vip,vin,sample; output hp,hn; inout gnd;
+  electrical vip,vin,sample,hp,hn,gnd;
+  parameter real vth=0.9, vcm=0.9, tr=10p, rout=10;
+  real xp,xn;
+  analog begin
+    @(initial_step) begin xp=vcm; xn=vcm; end
+    @(cross(V(sample,gnd)-vth,-1)) begin
+      xp=V(vip,gnd); xn=V(vin,gnd);
+    end
+    I(hp,gnd) <+ (V(hp,gnd)-transition(xp,0,tr,tr))/rout;
+    I(hn,gnd) <+ (V(hn,gnd)-transition(xn,0,tr,tr))/rout;
+  end
+endmodule
+
+module learn_cdac8(hp,hn,prefix,phase,dp,dn,gnd);
+  input hp,hn,phase; input [7:0] prefix;
+  output dp,dn; inout gnd;
+  electrical hp,hn,phase,dp,dn,gnd;
+  electrical [7:0] prefix;
+  parameter real fspan=1.8, vcm=0.9, vth=0.9;
+  parameter real rout=100, cload=100f;
+  integer used;
+  genvar j;
+  real threshold,weight,target;
+  analog begin
+    used=$rtoi(V(phase,gnd)+0.5);
+    if(used<0) used=0;
+    if(used>7) used=7;
+    threshold=0; weight=fspan/2;
+    for(j=0;j<7;j=j+1) begin
+      if(j<used) threshold=threshold+
+        ((V(prefix[7-j],gnd)>vth)?weight:-weight);
+      weight=weight/2;
+    end
+    target=V(hp,hn)-threshold;
+    I(dp,gnd) <+ (V(dp,gnd)-(vcm+target/2))/rout;
+    I(dn,gnd) <+ (V(dn,gnd)-(vcm-target/2))/rout;
+    I(dp,gnd) <+ cload*ddt(V(dp,gnd));
+    I(dn,gnd) <+ cload*ddt(V(dn,gnd));
+  end
+endmodule
+
+module learn_compare(dp,dn,eval,outp,outn,gnd);
+  input dp,dn,eval; output outp,outn; inout gnd;
+  electrical dp,dn,eval,outp,outn,gnd;
+  parameter real vhi=1.8, vth=0.9, vos=0;
+  parameter real tdec=300p, tr=10p, rout=10;
+  real op,on;
+  analog begin
+    @(initial_step) begin op=0; on=0; end
+    @(cross(V(eval,gnd)-vth,+1)) begin
+      op=(V(dp,dn)>=vos)?vhi:0;
+      on=(V(dp,dn)>=vos)?0:vhi;
+    end
+    @(cross(V(eval,gnd)-vth,-1)) begin op=0; on=0; end
+    I(outp,gnd) <+ (V(outp,gnd)-transition(op,tdec,tr,tr))/rout;
+    I(outn,gnd) <+ (V(outn,gnd)-transition(on,tdec,tr,tr))/rout;
+  end
+endmodule
+
+module learn_done(outp,outn,done,gnd);
+  input outp,outn; output done; inout gnd;
+  electrical outp,outn,done,gnd;
+  parameter real vhi=1.8, vth=0.9, tdet=50p, tr=10p;
+  real flag;
+  analog begin
+    @(initial_step) flag=0;
+    @(cross(V(outp,gnd)+V(outn,gnd)-vth,+1)) flag=vhi;
+    @(cross(V(outp,gnd)+V(outn,gnd)-vth,-1)) flag=0;
+    V(done,gnd) <+ transition(flag,tdet,tr,tr);
+  end
+endmodule
+
+module learn_ctrl8(sample,done,outp,eval,prefix,phase,bits,eoc,overrun,gnd);
+  input sample,done,outp; output eval,phase,eoc,overrun;
+  output [7:0] prefix,bits;
+  inout gnd;
+  electrical sample,done,outp,eval,phase;
+  electrical [7:0] prefix,bits;
+  electrical eoc,overrun,gnd;
+  parameter real vhi=1.8, vth=0.9, tlogic=100p, tr=10p;
+  integer running,step,trial,result,decision,sid,fault;
+  real clkstate,valid;
+  genvar b;
+  analog begin
+    @(initial_step) begin
+      running=0; step=0; trial=0; result=0; sid=0; fault=0;
+      clkstate=0; valid=0;
+    end
+    @(cross(V(sample,gnd)-vth,-1)) begin
+      if(running) begin
+        fault=1;
+        $strobe("SAR_OVERRUN time=%g",$abstime);
+      end else begin
+        sid=sid+1; running=1; step=0; trial=0; valid=0;
+        clkstate=vhi;
+      end
+    end
+    @(cross(V(done,gnd)-vth,+1)) begin
+      if(running && clkstate>vth) begin
+        decision=(V(outp,gnd)>vth)?1:0;
+        if(decision) trial=trial+(1<<(7-step));
+        $strobe("SAR_BIT sample=%d bit=%d decision=%d time=%g",
+                 sid,7-step,decision,$abstime);
+        step=step+1; clkstate=0;
+        if(step==8) begin
+          result=trial; valid=vhi; running=0;
+          $strobe("SAR_RESULT sample=%d code=%d time=%g",
+                   sid,result,$abstime);
+        end
+      end
+    end
+    @(cross(V(done,gnd)-vth,-1)) begin
+      if(running && step<8) clkstate=vhi;
+    end
+    V(eval,gnd) <+ transition(clkstate,tlogic,tr,tr);
+    // Debug phase voltage is the decision count, not a production interface.
+    V(phase,gnd) <+ transition(step,0,tr,tr);
+    V(eoc,gnd) <+ transition(valid,tlogic,tr,tr);
+    V(overrun,gnd) <+ transition(fault*vhi,0,tr,tr);
+    for(b=0;b<8;b=b+1) begin
+      V(prefix[b],gnd) <+ transition(((trial>>b)&1)*vhi,0,tr,tr);
+      V(bits[b],gnd) <+ transition(((result>>b)&1)*vhi,tlogic,tr,tr);
+    end
+  end
+endmodule

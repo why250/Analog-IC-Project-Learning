@@ -1,0 +1,573 @@
+{
+  "method": "new live read-only OA read via afe_course",
+  "top_counts": {
+    "instances": 226,
+    "pins": 363
+  },
+  "top_selected_instances": [
+    {
+      "name": "N15955",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "INP",
+        "G": "X21176_ZN",
+        "B": "GND",
+        "S": "net707"
+      },
+      "params": {
+        "totalW": "100.000u",
+        "fingerW": "10.000u",
+        "l": "0.600u",
+        "nf": "10",
+        "m": "1"
+      }
+    },
+    {
+      "name": "N15954",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "INM",
+        "G": "X21176_ZN",
+        "B": "GND",
+        "S": "net708"
+      },
+      "params": {
+        "totalW": "100.000u",
+        "fingerW": "10.000u",
+        "l": "0.600u",
+        "nf": "10",
+        "m": "1"
+      }
+    },
+    {
+      "name": "MI9",
+      "lib": "HIX_1907151SUB",
+      "cell": "DRIVER_1",
+      "terms": {
+        "A1": "X23531_Z",
+        "A2": "X24164_Z",
+        "ENP": "X20999_Z",
+        "GS": "GND",
+        "VO": "ADC_RDY",
+        "VS": "X13488_VS",
+        "VS1": "IO_SUP"
+      },
+      "params": {}
+    },
+    {
+      "name": "MI8",
+      "lib": "HIX_1907151SUB",
+      "cell": "DRIVER_1",
+      "terms": {
+        "A1": "X23530_Z",
+        "A2": "X23950_ZN",
+        "ENP": "X20999_Z",
+        "GS": "GND",
+        "VO": "PAD7",
+        "VS": "X13488_VS",
+        "VS1": "IO_SUP"
+      },
+      "params": {}
+    },
+    {
+      "name": "MI152",
+      "lib": "HIX_1907151SUB",
+      "cell": "AMP_5",
+      "terms": {
+        "ADJ<0>": "X20857_Z",
+        "ADJ<1>": "X21279_ZN",
+        "ENN1": "X13447_ZN",
+        "ENN2": "X21290_ZN",
+        "ENP1": "X21292_ZN",
+        "ENP2": "X20897_Z",
+        "ENP3": "X21285_ZN",
+        "GS": "GND",
+        "NIB": "P13823_D",
+        "VM": "net770",
+        "VO": "net830",
+        "VP": "PAD1",
+        "VS": "TX_SUP"
+      },
+      "params": {}
+    },
+    {
+      "name": "MI195",
+      "lib": "HIX_1907151SUB",
+      "cell": "DRIVER_2",
+      "terms": {
+        "A1": "net796",
+        "A2": "X23964_ZN",
+        "ENP": "X21251_ZN",
+        "GS": "GND",
+        "VO": "CLK",
+        "VS": "X13454_VS",
+        "VS1": "IO_SUP"
+      },
+      "params": {}
+    },
+    {
+      "name": "MI219",
+      "lib": "HIX_1907151SUB",
+      "cell": "ADC_1",
+      "terms": {
+        "CTRL": "X21892_ZN",
+        "ENN": "X21722_ZN",
+        "ENP1": "X22409_ZN",
+        "ENP2": "X21723_ZN",
+        "GS": "GND",
+        "S0": "X21891_ZN",
+        "S0N": "X21890_ZN",
+        "S1": "X21894_ZN",
+        "S1N": "X21893_ZN",
+        "S2": "X21896_ZN",
+        "VI1_1": "net820",
+        "VI1_2": "net821",
+        "VI2_1": "P16618_D",
+        "VI2_2": "P16619_D",
+        "VI3": "P14069_D",
+        "VS": "X13488_VS",
+        "Z<14:0>": "net832<0:14>"
+      },
+      "params": {}
+    },
+    {
+      "name": "MI311",
+      "lib": "HIX_1907151SUB",
+      "cell": "SWITCHED_RC_FILTER",
+      "terms": {
+        "A0": "X13493_Z",
+        "A1": "X13498_Z",
+        "A2": "X13494_Z",
+        "A3": "X13502_Z",
+        "A4": "X13501_Z",
+        "A5": "X13496_Z",
+        "A6": "X13500_Z",
+        "A7": "X13497_Z",
+        "GS": "GND",
+        "S1": "X22271_ZN",
+        "S2": "X24614_ZN",
+        "VIN1": "net713",
+        "VIN2": "net714",
+        "VOUT1": "net829",
+        "VOUT2": "net761",
+        "VS": "X13454_VS",
+        "VS1": "P15102_S"
+      },
+      "params": {}
+    },
+    {
+      "name": "MI337",
+      "lib": "HIX_1907151SUB",
+      "cell": "RC_CELL_2",
+      "terms": {
+        "ADJ0": "X21165_ZN",
+        "ADJ1": "X21164_ZN",
+        "ADJ10": "X21172_ZN",
+        "ADJ11": "X21170_ZN",
+        "ADJ12": "X21174_ZN",
+        "ADJ13": "X21175_ZN",
+        "ADJ14": "X21173_ZN",
+        "ADJ2": "X21163_ZN",
+        "ADJ3": "X21162_ZN",
+        "ADJ4": "X21161_ZN",
+        "ADJ5": "X21166_ZN",
+        "ADJ6": "X21167_ZN",
+        "ADJ7": "X21168_ZN",
+        "ADJ8": "X21169_ZN",
+        "ADJ9": "X21171_ZN",
+        "GS": "GND",
+        "MINUS": "net707",
+        "PLUS": "net714",
+        "S0": "X21151_ZN",
+        "S1": "X21116_ZN",
+        "S2": "X21157_ZN",
+        "S3": "X21156_ZN",
+        "S4": "X21155_ZN",
+        "S5": "X21154_ZN",
+        "S6": "X21153_ZN",
+        "S7": "X21152_ZN"
+      },
+      "params": {}
+    },
+    {
+      "name": "MI336",
+      "lib": "HIX_1907151SUB",
+      "cell": "RC_CELL_2",
+      "terms": {
+        "ADJ0": "X21165_ZN",
+        "ADJ1": "X21164_ZN",
+        "ADJ10": "X21172_ZN",
+        "ADJ11": "X21170_ZN",
+        "ADJ12": "X21174_ZN",
+        "ADJ13": "X21175_ZN",
+        "ADJ14": "X21173_ZN",
+        "ADJ2": "X21163_ZN",
+        "ADJ3": "X21162_ZN",
+        "ADJ4": "X21161_ZN",
+        "ADJ5": "X21166_ZN",
+        "ADJ6": "X21167_ZN",
+        "ADJ7": "X21168_ZN",
+        "ADJ8": "X21169_ZN",
+        "ADJ9": "X21171_ZN",
+        "GS": "GND",
+        "MINUS": "net708",
+        "PLUS": "net713",
+        "S0": "X21151_ZN",
+        "S1": "X21116_ZN",
+        "S2": "X21157_ZN",
+        "S3": "X21156_ZN",
+        "S4": "X21155_ZN",
+        "S5": "X21154_ZN",
+        "S6": "X21153_ZN",
+        "S7": "X21152_ZN"
+      },
+      "params": {}
+    },
+    {
+      "name": "MI341",
+      "lib": "HIX_1907151SUB",
+      "cell": "SWITCH_BLOCK",
+      "terms": {
+        "CTRL_1": "X20896_Z",
+        "CTRL_2": "X21102_ZN2",
+        "GS": "GND",
+        "S0<0>": "X20879_Z",
+        "S0<1>": "X20874_Z",
+        "S0<2>": "X20875_Z",
+        "S0<3>": "X20878_Z",
+        "S0<4>": "X20877_Z",
+        "S0<5>": "X20876_Z",
+        "S1<0>": "X20987_Z",
+        "S1<1>": "X20988_Z",
+        "S1<2>": "X20992_Z",
+        "S1<3>": "X20989_Z",
+        "S1<4>": "X20990_Z",
+        "S1<5>": "X20991_Z",
+        "S2<0>": "X20993_Z",
+        "S2<1>": "X20994_Z",
+        "S2<2>": "X20998_Z",
+        "S2<3>": "X20995_Z",
+        "S2<4>": "X20996_Z",
+        "S2<5>": "X20997_Z",
+        "S3<0>": "X20981_Z",
+        "S3<1>": "X20982_Z",
+        "S3<2>": "X20986_Z",
+        "S3<3>": "X20983_Z",
+        "S3<4>": "X20984_Z",
+        "S3<5>": "X20985_Z",
+        "TX1": "TX1",
+        "TX2": "TX2",
+        "TX3": "TX3",
+        "VI": "net830",
+        "VO": "net770",
+        "VS": "TX_SUP"
+      },
+      "params": {}
+    },
+    {
+      "name": "MI495",
+      "lib": "HIX_1907151SUB",
+      "cell": "DAC_2",
+      "terms": {
+        "A0": "X24415_ZN",
+        "A1": "X24503_ZN",
+        "A2": "X24602_ZN",
+        "A3": "X24615_ZN",
+        "GS": "GND",
+        "NVB1": "N15142_G",
+        "NVB2": "N15172_G",
+        "PVB1": "P15187_G",
+        "S": "X24432_ZN",
+        "VI": "P15157_G",
+        "VO1": "net707",
+        "VO2": "net708",
+        "VS": "X13454_VS"
+      },
+      "params": {}
+    },
+    {
+      "name": "MI499",
+      "lib": "HIX_1907151SUB",
+      "cell": "AMP_6",
+      "terms": {
+        "ADJ1_0": "X21180_ZN",
+        "ADJ1_1": "X21179_ZN",
+        "ADJ1_2": "X21178_ZN",
+        "ADJ1_3": "X21177_ZN",
+        "ADJ2_0": "X21181_ZN",
+        "ADJ2_1": "X21182_ZN",
+        "ADJ2_2": "X21183_ZN",
+        "ADJ2_3": "X21184_ZN",
+        "ENN": "X24132_Z",
+        "GS": "GND",
+        "NIB": "P14100_D",
+        "P14069_D": "P14069_D",
+        "VM": "net708",
+        "VOM": "net714",
+        "VOP": "net713",
+        "VP": "net707",
+        "VS": "X13454_VS",
+        "X24435_ZN": "X24435_ZN",
+        "X24441_ZN": "X24441_ZN",
+        "X24500_ZN": "X24500_ZN",
+        "X24590_ZN": "X24590_ZN"
+      },
+      "params": {}
+    }
+  ],
+  "top_selected_nets": {
+    "INP": {
+      "connections": [
+        "R24649.PLUS",
+        "R19135.MINUS",
+        "N15955.D",
+        "D19059.NEG",
+        "D19079.PLUS"
+      ],
+      "numBits": 1,
+      "sigType": "signal",
+      "isGlobal": false
+    },
+    "INM": {
+      "connections": [
+        "R19136.PLUS",
+        "R24650.MINUS",
+        "N15954.D",
+        "D19060.NEG",
+        "D19080.PLUS"
+      ],
+      "numBits": 1,
+      "sigType": "signal",
+      "isGlobal": false
+    },
+    "net707": {
+      "connections": [
+        "N15955.S",
+        "MI495.VO1",
+        "MI499.VP",
+        "MI337.MINUS"
+      ],
+      "numBits": 1,
+      "sigType": "signal",
+      "isGlobal": false
+    },
+    "net708": {
+      "connections": [
+        "N15954.S",
+        "MI495.VO2",
+        "MI336.MINUS",
+        "MI499.VM"
+      ],
+      "numBits": 1,
+      "sigType": "signal",
+      "isGlobal": false
+    },
+    "net713": {
+      "connections": [
+        "MI336.PLUS",
+        "MI499.VOP",
+        "MI311.VIN1",
+        "MI306.A"
+      ],
+      "numBits": 1,
+      "sigType": "signal",
+      "isGlobal": false
+    },
+    "net714": {
+      "connections": [
+        "MI499.VOM",
+        "MI337.PLUS",
+        "MI311.VIN2",
+        "X24242.A"
+      ],
+      "numBits": 1,
+      "sigType": "signal",
+      "isGlobal": false
+    },
+    "net770": {
+      "connections": [
+        "MI152.VM",
+        "MI341.VO"
+      ],
+      "numBits": 1,
+      "sigType": "signal",
+      "isGlobal": false
+    },
+    "net830": {
+      "connections": [
+        "MI152.VO",
+        "MI341.VI"
+      ],
+      "numBits": 1,
+      "sigType": "signal",
+      "isGlobal": false
+    }
+  },
+  "feedback_instances": [
+    {
+      "name": "MI316",
+      "lib": "HIX_1907151SUB",
+      "cell": "CAP_SWITCH_5",
+      "terms": {
+        "ADJ0": "ADJ9",
+        "ADJ1": "ADJ10",
+        "ADJ2": "ADJ11",
+        "ADJ3": "ADJ12",
+        "ADJ4": "ADJ13",
+        "ADJ5": "ADJ14",
+        "GS": "GS",
+        "MINUS": "MINUS",
+        "PLUS": "PLUS"
+      },
+      "params": {}
+    },
+    {
+      "name": "MI334",
+      "lib": "HIX_1907151SUB",
+      "cell": "RES_ADJ_3",
+      "terms": {
+        "ADJ0": "ADJ0",
+        "ADJ1": "ADJ1",
+        "ADJ2": "ADJ2",
+        "ADJ3": "ADJ3",
+        "ADJ4": "ADJ4",
+        "ADJ5": "ADJ5",
+        "ADJ6": "ADJ6",
+        "ADJ7": "ADJ7",
+        "ADJ8": "ADJ8",
+        "GS": "GS",
+        "MINUS": "MINUS",
+        "PLUS": "PLUS",
+        "S0": "S0",
+        "S1": "S1",
+        "S2": "S2",
+        "S3": "S3",
+        "S4": "S4",
+        "S5": "S5",
+        "S6": "S6",
+        "S7": "S7"
+      },
+      "params": {}
+    }
+  ],
+  "amp_input_connected_devices": [
+    {
+      "name": "P15738",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net79",
+        "G": "VP",
+        "S": "net73"
+      },
+      "params": {
+        "totalW": "448.000u",
+        "fingerW": "14.000u",
+        "l": "2.000u",
+        "nf": "32",
+        "m": "1"
+      }
+    },
+    {
+      "name": "P15737",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net78",
+        "G": "VM",
+        "S": "net73"
+      },
+      "params": {
+        "totalW": "448.000u",
+        "fingerW": "14.000u",
+        "l": "2.000u",
+        "nf": "32",
+        "m": "1"
+      }
+    },
+    {
+      "name": "P15448",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net89",
+        "G": "VP",
+        "S": "net83"
+      },
+      "params": {
+        "totalW": "10.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "2",
+        "m": "1"
+      }
+    },
+    {
+      "name": "P15446",
+      "lib": "gf018hv_green",
+      "cell": "pmos_3p3",
+      "terms": {
+        "B": "VS",
+        "D": "net87",
+        "G": "VM",
+        "S": "net83"
+      },
+      "params": {
+        "totalW": "10.000u",
+        "fingerW": "5.000u",
+        "l": "0.600u",
+        "nf": "2",
+        "m": "1"
+      }
+    },
+    {
+      "name": "N15838",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net71",
+        "G": "VP",
+        "B": "GS",
+        "S": "net79"
+      },
+      "params": {
+        "totalW": "213.600u",
+        "fingerW": "17.800u",
+        "l": "8.000u",
+        "nf": "12",
+        "m": "1"
+      }
+    },
+    {
+      "name": "N15836",
+      "lib": "gf018hv_green",
+      "cell": "nmos_3p3",
+      "terms": {
+        "D": "net78",
+        "G": "VM",
+        "B": "GS",
+        "S": "net71"
+      },
+      "params": {
+        "totalW": "213.600u",
+        "fingerW": "17.800u",
+        "l": "8.000u",
+        "nf": "12",
+        "m": "1"
+      }
+    }
+  ],
+  "library_readpaths": {
+    "HIX_1907151TOP": "/home/userone/AAAIC/afe_projects/afe4404/libraries/HIX_1907151TOP",
+    "HIX_1907151SUB": "/home/userone/AAAIC/afe_projects/afe4404/libraries/HIX_1907151SUB",
+    "HIX_1907151DEV": "/home/userone/AAAIC/afe_projects/afe4404/libraries/HIX_1907151DEV",
+    "gf018hv_green": "/home/userone/AAAIC/pdks/gf018hv_green/unpacked/gf018hv_green"
+  },
+  "prediction": "awaiting learner response; no learner understanding accepted",
+  "simulation": "not run"
+}

@@ -1,0 +1,157 @@
+{
+  "model_level": "teaching_behavioral_no_PDK",
+  "spectre": "/opt/eda/cadence/SPECTRE251/bin/spectre",
+  "spectre_version": "",
+  "runs": [
+    {
+      "name": "sar_nominal",
+      "exit_code": 0,
+      "netlist_sha256": "411357761987ac7467f9f80f892509eb7731f430c0e59c2d81ed098f12c83b31",
+      "model_sha256": {
+        "async_sar8.va": "cf789b170121c724958a76bb0164547a2ede0364e635183230f0fe0e3d00f4a9",
+        "residue_amp.va": "33e53fa91abf18fa793916e25d55d43c3a85712140e462f4b4fce3cbdf565a53"
+      },
+      "checks": {
+        "completed_samples": [
+          {
+            "id": 1,
+            "code": 149,
+            "time_s": 1.199e-08
+          },
+          {
+            "id": 2,
+            "code": 106,
+            "time_s": 3.699e-08
+          },
+          {
+            "id": 3,
+            "code": 206,
+            "time_s": 6.199e-08
+          },
+          {
+            "id": 4,
+            "code": 49,
+            "time_s": 8.699e-08
+          },
+          {
+            "id": 5,
+            "code": 149,
+            "time_s": 1.1199e-07
+          }
+        ],
+        "decision_events": 40,
+        "overrun_times_s": []
+      },
+      "summary": [
+        "spectre completes with 0 errors, 0 warnings, and 3 notices."
+      ],
+      "warning_lines": []
+    },
+    {
+      "name": "sar_timeout",
+      "exit_code": 0,
+      "netlist_sha256": "6d672afe47669607b91737c58fe2317fcc817b467b8451000247396b5c95a47d",
+      "model_sha256": {
+        "async_sar8.va": "cf789b170121c724958a76bb0164547a2ede0364e635183230f0fe0e3d00f4a9",
+        "residue_amp.va": "33e53fa91abf18fa793916e25d55d43c3a85712140e462f4b4fce3cbdf565a53"
+      },
+      "checks": {
+        "completed_samples": [
+          {
+            "id": 1,
+            "code": 144,
+            "time_s": 5.249e-08
+          },
+          {
+            "id": 2,
+            "code": 192,
+            "time_s": 1.0249e-07
+          }
+        ],
+        "decision_events": 18,
+        "overrun_times_s": [
+          3.0015e-08,
+          8.0015e-08
+        ]
+      },
+      "summary": [
+        "spectre completes with 0 errors, 0 warnings, and 3 notices."
+      ],
+      "warning_lines": []
+    },
+    {
+      "name": "residue_nominal",
+      "exit_code": 0,
+      "netlist_sha256": "b7cb619888b80427f517ef9b92e9dbe85a67e1828cebd7cb2372d304fea41cce",
+      "model_sha256": {
+        "async_sar8.va": "cf789b170121c724958a76bb0164547a2ede0364e635183230f0fe0e3d00f4a9",
+        "residue_amp.va": "33e53fa91abf18fa793916e25d55d43c3a85712140e462f4b4fce3cbdf565a53"
+      },
+      "checks": {
+        "input_differential_V": [
+          0.01,
+          0.05,
+          0.15
+        ],
+        "output_points": [
+          {
+            "time_s": 9e-09,
+            "diff_V": 0.08
+          },
+          {
+            "time_s": 2.9e-08,
+            "diff_V": 0.399975
+          },
+          {
+            "time_s": 4.9e-08,
+            "diff_V": 0.799976
+          }
+        ],
+        "gain_error": 0,
+        "absolute_tolerance_V": 5e-05
+      },
+      "summary": [
+        "spectre completes with 0 errors, 0 warnings, and 2 notices."
+      ],
+      "warning_lines": []
+    },
+    {
+      "name": "residue_gain_error",
+      "exit_code": 0,
+      "netlist_sha256": "a82a23d9cafb3d6fcbee86d5ef73cc7c88dcbf016fd9c227383878420d8be5b6",
+      "model_sha256": {
+        "async_sar8.va": "cf789b170121c724958a76bb0164547a2ede0364e635183230f0fe0e3d00f4a9",
+        "residue_amp.va": "33e53fa91abf18fa793916e25d55d43c3a85712140e462f4b4fce3cbdf565a53"
+      },
+      "checks": {
+        "input_differential_V": [
+          0.01,
+          0.05,
+          0.15
+        ],
+        "output_points": [
+          {
+            "time_s": 9e-09,
+            "diff_V": 0.0808
+          },
+          {
+            "time_s": 2.9e-08,
+            "diff_V": 0.403975
+          },
+          {
+            "time_s": 4.9e-08,
+            "diff_V": 0.799977
+          }
+        ],
+        "gain_error": 0.01,
+        "absolute_tolerance_V": 5e-05
+      },
+      "summary": [
+        "spectre completes with 0 errors, 0 warnings, and 2 notices."
+      ],
+      "warning_lines": []
+    }
+  ],
+  "original_OA_modified": false,
+  "transistor_simulation": false
+}

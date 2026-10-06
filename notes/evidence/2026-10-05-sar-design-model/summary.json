@@ -1,0 +1,269 @@
+{
+  "date": "2026-10-05",
+  "evidence_level": "offline_python_teaching_model",
+  "new_EDA_simulation": false,
+  "PDK_used": false,
+  "script_sha256": "00d8a3eed3a5a5342dd1f3a216aea42754d4b9f4577c613ba11f91f296538a1a",
+  "seed": 42,
+  "spec": {
+    "bits": 10,
+    "fs_Hz": 20000000.0,
+    "differential_span_V": 2.0,
+    "enob_target": 9.0,
+    "temperature_K": 300.0,
+    "sampling_noise_rms_V": 0.0006,
+    "comparator_noise_rms_V": 0.0004,
+    "reference_noise_rms_V": 0.0003,
+    "other_noise_rms_V": 0.0002,
+    "provisional_unit_C_F": 1e-14,
+    "acquisition_s": 1e-08,
+    "analog_error_lsb": 0.25,
+    "output_guard_s": 6e-09,
+    "dac_time_s": 2.2e-09,
+    "comparator_time_s": 3e-10,
+    "reset_time_s": 3e-10,
+    "logic_time_s": 2e-10
+  },
+  "budget": {
+    "LSB_V": 0.001953125,
+    "fullscale_sine_rms_V": 0.7071067811865475,
+    "ideal_quantization_rms_V": 0.000563818622255494,
+    "SNDR_target_dB": 55.93999999999999,
+    "total_error_rms_allowance_V": 0.001128456966965299,
+    "nonquantization_rms_allowance_V": 0.0009775089193917558,
+    "allocated_uncorrelated_total_rms_V": 0.0009838147380488277,
+    "allocated_noise_only_SNR_dB": 57.13143355884235,
+    "C_per_side_kTC_only_F": 2.301081666666667e-14,
+    "provisional_C_per_side_F": 1.024e-11,
+    "sampling_noise_at_provisional_C_V": 2.844246865933933e-05,
+    "acquisition_error_V": 0.00048828125,
+    "maximum_single_pole_tau_s": 1.2022458674074696e-09,
+    "maximum_Rtotal_at_provisional_C_ohm": 117.4068229890107,
+    "maximum_DAC_single_pole_tau_s": 2.8853900817779266e-10,
+    "period_s": 5e-08,
+    "conservative_per_bit_s": 3.0000000000000004e-09,
+    "time_used_s": 4.6e-08,
+    "remaining_margin_s": 3.999999999999996e-09,
+    "assumptions": "uncorrelated RMS; fullscale sine; differential 2kT/C; single-pole full-span step; conservative non-overlap timing"
+  },
+  "static_ideal": {
+    "fit": "first-to-last transition endpoint; outer bins excluded",
+    "fitted_LSB_V": 0.001953125,
+    "max_abs_INL_LSB": 0.0,
+    "min_DNL_LSB": 0.0,
+    "max_DNL_LSB": 0.0,
+    "zero_width_inner_bins_at_numeric_resolution": 0,
+    "transition_search_tolerance_V": 2.9802322387695312e-08
+  },
+  "static_mismatch": {
+    "fit": "first-to-last transition endpoint; outer bins excluded",
+    "fitted_LSB_V": 0.0019531241178862503,
+    "max_abs_INL_LSB": 0.3127220767421451,
+    "min_DNL_LSB": -0.15253028741289643,
+    "max_DNL_LSB": 0.24930247463815847,
+    "zero_width_inner_bins_at_numeric_resolution": 0,
+    "transition_search_tolerance_V": 2.9802322387695312e-08
+  },
+  "mismatch_unit_sigma_relative": 0.01,
+  "mismatch_weights_V": [
+    1.000234726081995,
+    0.499724995159168,
+    0.25019085579660144,
+    0.12515948361659154,
+    0.06229067030178138,
+    0.03115138346729338,
+    0.015633626167377207,
+    0.007800927142644055,
+    0.0039061766851704017,
+    0.0019366577201293022
+  ],
+  "dynamic_cases": [
+    {
+      "record_length": 2048,
+      "tone_bin": 901,
+      "window": "rectangular coherent",
+      "harmonic_orders_removed_from_SNR": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "SNR_dB": 61.896456804041655,
+      "SNDR_dB": 61.8876712973336,
+      "THD_dBc_orders_2_to_5": -88.83223827633586,
+      "ENOB_from_measured_amplitude": 9.987985265337809,
+      "name": "ideal",
+      "fin_Hz": 8798828.125,
+      "input_sine_peak_V": 0.98,
+      "sampling_noise_rms_V": 0,
+      "comparator_per_decision_noise_rms_V": 0,
+      "jitter_rms_s": 0,
+      "DAC_tau_s": 0
+    },
+    {
+      "record_length": 2048,
+      "tone_bin": 901,
+      "window": "rectangular coherent",
+      "harmonic_orders_removed_from_SNR": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "SNR_dB": 61.40609985313687,
+      "SNDR_dB": 61.23174136585189,
+      "THD_dBc_orders_2_to_5": -75.28204113246674,
+      "ENOB_from_measured_amplitude": 9.879026804958787,
+      "name": "unit_mismatch_1pct_one_seed",
+      "fin_Hz": 8798828.125,
+      "input_sine_peak_V": 0.98,
+      "sampling_noise_rms_V": 0,
+      "comparator_per_decision_noise_rms_V": 0,
+      "jitter_rms_s": 0,
+      "DAC_tau_s": 0
+    },
+    {
+      "record_length": 2048,
+      "tone_bin": 901,
+      "window": "rectangular coherent",
+      "harmonic_orders_removed_from_SNR": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "SNR_dB": 57.60700885017463,
+      "SNDR_dB": 57.58497194806181,
+      "THD_dBc_orders_2_to_5": -80.54232342753721,
+      "ENOB_from_measured_amplitude": 9.273251154163093,
+      "name": "sampling_and_comparator_noise",
+      "fin_Hz": 8798828.125,
+      "input_sine_peak_V": 0.98,
+      "sampling_noise_rms_V": 0.0006,
+      "comparator_per_decision_noise_rms_V": 0.0004,
+      "jitter_rms_s": 0,
+      "DAC_tau_s": 0
+    },
+    {
+      "record_length": 2048,
+      "tone_bin": 901,
+      "window": "rectangular coherent",
+      "harmonic_orders_removed_from_SNR": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "SNR_dB": 50.863547558772844,
+      "SNDR_dB": 50.837882149342846,
+      "THD_dBc_orders_2_to_5": -73.13506967952121,
+      "ENOB_from_measured_amplitude": 8.152472117831039,
+      "name": "jitter_50ps",
+      "fin_Hz": 8798828.125,
+      "input_sine_peak_V": 0.98,
+      "sampling_noise_rms_V": 0,
+      "comparator_per_decision_noise_rms_V": 0,
+      "jitter_rms_s": 5e-11,
+      "DAC_tau_s": 0
+    },
+    {
+      "record_length": 2048,
+      "tone_bin": 901,
+      "window": "rectangular coherent",
+      "harmonic_orders_removed_from_SNR": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "SNR_dB": 33.95891471084914,
+      "SNDR_dB": 33.56161844239618,
+      "THD_dBc_orders_2_to_5": -44.14545055999745,
+      "ENOB_from_measured_amplitude": 5.282660870829931,
+      "name": "DAC_tau_1ns",
+      "fin_Hz": 8798828.125,
+      "input_sine_peak_V": 0.98,
+      "sampling_noise_rms_V": 0,
+      "comparator_per_decision_noise_rms_V": 0,
+      "jitter_rms_s": 0,
+      "DAC_tau_s": 1e-09
+    }
+  ],
+  "example_search": {
+    "unipolar_input_V": 1.26,
+    "code": 645,
+    "independent_floor_code": 645,
+    "trace": [
+      {
+        "bit": 9,
+        "trial_V": 1.0,
+        "settled_trial_V": 1.0,
+        "keep": true,
+        "code_prefix": 512
+      },
+      {
+        "bit": 8,
+        "trial_V": 1.5,
+        "settled_trial_V": 1.5,
+        "keep": false,
+        "code_prefix": 512
+      },
+      {
+        "bit": 7,
+        "trial_V": 1.25,
+        "settled_trial_V": 1.25,
+        "keep": true,
+        "code_prefix": 640
+      },
+      {
+        "bit": 6,
+        "trial_V": 1.375,
+        "settled_trial_V": 1.375,
+        "keep": false,
+        "code_prefix": 640
+      },
+      {
+        "bit": 5,
+        "trial_V": 1.3125,
+        "settled_trial_V": 1.3125,
+        "keep": false,
+        "code_prefix": 640
+      },
+      {
+        "bit": 4,
+        "trial_V": 1.28125,
+        "settled_trial_V": 1.28125,
+        "keep": false,
+        "code_prefix": 640
+      },
+      {
+        "bit": 3,
+        "trial_V": 1.265625,
+        "settled_trial_V": 1.265625,
+        "keep": false,
+        "code_prefix": 640
+      },
+      {
+        "bit": 2,
+        "trial_V": 1.2578125,
+        "settled_trial_V": 1.2578125,
+        "keep": true,
+        "code_prefix": 644
+      },
+      {
+        "bit": 1,
+        "trial_V": 1.26171875,
+        "settled_trial_V": 1.26171875,
+        "keep": false,
+        "code_prefix": 644
+      },
+      {
+        "bit": 0,
+        "trial_V": 1.259765625,
+        "settled_trial_V": 1.259765625,
+        "keep": true,
+        "code_prefix": 645
+      }
+    ]
+  }
+}

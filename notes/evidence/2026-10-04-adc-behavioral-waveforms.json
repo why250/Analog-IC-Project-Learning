@@ -1,0 +1,54 @@
+{
+  "new_waveform_analysis": true,
+  "model_level": "teaching_behavioral_no_PDK",
+  "waveform_sha256": "1da95fc89c2de7afbaf5925e545e31c2924e7a3759d50fcb2bc1fc7f5c30eab1",
+  "bus_sample_after_eoc_s": 1e-10,
+  "logic_threshold_V": 0.9,
+  "samples": [
+    {
+      "sample_fall_s": 5.015e-09,
+      "eoc_rise_s": 1.2095001150127753e-08,
+      "conversion_window_s": 7.080001150127753e-09,
+      "input_differential_V": 0.30000000000000004,
+      "decoded_bus_code": 149,
+      "expected_floor_code": 149,
+      "evaluate_edges": 8
+    },
+    {
+      "sample_fall_s": 3.0015e-08,
+      "eoc_rise_s": 3.709500115012776e-08,
+      "conversion_window_s": 7.0800011501277604e-09,
+      "input_differential_V": -0.30000000000000004,
+      "decoded_bus_code": 106,
+      "expected_floor_code": 106,
+      "evaluate_edges": 8
+    },
+    {
+      "sample_fall_s": 5.5015e-08,
+      "eoc_rise_s": 6.209500115012771e-08,
+      "conversion_window_s": 7.080001150127714e-09,
+      "input_differential_V": 1.1,
+      "decoded_bus_code": 206,
+      "expected_floor_code": 206,
+      "evaluate_edges": 8
+    },
+    {
+      "sample_fall_s": 8.001499999999999e-08,
+      "eoc_rise_s": 8.709500115012763e-08,
+      "conversion_window_s": 7.080001150127641e-09,
+      "input_differential_V": -1.1,
+      "decoded_bus_code": 49,
+      "expected_floor_code": 49,
+      "evaluate_edges": 8
+    },
+    {
+      "sample_fall_s": 1.0501500000000003e-07,
+      "eoc_rise_s": 1.1209500115012762e-07,
+      "conversion_window_s": 7.080001150127588e-09,
+      "input_differential_V": 0.30000000000000004,
+      "decoded_bus_code": 149,
+      "expected_floor_code": 149,
+      "evaluate_edges": 8
+    }
+  ]
+}

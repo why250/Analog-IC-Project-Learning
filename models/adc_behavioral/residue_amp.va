@@ -1,0 +1,20 @@
+// Teaching differential residue amplifier with finite output R/C and clipping.
+// No gain-boost poles, CMFB, slew/current limit, noise or clocked SC feedback.
+`include "constants.vams"
+`include "disciplines.vams"
+module learn_residue_amp(vip,vin,vop,von,gnd);
+  input vip,vin; output vop,von; inout gnd;
+  electrical vip,vin,vop,von,gnd;
+  parameter real gain=8, gain_error=0, vos=0, vcm=0.6;
+  parameter real outdiffmax=0.8, rout=1000, cload=1p;
+  real target;
+  analog begin
+    target=gain*(1+gain_error)*(V(vip,vin)+vos);
+    if(target>outdiffmax) target=outdiffmax;
+    if(target< -outdiffmax) target= -outdiffmax;
+    I(vop,gnd) <+ (V(vop,gnd)-(vcm+target/2))/rout;
+    I(von,gnd) <+ (V(von,gnd)-(vcm-target/2))/rout;
+    I(vop,gnd) <+ cload*ddt(V(vop,gnd));
+    I(von,gnd) <+ cload*ddt(V(von,gnd));
+  end
+endmodule

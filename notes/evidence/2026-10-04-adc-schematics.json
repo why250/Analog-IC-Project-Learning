@@ -1,0 +1,5902 @@
+{
+  "date": "2026-10-04",
+  "new_simulation_run": false,
+  "live_bridge_read": true,
+  "method": "native Virtuoso hiExportImage, entireDesign, black on white, grid/axes hidden; geOpen read mode; no schematic edits",
+  "identity": {
+    "profile": "adc_project_course",
+    "port": 65385,
+    "cwd": "\"/home/userone/AAAIC/adc_learning\"",
+    "version": "\"@(#)$CDS: virtuoso version IC25.1-64b 06/17/2025 18:21 (cpgbld31) $\"",
+    "processes": [
+      {
+        "pid": 188233,
+        "cwd": "/home/userone/AAAIC/adc_learning",
+        "command": "/opt/eda/cadence/IC251/tools/dfII/bin/64bit/virtuoso -nocdsinit -restore /home/userone/.local/state/analog-ic-project-learning/2026-10-04-adc-schematics/startup.il -log /home/userone/.local/state/analog-ic-project-learning/2026-10-04-adc-schematics/CDS-readonly.log "
+      }
+    ],
+    "library_paths": {
+      "8_bit_sar_adc": "/home/userone/AAAIC/adc_projects/async_sar_8bit_40MSps/libraries/8_bit_sar_adc",
+      "Pipe_SAR": "/home/userone/AAAIC/adc_projects/pipelined_sar_12bit_100MSps/libraries/Pipe_SAR",
+      "smic18mmrf": "/home/userone/AAAIC/pdks/smic180_spdk18mse_1833_v1.11_4/unpacked/SPDK18MSE_1833_OA_CDS_V1.11_4/smic18mse_1833_oa_cds_v1.11_4/smic18mmrf",
+      "tsmcN65": "/home/userone/AAAIC/pdks/tsmc65_crn65lp_v1.7a/unpacked/PDK_CRN65LP_v1.7a_Official_IC61_20120914/tsmcN65"
+    }
+  },
+  "schematics": [
+    {
+      "library": "8_bit_sar_adc",
+      "cell": "BOOSTRAP",
+      "view": "schematic",
+      "window": "window:2",
+      "source_relative_path": "async_sar_8bit_40MSps/libraries/8_bit_sar_adc/BOOSTRAP/schematic/sch.oa",
+      "source_sha256_before": "39c1cabe1853fd43a1c3923d7a7e26762660b594ebf45c7720f60461de912197",
+      "source_sha256_after": "39c1cabe1853fd43a1c3923d7a7e26762660b594ebf45c7720f60461de912197",
+      "image_path": "8_bit_sar_adc__BOOSTRAP.png",
+      "image_sha256": "6c81efcd6c341cd524946117371f4699d06f5d2ffe137107b10c1a81b15f7e67",
+      "image_bytes": 208172,
+      "width": 3400,
+      "height": 1977,
+      "instance_count": 14,
+      "pins": {
+        "VSS": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VSS",
+          "occurrences": 1
+        },
+        "VDD": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VDD",
+          "occurrences": 1
+        },
+        "VIN": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VIN",
+          "occurrences": 1
+        },
+        "VOUT": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "VOUT",
+          "occurrences": 1
+        },
+        "CLKS": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "CLKS",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "NM0",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "-CLKS",
+            "B": "VSS",
+            "G": "CLKS",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM5",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net54",
+            "B": "VSS",
+            "G": "-CLKS",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM4",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net52",
+            "B": "VSS",
+            "G": "VDD",
+            "S": "net54"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM1",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net44",
+            "B": "VSS",
+            "G": "CLKS",
+            "S": "net56"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM8",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net44",
+            "B": "VSS",
+            "G": "net52",
+            "S": "net56"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM10",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "VIN",
+            "B": "VSS",
+            "G": "net52",
+            "S": "net56"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM11",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "VOUT",
+            "B": "VSS",
+            "G": "net52",
+            "S": "VIN"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM2",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net56",
+            "B": "VSS",
+            "G": "-CLKS",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM3",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "-CLKS",
+            "B": "VDD",
+            "G": "CLKS",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM1",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "VDD",
+            "B": "net57",
+            "G": "net52",
+            "S": "net57"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM5",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net52",
+            "B": "net57",
+            "G": "net44",
+            "S": "net57"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM2",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net54",
+            "B": "VDD",
+            "G": "-CLKS",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM0",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net44",
+            "B": "VDD",
+            "G": "CLKS",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM6",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net56",
+            "B": "net56",
+            "G": "net57",
+            "S": "net56"
+          },
+          "saved_parameters": {
+            "m": "20",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        }
+      ]
+    },
+    {
+      "library": "8_bit_sar_adc",
+      "cell": "BOOSTRAP_test",
+      "view": "schematic",
+      "window": "window:3",
+      "source_relative_path": "async_sar_8bit_40MSps/libraries/8_bit_sar_adc/BOOSTRAP_test/schematic/sch.oa",
+      "source_sha256_before": "31940dfc419de790926291ea84cc96e7f638a25b839010e1c031c3e94a7bce62",
+      "source_sha256_after": "31940dfc419de790926291ea84cc96e7f638a25b839010e1c031c3e94a7bce62",
+      "image_path": "8_bit_sar_adc__BOOSTRAP_test.png",
+      "image_sha256": "c884fbc4315d555360e0ac36695ed3697f9486dfd686fc5f761346d377126608",
+      "image_bytes": 98311,
+      "width": 3400,
+      "height": 1570,
+      "instance_count": 13,
+      "pins": {},
+      "instances": [
+        {
+          "name": "I3",
+          "lib": "analogLib",
+          "cell": "gnd",
+          "terms": {
+            "gnd!": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I2",
+          "lib": "analogLib",
+          "cell": "gnd",
+          "terms": {
+            "gnd!": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I14",
+          "lib": "analogLib",
+          "cell": "gnd",
+          "terms": {
+            "gnd!": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V8",
+          "lib": "analogLib",
+          "cell": "vdc",
+          "terms": {
+            "PLUS": "VDD",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V7",
+          "lib": "analogLib",
+          "cell": "vdc",
+          "terms": {
+            "PLUS": "GND",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V10",
+          "lib": "analogLib",
+          "cell": "vdc",
+          "terms": {
+            "PLUS": "net13",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V11",
+          "lib": "analogLib",
+          "cell": "vpulse",
+          "terms": {
+            "PLUS": "VCLK",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V13",
+          "lib": "analogLib",
+          "cell": "vsin",
+          "terms": {
+            "PLUS": "VIP",
+            "MINUS": "net13"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V12",
+          "lib": "analogLib",
+          "cell": "vsin",
+          "terms": {
+            "PLUS": "VIN",
+            "MINUS": "net13"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I5",
+          "lib": "8_bit_sar_adc",
+          "cell": "BOOSTRAP",
+          "terms": {
+            "VSS": "GND",
+            "VDD": "VDD",
+            "VOUT": "SH_N",
+            "CLKS": "VCLK",
+            "VIN": "VIN"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I4",
+          "lib": "8_bit_sar_adc",
+          "cell": "BOOSTRAP",
+          "terms": {
+            "VSS": "GND",
+            "VDD": "VDD",
+            "VOUT": "SH_P",
+            "CLKS": "VCLK",
+            "VIN": "VIP"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "C1",
+          "lib": "analogLib",
+          "cell": "cap",
+          "terms": {
+            "MINUS": "gnd!",
+            "PLUS": "SH_N"
+          },
+          "saved_parameters": {
+            "c": "2p"
+          }
+        },
+        {
+          "name": "C0",
+          "lib": "analogLib",
+          "cell": "cap",
+          "terms": {
+            "MINUS": "gnd!",
+            "PLUS": "SH_P"
+          },
+          "saved_parameters": {
+            "c": "2p"
+          }
+        }
+      ]
+    },
+    {
+      "library": "8_bit_sar_adc",
+      "cell": "compare",
+      "view": "schematic",
+      "window": "window:4",
+      "source_relative_path": "async_sar_8bit_40MSps/libraries/8_bit_sar_adc/compare/schematic/sch.oa",
+      "source_sha256_before": "42a845df28df246027c46cd75f382cd2ed5614e927f82bff334ad6a8e6dcfd68",
+      "source_sha256_after": "42a845df28df246027c46cd75f382cd2ed5614e927f82bff334ad6a8e6dcfd68",
+      "image_path": "8_bit_sar_adc__compare.png",
+      "image_sha256": "5ddedf8d5fbf2ba604564c5fc58d737abfc23bda19fb9756e47cb17b24f2ea77",
+      "image_bytes": 202363,
+      "width": 3400,
+      "height": 1986,
+      "instance_count": 26,
+      "pins": {
+        "DACN": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "DACN",
+          "occurrences": 1
+        },
+        "VSS": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VSS",
+          "occurrences": 1
+        },
+        "OUTN": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "OUTN",
+          "occurrences": 1
+        },
+        "DACP": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "DACP",
+          "occurrences": 1
+        },
+        "VDD": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VDD",
+          "occurrences": 1
+        },
+        "OUTP": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "OUTP",
+          "occurrences": 1
+        },
+        "CLK": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "CLK",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "NM1",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "-CLK",
+            "B": "VSS",
+            "G": "CLK",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM20",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "OUTP",
+            "B": "VSS",
+            "G": "net84",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "8",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM13",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "P",
+            "B": "VSS",
+            "G": "net90",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "8",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM3",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "N",
+            "B": "VSS",
+            "G": "P",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM12",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "N",
+            "B": "VSS",
+            "G": "net67",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "8",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM11",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "P",
+            "B": "VSS",
+            "G": "N",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM18",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net80",
+            "B": "VSS",
+            "G": "P",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM19",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net84",
+            "B": "VSS",
+            "G": "net80",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM23",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net71",
+            "B": "VSS",
+            "G": "N",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM22",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net83",
+            "B": "VSS",
+            "G": "net71",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM16",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net67",
+            "B": "VSS",
+            "G": "DACN",
+            "S": "net64"
+          },
+          "saved_parameters": {
+            "m": "8",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM15",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net90",
+            "B": "VSS",
+            "G": "DACP",
+            "S": "net64"
+          },
+          "saved_parameters": {
+            "m": "8",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM21",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "OUTN",
+            "B": "VSS",
+            "G": "net83",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "8",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM17",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net64",
+            "B": "VSS",
+            "G": "CLK",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM2",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net65",
+            "B": "VDD",
+            "G": "-CLK",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM1",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "-CLK",
+            "B": "VDD",
+            "G": "CLK",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM5",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "P",
+            "B": "VDD",
+            "G": "N",
+            "S": "net65"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM3",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "N",
+            "B": "VDD",
+            "G": "P",
+            "S": "net65"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM8",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net80",
+            "B": "VDD",
+            "G": "P",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM9",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net84",
+            "B": "VDD",
+            "G": "net80",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM10",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "OUTP",
+            "B": "VDD",
+            "G": "net84",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "8",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM6",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net67",
+            "B": "VDD",
+            "G": "CLK",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM7",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net90",
+            "B": "VDD",
+            "G": "CLK",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM13",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net71",
+            "B": "VDD",
+            "G": "N",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM12",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net83",
+            "B": "VDD",
+            "G": "net71",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM11",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "OUTN",
+            "B": "VDD",
+            "G": "net83",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "8",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        }
+      ]
+    },
+    {
+      "library": "8_bit_sar_adc",
+      "cell": "DAC_C_SW_1",
+      "view": "schematic",
+      "window": "window:5",
+      "source_relative_path": "async_sar_8bit_40MSps/libraries/8_bit_sar_adc/DAC_C_SW_1/schematic/sch.oa",
+      "source_sha256_before": "aa74f7b8649c78181bef5f81ffabbad94e30dec3d915dbf44096488a5927db78",
+      "source_sha256_after": "aa74f7b8649c78181bef5f81ffabbad94e30dec3d915dbf44096488a5927db78",
+      "image_path": "8_bit_sar_adc__DAC_C_SW_1.png",
+      "image_sha256": "4f05564748617fde79ba87412c5fbc8afc9bb6563adc6c7f507ee764f45bbc81",
+      "image_bytes": 231955,
+      "width": 3400,
+      "height": 2151,
+      "instance_count": 12,
+      "pins": {
+        "Vcm": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "Vcm",
+          "occurrences": 1
+        },
+        "VSS": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VSS",
+          "occurrences": 1
+        },
+        "VREF": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VREF",
+          "occurrences": 1
+        },
+        "OUT": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "OUT",
+          "occurrences": 1
+        },
+        "NIN": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "NIN",
+          "occurrences": 1
+        },
+        "VDD": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VDD",
+          "occurrences": 1
+        },
+        "PIN": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "PIN",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "PM2",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net61",
+            "B": "VDD",
+            "G": "PIN",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM1",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "PIN-inv",
+            "B": "VDD",
+            "G": "PIN",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM4",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "C-inv",
+            "B": "VDD",
+            "G": "C",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM3",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "C",
+            "B": "VDD",
+            "G": "NIN",
+            "S": "net61"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM5",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "VREF",
+            "B": "VDD",
+            "G": "PIN-inv",
+            "S": "OUT"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM6",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "Vcm",
+            "B": "VDD",
+            "G": "C-inv",
+            "S": "OUT"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM1",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "PIN-inv",
+            "B": "VSS",
+            "G": "PIN",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM4",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "C-inv",
+            "B": "VSS",
+            "G": "C",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM2",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "C",
+            "B": "VSS",
+            "G": "PIN",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM3",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "C",
+            "B": "VSS",
+            "G": "NIN",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM5",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "OUT",
+            "B": "VSS",
+            "G": "NIN",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM6",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "OUT",
+            "B": "VSS",
+            "G": "C",
+            "S": "Vcm"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        }
+      ]
+    },
+    {
+      "library": "8_bit_sar_adc",
+      "cell": "DAC_SW",
+      "view": "schematic",
+      "window": "window:6",
+      "source_relative_path": "async_sar_8bit_40MSps/libraries/8_bit_sar_adc/DAC_SW/schematic/sch.oa",
+      "source_sha256_before": "db6db664c5f0edb43fceab7b755dae81335dbe0feab53d0e6e1d87ce40805894",
+      "source_sha256_after": "db6db664c5f0edb43fceab7b755dae81335dbe0feab53d0e6e1d87ce40805894",
+      "image_path": "8_bit_sar_adc__DAC_SW.png",
+      "image_sha256": "ce166a899c5e08c9780ac90f56daad6aea98ba54c9acbf55891a75c6864a1038",
+      "image_bytes": 132495,
+      "width": 3400,
+      "height": 1102,
+      "instance_count": 8,
+      "pins": {
+        "DAC8": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "DAC8",
+          "occurrences": 1
+        },
+        "Vcm": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "Vcm",
+          "occurrences": 1
+        },
+        "DAC7": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "DAC7",
+          "occurrences": 1
+        },
+        "DAC6": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "DAC6",
+          "occurrences": 1
+        },
+        "VREF": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VREF",
+          "occurrences": 1
+        },
+        "DAC5": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "DAC5",
+          "occurrences": 1
+        },
+        "VSS": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VSS",
+          "occurrences": 1
+        },
+        "DAC4": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "DAC4",
+          "occurrences": 1
+        },
+        "N<2:8>": {
+          "direction": "input",
+          "numBits": 7,
+          "net": "N<2:8>",
+          "occurrences": 1
+        },
+        "DAC3": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "DAC3",
+          "occurrences": 1
+        },
+        "VDD": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VDD",
+          "occurrences": 1
+        },
+        "P<2:8>": {
+          "direction": "input",
+          "numBits": 7,
+          "net": "P<2:8>",
+          "occurrences": 1
+        },
+        "DAC2": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "DAC2",
+          "occurrences": 1
+        },
+        "DAC1": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "DAC1",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "I45",
+          "lib": "8_bit_sar_adc",
+          "cell": "DAC_C_SW_2",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUT": "DAC4",
+            "NIN": "N<4>",
+            "PIN": "P<4>",
+            "VREF": "VREF",
+            "Vcm": "Vcm"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I46",
+          "lib": "8_bit_sar_adc",
+          "cell": "DAC_C_SW_2",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUT": "DAC3",
+            "NIN": "N<3>",
+            "PIN": "P<3>",
+            "VREF": "VREF",
+            "Vcm": "Vcm"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I42",
+          "lib": "8_bit_sar_adc",
+          "cell": "DAC_C_SW_8",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUT": "DAC7",
+            "NIN": "N<7>",
+            "PIN": "P<7>",
+            "VREF": "VREF",
+            "Vcm": "Vcm"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I41",
+          "lib": "8_bit_sar_adc",
+          "cell": "DAC_C_SW_8",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUT": "DAC8",
+            "NIN": "N<8>",
+            "PIN": "P<8>",
+            "VREF": "VREF",
+            "Vcm": "Vcm"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I47",
+          "lib": "8_bit_sar_adc",
+          "cell": "DAC_C_SW_1",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUT": "DAC2",
+            "NIN": "N<2>",
+            "PIN": "P<2>",
+            "VREF": "VREF",
+            "Vcm": "Vcm"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I48",
+          "lib": "8_bit_sar_adc",
+          "cell": "DAC_C_SW_1",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUT": "DAC1",
+            "NIN": "VSS",
+            "PIN": "VSS",
+            "VREF": "VREF",
+            "Vcm": "Vcm"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I44",
+          "lib": "8_bit_sar_adc",
+          "cell": "DAC_C_SW_4",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUT": "DAC5",
+            "NIN": "N<5>",
+            "PIN": "P<5>",
+            "VREF": "VREF",
+            "Vcm": "Vcm"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I43",
+          "lib": "8_bit_sar_adc",
+          "cell": "DAC_C_SW_4",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUT": "DAC6",
+            "NIN": "N<6>",
+            "PIN": "P<6>",
+            "VREF": "VREF",
+            "Vcm": "Vcm"
+          },
+          "saved_parameters": {}
+        }
+      ]
+    },
+    {
+      "library": "8_bit_sar_adc",
+      "cell": "EN_LOOP",
+      "view": "schematic",
+      "window": "window:7",
+      "source_relative_path": "async_sar_8bit_40MSps/libraries/8_bit_sar_adc/EN_LOOP/schematic/sch.oa",
+      "source_sha256_before": "2d2010afe08a62b1de966cdb7b6e231b5ef0764d8529d2fd31fbf122cf6509d1",
+      "source_sha256_after": "2d2010afe08a62b1de966cdb7b6e231b5ef0764d8529d2fd31fbf122cf6509d1",
+      "image_path": "8_bit_sar_adc__EN_LOOP.png",
+      "image_sha256": "53a4448dfec9f68081610ac3c24e052321e153226a986721edd68293726d04ce",
+      "image_bytes": 143942,
+      "width": 3400,
+      "height": 1395,
+      "instance_count": 30,
+      "pins": {
+        "OUTN": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "OUTN",
+          "occurrences": 1
+        },
+        "OUTP": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "OUTP",
+          "occurrences": 1
+        },
+        "VALID": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "VALID",
+          "occurrences": 1
+        },
+        "VSS": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VSS",
+          "occurrences": 1
+        },
+        "CMP_OK": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "CMP_OK",
+          "occurrences": 1
+        },
+        "LATCH": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "LATCH",
+          "occurrences": 1
+        },
+        "VDD": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VDD",
+          "occurrences": 1
+        },
+        "CLK": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "CLK",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "PM3",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net79",
+            "B": "VDD",
+            "G": "CMP_OK-INV",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM4",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net79",
+            "B": "VDD",
+            "G": "CLK-INV",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM1",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "CMP_OK-INV",
+            "B": "VDD",
+            "G": "CMP_OK",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM5",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "EN-LOOP",
+            "B": "VDD",
+            "G": "net79",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM2",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "CLK-INV",
+            "B": "VDD",
+            "G": "CLK",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM9",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net75",
+            "B": "VDD",
+            "G": "net62",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM11",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net81",
+            "B": "VDD",
+            "G": "net102",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM15",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net115",
+            "B": "VDD",
+            "G": "net81",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM6",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "VALID",
+            "B": "VDD",
+            "G": "OUTP",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM7",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "VALID",
+            "B": "VDD",
+            "G": "OUTN",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM12",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net81",
+            "B": "VDD",
+            "G": "EN-LOOP",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM8",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net62",
+            "B": "VDD",
+            "G": "VALID",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM14",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net122",
+            "B": "VDD",
+            "G": "net115",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM13",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "LATCH",
+            "B": "VDD",
+            "G": "net122",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM10",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net102",
+            "B": "VDD",
+            "G": "net75",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM5",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "EN-LOOP",
+            "B": "VSS",
+            "G": "net79",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM2",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "CLK-INV",
+            "B": "VSS",
+            "G": "CLK",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM4",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net92",
+            "B": "VSS",
+            "G": "CLK-INV",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM1",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "CMP_OK-INV",
+            "B": "VSS",
+            "G": "CMP_OK",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM3",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net79",
+            "B": "VSS",
+            "G": "CMP_OK-INV",
+            "S": "net92"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM8",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net62",
+            "B": "VSS",
+            "G": "VALID",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM15",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net115",
+            "B": "VSS",
+            "G": "net81",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM14",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net122",
+            "B": "VSS",
+            "G": "net115",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM10",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net102",
+            "B": "VSS",
+            "G": "net75",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM9",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net75",
+            "B": "VSS",
+            "G": "net62",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM13",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "LATCH",
+            "B": "VSS",
+            "G": "net122",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM7",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net93",
+            "B": "VSS",
+            "G": "OUTN",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM12",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net91",
+            "B": "VSS",
+            "G": "EN-LOOP",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM11",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net81",
+            "B": "VSS",
+            "G": "net102",
+            "S": "net91"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM6",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "VALID",
+            "B": "VSS",
+            "G": "OUTP",
+            "S": "net93"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        }
+      ]
+    },
+    {
+      "library": "8_bit_sar_adc",
+      "cell": "SAR_LOGIC_UNIT",
+      "view": "schematic",
+      "window": "window:8",
+      "source_relative_path": "async_sar_8bit_40MSps/libraries/8_bit_sar_adc/SAR_LOGIC_UNIT/schematic/sch.oa",
+      "source_sha256_before": "270db2d1bfaa143dd6b48862e369f2d3e8b74030f446c43fab90f990c98f97c5",
+      "source_sha256_after": "270db2d1bfaa143dd6b48862e369f2d3e8b74030f446c43fab90f990c98f97c5",
+      "image_path": "8_bit_sar_adc__SAR_LOGIC_UNIT.png",
+      "image_sha256": "fd997ca8276013eb54315024dc406840e5d5a5e43061614255822f0b00521bb6",
+      "image_bytes": 192278,
+      "width": 3400,
+      "height": 1384,
+      "instance_count": 21,
+      "pins": {
+        "COMN": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "COMN",
+          "occurrences": 1
+        },
+        "Q": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "Q",
+          "occurrences": 1
+        },
+        "COMP": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "COMP",
+          "occurrences": 1
+        },
+        "VSS": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VSS",
+          "occurrences": 1
+        },
+        "OUTN": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "OUTN",
+          "occurrences": 1
+        },
+        "VALID": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VALID",
+          "occurrences": 1
+        },
+        "OUTP": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "OUTP",
+          "occurrences": 1
+        },
+        "VDD": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VDD",
+          "occurrences": 1
+        },
+        "D": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "D",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "PM1",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "CLK",
+            "B": "VDD",
+            "G": "D",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM6",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "Q",
+            "B": "VDD",
+            "G": "VALID",
+            "S": "net87"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM13",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net70",
+            "B": "VDD",
+            "G": "CLK",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM19",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "OUTN",
+            "B": "VDD",
+            "G": "net76",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM15",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net85",
+            "B": "VDD",
+            "G": "COMN",
+            "S": "net70"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM14",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net86",
+            "B": "VDD",
+            "G": "COMP",
+            "S": "net70"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM2",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net87",
+            "B": "VDD",
+            "G": "CLK",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM18",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net76",
+            "B": "VDD",
+            "G": "N",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM17",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "P",
+            "B": "VDD",
+            "G": "Q",
+            "S": "net85"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM16",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "N",
+            "B": "VDD",
+            "G": "Q",
+            "S": "net86"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM21",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net74",
+            "B": "VDD",
+            "G": "P",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM20",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "OUTP",
+            "B": "VDD",
+            "G": "net74",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM6",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net76",
+            "B": "VSS",
+            "G": "N",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM7",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "OUTN",
+            "B": "VSS",
+            "G": "net76",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM2",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net88",
+            "B": "VSS",
+            "G": "D",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM3",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "Q",
+            "B": "VSS",
+            "G": "CLK",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM1",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "CLK",
+            "B": "VSS",
+            "G": "VALID",
+            "S": "net88"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM5",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "P",
+            "B": "VSS",
+            "G": "CLK",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM4",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "N",
+            "B": "VSS",
+            "G": "CLK",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM9",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net74",
+            "B": "VSS",
+            "G": "P",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM8",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "OUTP",
+            "B": "VSS",
+            "G": "net74",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        }
+      ]
+    },
+    {
+      "library": "8_bit_sar_adc",
+      "cell": "SAR_LOGIC",
+      "view": "schematic",
+      "window": "window:9",
+      "source_relative_path": "async_sar_8bit_40MSps/libraries/8_bit_sar_adc/SAR_LOGIC/schematic/sch.oa",
+      "source_sha256_before": "9b1385383f1ad7fba09b55be37e13daa0ccd9fc9e6f96eb9e67b5d2491f3bc9f",
+      "source_sha256_after": "9b1385383f1ad7fba09b55be37e13daa0ccd9fc9e6f96eb9e67b5d2491f3bc9f",
+      "image_path": "8_bit_sar_adc__SAR_LOGIC.png",
+      "image_sha256": "03901b6a4b9a65c0dd8e6239f126d27cc3a206c4c6ec63da0df0d24d92967d1f",
+      "image_bytes": 85403,
+      "width": 3400,
+      "height": 1075,
+      "instance_count": 18,
+      "pins": {
+        "VALID": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VALID",
+          "occurrences": 1
+        },
+        "CMP_OK": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "CMP_OK",
+          "occurrences": 1
+        },
+        "CLK": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "CLK",
+          "occurrences": 1
+        },
+        "VSS": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VSS",
+          "occurrences": 1
+        },
+        "P<1:8>": {
+          "direction": "output",
+          "numBits": 8,
+          "net": "P<1:8>",
+          "occurrences": 1
+        },
+        "COMN": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "COMN",
+          "occurrences": 1
+        },
+        "VDD": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VDD",
+          "occurrences": 1
+        },
+        "N<1:8>": {
+          "direction": "output",
+          "numBits": 8,
+          "net": "N<1:8>",
+          "occurrences": 1
+        },
+        "COMP": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "COMP",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "I26",
+          "lib": "8_bit_sar_adc",
+          "cell": "SAR_LOGIC_UNIT",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUTN": "N<7>",
+            "OUTP": "P<7>",
+            "Q": "Q7",
+            "COMN": "COMN",
+            "COMP": "COMP",
+            "D": "Q8",
+            "VALID": "VALID_inv"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I25",
+          "lib": "8_bit_sar_adc",
+          "cell": "SAR_LOGIC_UNIT",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUTN": "N<8>",
+            "OUTP": "P<8>",
+            "Q": "Q8",
+            "COMN": "COMN",
+            "COMP": "COMP",
+            "D": "D",
+            "VALID": "VALID_inv"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I32",
+          "lib": "8_bit_sar_adc",
+          "cell": "SAR_LOGIC_UNIT",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUTN": "N<1>",
+            "OUTP": "P<1>",
+            "Q": "VSS",
+            "COMN": "COMN",
+            "COMP": "COMP",
+            "D": "Q2",
+            "VALID": "VALID_inv"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I31",
+          "lib": "8_bit_sar_adc",
+          "cell": "SAR_LOGIC_UNIT",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUTN": "N<2>",
+            "OUTP": "P<2>",
+            "Q": "Q2",
+            "COMN": "COMN",
+            "COMP": "COMP",
+            "D": "Q3",
+            "VALID": "VALID_inv"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I30",
+          "lib": "8_bit_sar_adc",
+          "cell": "SAR_LOGIC_UNIT",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUTN": "N<3>",
+            "OUTP": "P<3>",
+            "Q": "Q3",
+            "COMN": "COMN",
+            "COMP": "COMP",
+            "D": "Q4",
+            "VALID": "VALID_inv"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I29",
+          "lib": "8_bit_sar_adc",
+          "cell": "SAR_LOGIC_UNIT",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUTN": "N<4>",
+            "OUTP": "P<4>",
+            "Q": "Q4",
+            "COMN": "COMN",
+            "COMP": "COMP",
+            "D": "Q5",
+            "VALID": "VALID_inv"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I28",
+          "lib": "8_bit_sar_adc",
+          "cell": "SAR_LOGIC_UNIT",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUTN": "N<5>",
+            "OUTP": "P<5>",
+            "Q": "Q5",
+            "COMN": "COMN",
+            "COMP": "COMP",
+            "D": "Q6",
+            "VALID": "VALID_inv"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I27",
+          "lib": "8_bit_sar_adc",
+          "cell": "SAR_LOGIC_UNIT",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "OUTN": "N<6>",
+            "OUTP": "P<6>",
+            "Q": "Q6",
+            "COMN": "COMN",
+            "COMP": "COMP",
+            "D": "Q7",
+            "VALID": "VALID_inv"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "NM5",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "CMP_OK",
+            "B": "VSS",
+            "G": "net61",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM1",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "VALID_inv",
+            "B": "VSS",
+            "G": "VALID",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM0",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "D",
+            "B": "VSS",
+            "G": "CLK",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM3",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net61",
+            "B": "VSS",
+            "G": "N<1>",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "NM4",
+          "lib": "smic18mmrf",
+          "cell": "n18_ckt",
+          "terms": {
+            "D": "net61",
+            "B": "VSS",
+            "G": "P<1>",
+            "S": "VSS"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "1u",
+            "fw": "1u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM4",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net61",
+            "B": "VDD",
+            "G": "N<1>",
+            "S": "net91"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM3",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "net91",
+            "B": "VDD",
+            "G": "P<1>",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM0",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "D",
+            "B": "VDD",
+            "G": "CLK",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM5",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "CMP_OK",
+            "B": "VDD",
+            "G": "net61",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        },
+        {
+          "name": "PM1",
+          "lib": "smic18mmrf",
+          "cell": "p18_ckt",
+          "terms": {
+            "D": "VALID_inv",
+            "B": "VDD",
+            "G": "VALID",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "l": "180n",
+            "w": "2u",
+            "fw": "2u",
+            "fingers": "1"
+          }
+        }
+      ]
+    },
+    {
+      "library": "8_bit_sar_adc",
+      "cell": "SAR_ADC",
+      "view": "schematic",
+      "window": "window:10",
+      "source_relative_path": "async_sar_8bit_40MSps/libraries/8_bit_sar_adc/SAR_ADC/schematic/sch.oa",
+      "source_sha256_before": "cd2f53f5234e92dfb82d962f48e5fbbae15ab27ec5b5b46883e67fc428dce7b6",
+      "source_sha256_after": "cd2f53f5234e92dfb82d962f48e5fbbae15ab27ec5b5b46883e67fc428dce7b6",
+      "image_path": "8_bit_sar_adc__SAR_ADC.png",
+      "image_sha256": "d6c0700c07d0d3d9744aeaf74d4ffd2fc7d1872a25fed201b6876dee5932e74c",
+      "image_bytes": 426651,
+      "width": 5200,
+      "height": 3904,
+      "instance_count": 35,
+      "pins": {
+        "VREF2": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VREF2",
+          "occurrences": 1
+        },
+        "SEL": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "SEL",
+          "occurrences": 1
+        },
+        "VREF3": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VREF3",
+          "occurrences": 1
+        },
+        "VDD": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VDD",
+          "occurrences": 1
+        },
+        "VSS": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VSS",
+          "occurrences": 1
+        },
+        "VIN": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VIN",
+          "occurrences": 1
+        },
+        "VIP": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VIP",
+          "occurrences": 1
+        },
+        "VCLK": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VCLK",
+          "occurrences": 1
+        },
+        "VREF1": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VREF1",
+          "occurrences": 1
+        },
+        "DOUT<7:0>": {
+          "direction": "output",
+          "numBits": 8,
+          "net": "DOUT<7:0>",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "I13",
+          "lib": "basic",
+          "cell": "noConn",
+          "terms": {
+            "noConn": "P<1>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I8",
+          "lib": "basic",
+          "cell": "noConn",
+          "terms": {
+            "noConn": "VREF2"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I7",
+          "lib": "basic",
+          "cell": "noConn",
+          "terms": {
+            "noConn": "SEL"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I6",
+          "lib": "basic",
+          "cell": "noConn",
+          "terms": {
+            "noConn": "VREF3"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I46",
+          "lib": "8_bit_sar_adc",
+          "cell": "DFF",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "Q": "DOUT<7>",
+            "CLK": "VCLK",
+            "D": "N<1>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I44",
+          "lib": "8_bit_sar_adc",
+          "cell": "DFF",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "Q": "DOUT<5>",
+            "CLK": "VCLK",
+            "D": "N<3>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I45",
+          "lib": "8_bit_sar_adc",
+          "cell": "DFF",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "Q": "DOUT<6>",
+            "CLK": "VCLK",
+            "D": "N<2>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I43",
+          "lib": "8_bit_sar_adc",
+          "cell": "DFF",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "Q": "DOUT<4>",
+            "CLK": "VCLK",
+            "D": "N<4>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I39",
+          "lib": "8_bit_sar_adc",
+          "cell": "DFF",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "Q": "DOUT<0>",
+            "CLK": "VCLK",
+            "D": "N<8>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I40",
+          "lib": "8_bit_sar_adc",
+          "cell": "DFF",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "Q": "DOUT<1>",
+            "CLK": "VCLK",
+            "D": "N<7>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I41",
+          "lib": "8_bit_sar_adc",
+          "cell": "DFF",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "Q": "DOUT<2>",
+            "CLK": "VCLK",
+            "D": "N<6>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I42",
+          "lib": "8_bit_sar_adc",
+          "cell": "DFF",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "Q": "DOUT<3>",
+            "CLK": "VCLK",
+            "D": "N<5>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I38",
+          "lib": "8_bit_sar_adc",
+          "cell": "EN_LOOP",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "LATCH": "LATCH",
+            "VALID": "VALID",
+            "CLK": "VCLK",
+            "CMP_OK": "CMP_OK",
+            "OUTN": "OUTN",
+            "OUTP": "OUTP"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I33",
+          "lib": "8_bit_sar_adc",
+          "cell": "BOOSTRAP",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "VOUT": "SH-N",
+            "CLKS": "VCLK",
+            "VIN": "VIN"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I32",
+          "lib": "8_bit_sar_adc",
+          "cell": "BOOSTRAP",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "VOUT": "SH-P",
+            "CLKS": "VCLK",
+            "VIN": "VIP"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "C15",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net54",
+            "PLUS": "SH-P"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C14",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net52",
+            "PLUS": "SH-P"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C13",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net55",
+            "PLUS": "SH-P"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C12",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net43",
+            "PLUS": "SH-P"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C11",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net39",
+            "PLUS": "SH-P"
+          },
+          "saved_parameters": {
+            "m": "8",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C10",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net31",
+            "PLUS": "SH-P"
+          },
+          "saved_parameters": {
+            "m": "16",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C9",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net25",
+            "PLUS": "SH-P"
+          },
+          "saved_parameters": {
+            "m": "32",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C8",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net9",
+            "PLUS": "SH-P"
+          },
+          "saved_parameters": {
+            "m": "64",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C7",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net19",
+            "PLUS": "SH-N"
+          },
+          "saved_parameters": {
+            "m": "64",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C0",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net70",
+            "PLUS": "SH-N"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C1",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net60",
+            "PLUS": "SH-N"
+          },
+          "saved_parameters": {
+            "m": "1",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C2",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net49",
+            "PLUS": "SH-N"
+          },
+          "saved_parameters": {
+            "m": "2",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C3",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net42",
+            "PLUS": "SH-N"
+          },
+          "saved_parameters": {
+            "m": "4",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C4",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net38",
+            "PLUS": "SH-N"
+          },
+          "saved_parameters": {
+            "m": "8",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C5",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net34",
+            "PLUS": "SH-N"
+          },
+          "saved_parameters": {
+            "m": "16",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "C6",
+          "lib": "smic18mmrf",
+          "cell": "mim_ckt",
+          "terms": {
+            "MINUS": "net26",
+            "PLUS": "SH-N"
+          },
+          "saved_parameters": {
+            "m": "32",
+            "c": "15.504f",
+            "w": "4u",
+            "l": "4u"
+          }
+        },
+        {
+          "name": "I35",
+          "lib": "8_bit_sar_adc",
+          "cell": "DAC_SW",
+          "terms": {
+            "DAC1": "net70",
+            "DAC2": "net60",
+            "DAC3": "net49",
+            "DAC4": "net42",
+            "DAC5": "net38",
+            "DAC6": "net34",
+            "DAC7": "net26",
+            "DAC8": "net19",
+            "Vcm": "VREF1",
+            "VREF": "VDD",
+            "VDD": "VDD",
+            "VSS": "VSS",
+            "N<2:8>": "P<2:8>",
+            "P<2:8>": "N<2:8>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I34",
+          "lib": "8_bit_sar_adc",
+          "cell": "DAC_SW",
+          "terms": {
+            "DAC1": "net54",
+            "DAC2": "net52",
+            "DAC3": "net55",
+            "DAC4": "net43",
+            "DAC5": "net39",
+            "DAC6": "net31",
+            "DAC7": "net25",
+            "DAC8": "net9",
+            "Vcm": "VREF1",
+            "VREF": "VDD",
+            "VDD": "VDD",
+            "VSS": "VSS",
+            "N<2:8>": "N<2:8>",
+            "P<2:8>": "P<2:8>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I36",
+          "lib": "8_bit_sar_adc",
+          "cell": "compare",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "CLK": "LATCH",
+            "OUTP": "OUTP",
+            "OUTN": "OUTN",
+            "DACP": "SH-P",
+            "DACN": "SH-N"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I37",
+          "lib": "8_bit_sar_adc",
+          "cell": "SAR_LOGIC",
+          "terms": {
+            "VSS": "VSS",
+            "VDD": "VDD",
+            "CMP_OK": "CMP_OK",
+            "N<1:8>": "N<1:8>",
+            "P<1:8>": "P<1:8>",
+            "CLK": "VCLK",
+            "COMP": "OUTP",
+            "COMN": "OUTN",
+            "VALID": "VALID"
+          },
+          "saved_parameters": {}
+        }
+      ]
+    },
+    {
+      "library": "Pipe_SAR",
+      "cell": "Pi-SAR_amp",
+      "view": "schematic",
+      "window": "window:11",
+      "source_relative_path": "pipelined_sar_12bit_100MSps/libraries/Pipe_SAR/Pi#2dSAR_amp/schematic/sch.oa",
+      "source_sha256_before": "459c4a0a9c094122640dde96e46f80acc79b8a0b621483f1f45b41d4fd8a1431",
+      "source_sha256_after": "459c4a0a9c094122640dde96e46f80acc79b8a0b621483f1f45b41d4fd8a1431",
+      "image_path": "Pipe_SAR__Pi-SAR_amp.png",
+      "image_sha256": "7808fe7dee8df97a5bca5365b0e59c8a4df2823b433e437223172e4a04b5e03b",
+      "image_bytes": 654087,
+      "width": 5200,
+      "height": 2876,
+      "instance_count": 34,
+      "pins": {
+        "OUTA": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "OUTA",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "I1",
+          "lib": "analogLib",
+          "cell": "gnd",
+          "terms": {
+            "gnd!": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I50",
+          "lib": "analogLib",
+          "cell": "gnd",
+          "terms": {
+            "gnd!": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V2",
+          "lib": "analogLib",
+          "cell": "vdc",
+          "terms": {
+            "PLUS": "net016",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V15",
+          "lib": "analogLib",
+          "cell": "vdc",
+          "terms": {
+            "PLUS": "VCM",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V11",
+          "lib": "analogLib",
+          "cell": "vdc",
+          "terms": {
+            "PLUS": "VREFN2",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V10",
+          "lib": "analogLib",
+          "cell": "vdc",
+          "terms": {
+            "PLUS": "VREFP2",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V7",
+          "lib": "analogLib",
+          "cell": "vdc",
+          "terms": {
+            "PLUS": "VDD",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V5",
+          "lib": "analogLib",
+          "cell": "vdc",
+          "terms": {
+            "PLUS": "VREFP",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V4",
+          "lib": "analogLib",
+          "cell": "vdc",
+          "terms": {
+            "PLUS": "VREFN",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V0",
+          "lib": "analogLib",
+          "cell": "vdc",
+          "terms": {
+            "PLUS": "GND",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V1",
+          "lib": "analogLib",
+          "cell": "vpulse",
+          "terms": {
+            "PLUS": "CK1",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V13",
+          "lib": "analogLib",
+          "cell": "vpulse",
+          "terms": {
+            "PLUS": "SAM-",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "V12",
+          "lib": "analogLib",
+          "cell": "vpulse",
+          "terms": {
+            "PLUS": "CK2",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I82",
+          "lib": "Pipe_SAR",
+          "cell": "DAC_VA12",
+          "terms": {
+            "vout": "OUTA",
+            "clk": "CK",
+            "din<11:0>": "D<11:0>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "C46",
+          "lib": "tsmcN65",
+          "cell": "crtmom",
+          "terms": {
+            "BULK": "net97",
+            "MINUS": "net94",
+            "PLUS": "net88"
+          },
+          "saved_parameters": {
+            "w": "100n",
+            "c": "19.734f",
+            "m": "16"
+          }
+        },
+        {
+          "name": "C42",
+          "lib": "tsmcN65",
+          "cell": "crtmom",
+          "terms": {
+            "BULK": "net98",
+            "MINUS": "net93",
+            "PLUS": "net86"
+          },
+          "saved_parameters": {
+            "w": "100n",
+            "c": "19.734f",
+            "m": "16"
+          }
+        },
+        {
+          "name": "V3",
+          "lib": "analogLib",
+          "cell": "vsin",
+          "terms": {
+            "PLUS": "net99",
+            "MINUS": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I10",
+          "lib": "Pipe_SAR",
+          "cell": "Difference1",
+          "terms": {
+            "VIPN": "VINP",
+            "VINN": "VINN",
+            "VCM": "VCM",
+            "VI+": "net99",
+            "VI-": "gnd!"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I29",
+          "lib": "Pipe_SAR",
+          "cell": "TG1",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "OUT": "net94",
+            "C": "CK2",
+            "IN": "VIN2+",
+            "NOT_C": "CK2-"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I28",
+          "lib": "Pipe_SAR",
+          "cell": "TG1",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "OUT": "net93",
+            "C": "CK2",
+            "IN": "VIN2-",
+            "NOT_C": "CK2-"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I0",
+          "lib": "Pipe_SAR",
+          "cell": "DYSAR6b_200M",
+          "terms": {
+            "din<2>": "din<2>",
+            "din<3>": "din<3>",
+            "din<1>": "din<1>",
+            "VDD": "VDD",
+            "VREFP": "VREFP",
+            "din<4>": "din<4>",
+            "din<5>": "din<5>",
+            "CAP_DOWN": "VNN",
+            "CAP_UP": "VPN",
+            "din<0>": "din<0>",
+            "OUTA1": "OUTA1",
+            "CLK_DAC": "c1",
+            "VINP": "VINP",
+            "VINN": "VINN",
+            "SAM-": "SAM-",
+            "GND": "GND",
+            "VCM": "VCM",
+            "VREFN": "VREFN"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I155",
+          "lib": "Pipe_SAR",
+          "cell": "TG_8C",
+          "terms": {
+            "NOT_C": "CK1-",
+            "C": "CK1",
+            "OUT": "net94",
+            "IN": "VCM",
+            "VDD": "VDD",
+            "GND": "GND"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I25",
+          "lib": "Pipe_SAR",
+          "cell": "TG_8C",
+          "terms": {
+            "NOT_C": "CK1-",
+            "C": "CK1",
+            "OUT": "net88",
+            "IN": "VIN2+",
+            "VDD": "VDD",
+            "GND": "GND"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I32",
+          "lib": "Pipe_SAR",
+          "cell": "TG_8C",
+          "terms": {
+            "NOT_C": "CK2-",
+            "C": "CK2",
+            "OUT": "net88",
+            "IN": "VPN",
+            "VDD": "VDD",
+            "GND": "GND"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I30",
+          "lib": "Pipe_SAR",
+          "cell": "TG_8C",
+          "terms": {
+            "NOT_C": "CK1-",
+            "C": "CK1",
+            "OUT": "net88",
+            "IN": "VCM",
+            "VDD": "VDD",
+            "GND": "GND"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I31",
+          "lib": "Pipe_SAR",
+          "cell": "TG_8C",
+          "terms": {
+            "NOT_C": "CK1-",
+            "C": "CK1",
+            "OUT": "net86",
+            "IN": "VCM",
+            "VDD": "VDD",
+            "GND": "GND"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I33",
+          "lib": "Pipe_SAR",
+          "cell": "TG_8C",
+          "terms": {
+            "NOT_C": "CK2-",
+            "C": "CK2",
+            "OUT": "net86",
+            "IN": "VNN",
+            "VDD": "VDD",
+            "GND": "GND"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I26",
+          "lib": "Pipe_SAR",
+          "cell": "TG_8C",
+          "terms": {
+            "NOT_C": "CK1-",
+            "C": "CK1",
+            "OUT": "net86",
+            "IN": "VIN2-",
+            "VDD": "VDD",
+            "GND": "GND"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I154",
+          "lib": "Pipe_SAR",
+          "cell": "TG_8C",
+          "terms": {
+            "NOT_C": "CK1-",
+            "C": "CK1",
+            "OUT": "net93",
+            "IN": "VCM",
+            "VDD": "VDD",
+            "GND": "GND"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I11",
+          "lib": "Pipe_SAR",
+          "cell": "PiSAR_2st_8bit",
+          "terms": {
+            "CAP_DN": "CDOWN",
+            "CAP_UP": "CUP",
+            "CLK_DAC": "CK",
+            "OUTA2": "OUTA2",
+            "din<0>": "D2<0>",
+            "din<1>": "D2<1>",
+            "din<2>": "D2<2>",
+            "din<3>": "D2<3>",
+            "din<4>": "D2<4>",
+            "din<5>": "D2<5>",
+            "din<6>": "D2<6>",
+            "din<7>": "D2<7>",
+            "GND": "GND",
+            "SAM-": "CK2",
+            "VCM": "VCM",
+            "VDD": "VDD",
+            "VINN": "VIN2-",
+            "VINP": "VIN2+",
+            "VREFN": "VREFN2",
+            "VREFP": "VREFP2"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I14",
+          "lib": "Pipe_SAR",
+          "cell": "D_adjust2",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "D<0>": "D<0>",
+            "D<1>": "D<1>",
+            "D<2>": "D<2>",
+            "D<3>": "D<3>",
+            "D<4>": "D<4>",
+            "D<5>": "D<5>",
+            "D<6>": "D<6>",
+            "D<7>": "D<7>",
+            "D<8>": "D<8>",
+            "D<9>": "D<9>",
+            "D<10>": "D<10>",
+            "D<11>": "D<11>",
+            "D2<0>": "D2<0>",
+            "D2<1>": "D2<1>",
+            "D2<2>": "D2<2>",
+            "D2<3>": "D2<3>",
+            "D2<4>": "D2<4>",
+            "D2<5>": "D2<5>",
+            "D2<6>": "D2<6>",
+            "D2<7>": "D2<7>",
+            "c1": "c1",
+            "din<0>": "din<0>",
+            "din<1>": "din<1>",
+            "din<2>": "din<2>",
+            "din<3>": "din<3>",
+            "din<4>": "din<4>",
+            "din<5>": "din<5>"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I3",
+          "lib": "Pipe_SAR",
+          "cell": "amp_gainboost",
+          "terms": {
+            "GND": "GND",
+            "CK2": "CK2",
+            "VON": "VIN2+",
+            "VOP": "VIN2-",
+            "VIN": "net86",
+            "VIP": "net88",
+            "VCM": "VCM",
+            "CK1": "CK1",
+            "VDD": "VDD"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I8",
+          "lib": "Pipe_SAR",
+          "cell": "INV",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "OUT": "CK2-",
+            "IN": "CK2"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I9",
+          "lib": "Pipe_SAR",
+          "cell": "INV",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "OUT": "CK1-",
+            "IN": "CK1"
+          },
+          "saved_parameters": {}
+        }
+      ]
+    },
+    {
+      "library": "Pipe_SAR",
+      "cell": "amp_gainboost",
+      "view": "schematic",
+      "window": "window:12",
+      "source_relative_path": "pipelined_sar_12bit_100MSps/libraries/Pipe_SAR/amp_gainboost/schematic/sch.oa",
+      "source_sha256_before": "53570d6bc9c7fdf4cb4d96336846d78ebc574aaa57d56241320ff2a64d4abcc0",
+      "source_sha256_after": "53570d6bc9c7fdf4cb4d96336846d78ebc574aaa57d56241320ff2a64d4abcc0",
+      "image_path": "Pipe_SAR__amp_gainboost.png",
+      "image_sha256": "e2d93d1612d87639939988260152237cfef5fd898b13ba03436388207b08f882",
+      "image_bytes": 339453,
+      "width": 3400,
+      "height": 2127,
+      "instance_count": 47,
+      "pins": {
+        "CK2": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "CK2",
+          "occurrences": 1
+        },
+        "VCM": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VCM",
+          "occurrences": 1
+        },
+        "GND": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "GND",
+          "occurrences": 1
+        },
+        "VDD": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VDD",
+          "occurrences": 1
+        },
+        "CK1": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "CK1",
+          "occurrences": 1
+        },
+        "VIP": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VIP",
+          "occurrences": 1
+        },
+        "VIN": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VIN",
+          "occurrences": 1
+        },
+        "VON": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "VON",
+          "occurrences": 1
+        },
+        "VOP": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "VOP",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "I6",
+          "lib": "Pipe_SAR",
+          "cell": "TG",
+          "terms": {
+            "NOT_C": "CK2-",
+            "GND": "GND",
+            "C": "CK2",
+            "VDD": "VDD",
+            "OUT": "VOP",
+            "IN": "net032"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I5",
+          "lib": "Pipe_SAR",
+          "cell": "TG",
+          "terms": {
+            "NOT_C": "CK2-",
+            "GND": "GND",
+            "C": "CK2",
+            "VDD": "VDD",
+            "OUT": "VON",
+            "IN": "net030"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I2",
+          "lib": "Pipe_SAR",
+          "cell": "TG",
+          "terms": {
+            "NOT_C": "CK1-",
+            "GND": "GND",
+            "C": "CK1",
+            "VDD": "VDD",
+            "OUT": "net030",
+            "IN": "VCM"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I0",
+          "lib": "Pipe_SAR",
+          "cell": "TG",
+          "terms": {
+            "NOT_C": "CK1-",
+            "GND": "GND",
+            "C": "CK1",
+            "VDD": "VDD",
+            "OUT": "net032",
+            "IN": "VCM"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I87",
+          "lib": "Pipe_SAR",
+          "cell": "TG",
+          "terms": {
+            "NOT_C": "CK2-",
+            "GND": "GND",
+            "C": "CK2",
+            "VDD": "VDD",
+            "OUT": "X",
+            "IN": "net173"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I88",
+          "lib": "Pipe_SAR",
+          "cell": "TG",
+          "terms": {
+            "NOT_C": "CK2-",
+            "GND": "GND",
+            "C": "CK2",
+            "VDD": "VDD",
+            "OUT": "Y",
+            "IN": "net171"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I89",
+          "lib": "Pipe_SAR",
+          "cell": "TG",
+          "terms": {
+            "NOT_C": "CK1-",
+            "GND": "GND",
+            "C": "CK1",
+            "VDD": "VDD",
+            "OUT": "net171",
+            "IN": "VCM"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I86",
+          "lib": "Pipe_SAR",
+          "cell": "TG",
+          "terms": {
+            "NOT_C": "CK1-",
+            "GND": "GND",
+            "C": "CK1",
+            "VDD": "VDD",
+            "OUT": "net173",
+            "IN": "VCM"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I8",
+          "lib": "Pipe_SAR",
+          "cell": "TG_2C",
+          "terms": {
+            "C": "CK1",
+            "NOT_C": "CK1-",
+            "OUT": "net031",
+            "IN": "Vbn",
+            "GND": "GND",
+            "VDD": "VDD"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I7",
+          "lib": "Pipe_SAR",
+          "cell": "TG_2C",
+          "terms": {
+            "C": "CK2",
+            "NOT_C": "CK2-",
+            "OUT": "Vcmd",
+            "IN": "net031",
+            "GND": "GND",
+            "VDD": "VDD"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I80",
+          "lib": "Pipe_SAR",
+          "cell": "TG_2C",
+          "terms": {
+            "C": "CK1",
+            "NOT_C": "CK1-",
+            "OUT": "net172",
+            "IN": "bn1",
+            "GND": "GND",
+            "VDD": "VDD"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I81",
+          "lib": "Pipe_SAR",
+          "cell": "TG_2C",
+          "terms": {
+            "C": "CK2",
+            "NOT_C": "CK2-",
+            "OUT": "Vcmc",
+            "IN": "net172",
+            "GND": "GND",
+            "VDD": "VDD"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "C11",
+          "lib": "tsmcN65",
+          "cell": "mimcap_5m_1p0",
+          "terms": {
+            "MINUS": "net032",
+            "PLUS": "net031"
+          },
+          "saved_parameters": {
+            "c": "11.5516f",
+            "wt": "3u",
+            "m": "8"
+          }
+        },
+        {
+          "name": "C10",
+          "lib": "tsmcN65",
+          "cell": "mimcap_5m_1p0",
+          "terms": {
+            "MINUS": "VOP",
+            "PLUS": "Vcmd"
+          },
+          "saved_parameters": {
+            "c": "11.5516f",
+            "wt": "3u",
+            "m": "2"
+          }
+        },
+        {
+          "name": "C9",
+          "lib": "tsmcN65",
+          "cell": "mimcap_5m_1p0",
+          "terms": {
+            "MINUS": "Vcmd",
+            "PLUS": "VON"
+          },
+          "saved_parameters": {
+            "c": "11.5516f",
+            "wt": "3u",
+            "m": "2"
+          }
+        },
+        {
+          "name": "C2",
+          "lib": "tsmcN65",
+          "cell": "mimcap_5m_1p0",
+          "terms": {
+            "MINUS": "net031",
+            "PLUS": "net030"
+          },
+          "saved_parameters": {
+            "c": "11.5516f",
+            "wt": "3u",
+            "m": "8"
+          }
+        },
+        {
+          "name": "C8",
+          "lib": "tsmcN65",
+          "cell": "mimcap_5m_1p0",
+          "terms": {
+            "MINUS": "net173",
+            "PLUS": "net172"
+          },
+          "saved_parameters": {
+            "c": "11.5516f",
+            "wt": "3u",
+            "m": "8"
+          }
+        },
+        {
+          "name": "C6",
+          "lib": "tsmcN65",
+          "cell": "mimcap_5m_1p0",
+          "terms": {
+            "MINUS": "X",
+            "PLUS": "Vcmc"
+          },
+          "saved_parameters": {
+            "c": "11.5516f",
+            "wt": "3u",
+            "m": "2"
+          }
+        },
+        {
+          "name": "C0",
+          "lib": "tsmcN65",
+          "cell": "mimcap_5m_1p0",
+          "terms": {
+            "MINUS": "Vcmc",
+            "PLUS": "Y"
+          },
+          "saved_parameters": {
+            "c": "11.5516f",
+            "wt": "3u",
+            "m": "2"
+          }
+        },
+        {
+          "name": "C1",
+          "lib": "tsmcN65",
+          "cell": "mimcap_5m_1p0",
+          "terms": {
+            "MINUS": "net172",
+            "PLUS": "net171"
+          },
+          "saved_parameters": {
+            "c": "11.5516f",
+            "wt": "3u",
+            "m": "8"
+          }
+        },
+        {
+          "name": "I34",
+          "lib": "Pipe_SAR",
+          "cell": "Bias",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "Vcmn": "Vcmn",
+            "Vcmp": "Vcmp",
+            "bn1": "bn1",
+            "bn2": "bn2",
+            "bp1": "bp1",
+            "bp2": "bp2"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I3",
+          "lib": "Pipe_SAR",
+          "cell": "ampGA",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "VON1": "net179",
+            "VOP1": "net181",
+            "VIN1": "net198",
+            "VIP1": "net196",
+            "Vcmp": "Vcmp",
+            "bn1": "bn1",
+            "bn2": "bn2",
+            "bp1": "bp1",
+            "bp2": "bp2"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I4",
+          "lib": "analogLib",
+          "cell": "idc",
+          "terms": {
+            "PLUS": "VDD",
+            "MINUS": "Vbn"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I10",
+          "lib": "Pipe_SAR",
+          "cell": "INV",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "OUT": "CK2-",
+            "IN": "CK2"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I9",
+          "lib": "Pipe_SAR",
+          "cell": "INV",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "OUT": "CK1-",
+            "IN": "CK1"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "M4",
+          "lib": "tsmcN65",
+          "cell": "nch_lvt",
+          "terms": {
+            "D": "VON",
+            "B": "GND",
+            "G": "X",
+            "S": "net189"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "10u",
+            "wf": "10u",
+            "fingers": "1",
+            "m": "3",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M1",
+          "lib": "tsmcN65",
+          "cell": "nch_lvt",
+          "terms": {
+            "D": "VOP",
+            "B": "GND",
+            "G": "Y",
+            "S": "net189"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "10u",
+            "wf": "10u",
+            "fingers": "1",
+            "m": "3",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M6",
+          "lib": "tsmcN65",
+          "cell": "pch_lvt",
+          "terms": {
+            "D": "VOP",
+            "B": "VDD",
+            "G": "Y",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "10u",
+            "wf": "10u",
+            "fingers": "1",
+            "m": "3",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M5",
+          "lib": "tsmcN65",
+          "cell": "pch_lvt",
+          "terms": {
+            "D": "VON",
+            "B": "VDD",
+            "G": "X",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "10u",
+            "wf": "10u",
+            "fingers": "1",
+            "m": "3",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M35",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "X",
+            "B": "GND",
+            "G": "net179",
+            "S": "net196"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "15.0u",
+            "wf": "15.0u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M29",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "Y",
+            "B": "GND",
+            "G": "net181",
+            "S": "net198"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "15.0u",
+            "wf": "15.0u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M36",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net196",
+            "B": "GND",
+            "G": "Vcmc",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "12.2u",
+            "wf": "12.2u",
+            "fingers": "1",
+            "m": "2",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M30",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net198",
+            "B": "GND",
+            "G": "Vcmc",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "12.2u",
+            "wf": "12.2u",
+            "fingers": "1",
+            "m": "2",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M8",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "Vbn",
+            "B": "GND",
+            "G": "Vbn",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "1u",
+            "w": "12.2u",
+            "wf": "12.2u",
+            "fingers": "1",
+            "m": "2",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M7",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net189",
+            "B": "GND",
+            "G": "Vcmd",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "1u",
+            "w": "12.2u",
+            "wf": "12.2u",
+            "fingers": "1",
+            "m": "4",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "C7",
+          "lib": "analogLib",
+          "cell": "cap",
+          "terms": {
+            "MINUS": "X",
+            "PLUS": "net179"
+          },
+          "saved_parameters": {
+            "c": "50f"
+          }
+        },
+        {
+          "name": "C4",
+          "lib": "analogLib",
+          "cell": "cap",
+          "terms": {
+            "MINUS": "Y",
+            "PLUS": "net182"
+          },
+          "saved_parameters": {
+            "c": "50f"
+          }
+        },
+        {
+          "name": "C5",
+          "lib": "analogLib",
+          "cell": "cap",
+          "terms": {
+            "MINUS": "X",
+            "PLUS": "net180"
+          },
+          "saved_parameters": {
+            "c": "50f"
+          }
+        },
+        {
+          "name": "C3",
+          "lib": "analogLib",
+          "cell": "cap",
+          "terms": {
+            "MINUS": "Y",
+            "PLUS": "net181"
+          },
+          "saved_parameters": {
+            "c": "50f"
+          }
+        },
+        {
+          "name": "I1",
+          "lib": "Pipe_SAR",
+          "cell": "ampGB",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "VON2": "net180",
+            "VOP2": "net182",
+            "VIN2": "net199",
+            "VIP2": "net178",
+            "Vcmn": "Vcmn",
+            "bn1": "bn1",
+            "bn2": "bn2",
+            "bp1": "bp1",
+            "bp2": "bp2"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "M33",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net178",
+            "B": "VDD",
+            "G": "bp1",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "35.0u",
+            "wf": "35.0u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M37",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net199",
+            "B": "VDD",
+            "G": "bp1",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "35.0u",
+            "wf": "35.0u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M0",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net174",
+            "B": "VDD",
+            "G": "bp1",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "35.0u",
+            "wf": "35.0u",
+            "fingers": "1",
+            "m": "2",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M34",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "X",
+            "B": "VDD",
+            "G": "net180",
+            "S": "net178"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "34.8u",
+            "wf": "34.8u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M38",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "Y",
+            "B": "VDD",
+            "G": "net182",
+            "S": "net199"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "34.8u",
+            "wf": "34.8u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M3",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net198",
+            "B": "VDD",
+            "G": "VIP",
+            "S": "net174"
+          },
+          "saved_parameters": {
+            "l": "100n",
+            "w": "10u",
+            "wf": "10u",
+            "fingers": "1",
+            "m": "30",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M2",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net196",
+            "B": "VDD",
+            "G": "VIN",
+            "S": "net174"
+          },
+          "saved_parameters": {
+            "l": "100n",
+            "w": "10u",
+            "wf": "10u",
+            "fingers": "1",
+            "m": "30",
+            "nf": "1"
+          }
+        }
+      ]
+    },
+    {
+      "library": "Pipe_SAR",
+      "cell": "ampGA",
+      "view": "schematic",
+      "window": "window:13",
+      "source_relative_path": "pipelined_sar_12bit_100MSps/libraries/Pipe_SAR/ampGA/schematic/sch.oa",
+      "source_sha256_before": "234d16faed67561a0afdef0a3f2e2ce2e8357fd334c9ab9678b6d61b1bfede2c",
+      "source_sha256_after": "234d16faed67561a0afdef0a3f2e2ce2e8357fd334c9ab9678b6d61b1bfede2c",
+      "image_path": "Pipe_SAR__ampGA.png",
+      "image_sha256": "c45bfe763c1b196963b39bd29d946d999f2d7ba7b7e079835f0a2bea6107b3a2",
+      "image_bytes": 394406,
+      "width": 3400,
+      "height": 1967,
+      "instance_count": 13,
+      "pins": {
+        "VIP1": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VIP1",
+          "occurrences": 1
+        },
+        "VIN1": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VIN1",
+          "occurrences": 1
+        },
+        "VOP1": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "VOP1",
+          "occurrences": 1
+        },
+        "VON1": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "VON1",
+          "occurrences": 1
+        },
+        "GND": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "GND",
+          "occurrences": 1
+        },
+        "VDD": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VDD",
+          "occurrences": 1
+        },
+        "bn2": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "bn2",
+          "occurrences": 1
+        },
+        "bn1": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "bn1",
+          "occurrences": 1
+        },
+        "bp2": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "bp2",
+          "occurrences": 1
+        },
+        "bp1": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "bp1",
+          "occurrences": 1
+        },
+        "Vcmp": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "Vcmp",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "M35",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "VOP1",
+            "B": "GND",
+            "G": "bn2",
+            "S": "net60"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "1.5u",
+            "wf": "1.5u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M29",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "VON1",
+            "B": "GND",
+            "G": "bn2",
+            "S": "net59"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "1.5u",
+            "wf": "1.5u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M36",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net60",
+            "B": "GND",
+            "G": "bn1",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "2.44u",
+            "wf": "2.44u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M30",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net59",
+            "B": "GND",
+            "G": "bn1",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "2.44u",
+            "wf": "2.44u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M4",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "GND",
+            "B": "VDD",
+            "G": "Vcmp",
+            "S": "net012"
+          },
+          "saved_parameters": {
+            "l": "10u",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M3",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net59",
+            "B": "VDD",
+            "G": "VIP1",
+            "S": "net012"
+          },
+          "saved_parameters": {
+            "l": "100n",
+            "w": "12.0u",
+            "wf": "12.0u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M2",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net60",
+            "B": "VDD",
+            "G": "VIN1",
+            "S": "net012"
+          },
+          "saved_parameters": {
+            "l": "100n",
+            "w": "12.0u",
+            "wf": "12.0u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M1",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net012",
+            "B": "VDD",
+            "G": "bp2",
+            "S": "net65"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "6.96u",
+            "wf": "6.96u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M0",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net65",
+            "B": "VDD",
+            "G": "bp1",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "7u",
+            "wf": "7u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M33",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net66",
+            "B": "VDD",
+            "G": "bp1",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "3.5u",
+            "wf": "3.5u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M37",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net63",
+            "B": "VDD",
+            "G": "bp1",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "3.5u",
+            "wf": "3.5u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M34",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "VOP1",
+            "B": "VDD",
+            "G": "bp2",
+            "S": "net66"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "3.48u",
+            "wf": "3.48u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M38",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "VON1",
+            "B": "VDD",
+            "G": "bp2",
+            "S": "net63"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "3.48u",
+            "wf": "3.48u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        }
+      ]
+    },
+    {
+      "library": "Pipe_SAR",
+      "cell": "ampGB",
+      "view": "schematic",
+      "window": "window:14",
+      "source_relative_path": "pipelined_sar_12bit_100MSps/libraries/Pipe_SAR/ampGB/schematic/sch.oa",
+      "source_sha256_before": "78772d12615fe6895aa2f706538e28b5b94e22fb789837fe11238fce9544b46f",
+      "source_sha256_after": "78772d12615fe6895aa2f706538e28b5b94e22fb789837fe11238fce9544b46f",
+      "image_path": "Pipe_SAR__ampGB.png",
+      "image_sha256": "a762e187d6f8f97cd5fbe0e2a614fa9ddd00672d7fbd64707d78e492d094e549",
+      "image_bytes": 419047,
+      "width": 3400,
+      "height": 2272,
+      "instance_count": 13,
+      "pins": {
+        "VIP2": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VIP2",
+          "occurrences": 1
+        },
+        "VIN2": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VIN2",
+          "occurrences": 1
+        },
+        "VOP2": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "VOP2",
+          "occurrences": 1
+        },
+        "VON2": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "VON2",
+          "occurrences": 1
+        },
+        "bp1": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "bp1",
+          "occurrences": 1
+        },
+        "bp2": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "bp2",
+          "occurrences": 1
+        },
+        "bn1": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "bn1",
+          "occurrences": 1
+        },
+        "bn2": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "bn2",
+          "occurrences": 1
+        },
+        "GND": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "GND",
+          "occurrences": 1
+        },
+        "VDD": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VDD",
+          "occurrences": 1
+        },
+        "Vcmn": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "Vcmn",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "M43",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "VDD",
+            "B": "GND",
+            "G": "Vcmn",
+            "S": "net23"
+          },
+          "saved_parameters": {
+            "l": "800n",
+            "w": "32.0u",
+            "wf": "32.0u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M42",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net37",
+            "B": "GND",
+            "G": "VIP2",
+            "S": "net23"
+          },
+          "saved_parameters": {
+            "l": "100n",
+            "w": "15.0u",
+            "wf": "15.0u",
+            "fingers": "1",
+            "m": "2",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M41",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net38",
+            "B": "GND",
+            "G": "VIN2",
+            "S": "net23"
+          },
+          "saved_parameters": {
+            "l": "100n",
+            "w": "15.0u",
+            "wf": "15.0u",
+            "fingers": "1",
+            "m": "2",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M36",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net42",
+            "B": "GND",
+            "G": "bn1",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "1.22u",
+            "wf": "1.22u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M35",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "VOP2",
+            "B": "GND",
+            "G": "bn2",
+            "S": "net42"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "1.5u",
+            "wf": "1.5u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M30",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net41",
+            "B": "GND",
+            "G": "bn1",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "1.22u",
+            "wf": "1.22u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M29",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "VON2",
+            "B": "GND",
+            "G": "bn2",
+            "S": "net41"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "1.5u",
+            "wf": "1.5u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M40",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net23",
+            "B": "GND",
+            "G": "bn2",
+            "S": "net43"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "3u",
+            "wf": "3u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M39",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net43",
+            "B": "GND",
+            "G": "bn1",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "2.44u",
+            "wf": "2.44u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M34",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "VOP2",
+            "B": "VDD",
+            "G": "bp2",
+            "S": "net38"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "3.48u",
+            "wf": "3.48u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M33",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net38",
+            "B": "VDD",
+            "G": "bp1",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "7u",
+            "wf": "7u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M38",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "VON2",
+            "B": "VDD",
+            "G": "bp2",
+            "S": "net37"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "3.48u",
+            "wf": "3.48u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M37",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net37",
+            "B": "VDD",
+            "G": "bp1",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "150.0n",
+            "w": "7u",
+            "wf": "7u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        }
+      ]
+    },
+    {
+      "library": "Pipe_SAR",
+      "cell": "comparator4in2",
+      "view": "schematic",
+      "window": "window:15",
+      "source_relative_path": "pipelined_sar_12bit_100MSps/libraries/Pipe_SAR/comparator4in2/schematic/sch.oa",
+      "source_sha256_before": "952e40e81e00a53b1c3539d9fd2edebe5ffa8050f549a59182b3c0fde92e367c",
+      "source_sha256_after": "952e40e81e00a53b1c3539d9fd2edebe5ffa8050f549a59182b3c0fde92e367c",
+      "image_path": "Pipe_SAR__comparator4in2.png",
+      "image_sha256": "a5a627970042def4ac557d19170b6e95538c1701147f5298547d768e8df46e46",
+      "image_bytes": 229221,
+      "width": 3400,
+      "height": 1811,
+      "instance_count": 19,
+      "pins": {
+        "Vrp": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "Vrp",
+          "occurrences": 1
+        },
+        "VNN": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VNN",
+          "occurrences": 1
+        },
+        "VPN": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "VPN",
+          "occurrences": 1
+        },
+        "Vrn": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "Vrn",
+          "occurrences": 1
+        },
+        "GND": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "GND",
+          "occurrences": 1
+        },
+        "VDD": {
+          "direction": "inputOutput",
+          "numBits": 1,
+          "net": "VDD",
+          "occurrences": 1
+        },
+        "CLK": {
+          "direction": "input",
+          "numBits": 1,
+          "net": "CLK",
+          "occurrences": 1
+        },
+        "OUTP": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "OUTP",
+          "occurrences": 1
+        },
+        "OUTN": {
+          "direction": "output",
+          "numBits": 1,
+          "net": "OUTN",
+          "occurrences": 1
+        }
+      },
+      "instances": [
+        {
+          "name": "M24",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "VOUTN",
+            "B": "GND",
+            "G": "XN",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "12",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M23",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net045",
+            "B": "GND",
+            "G": "VOUTN",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "6",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M22",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "VOUTN",
+            "B": "GND",
+            "G": "net045",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "6",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M21",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net045",
+            "B": "GND",
+            "G": "XP",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "12",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M18",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "XP",
+            "B": "GND",
+            "G": "Vrn",
+            "S": "net065"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M17",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "XN",
+            "B": "GND",
+            "G": "Vrp",
+            "S": "net065"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M16",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "XN",
+            "B": "GND",
+            "G": "VNN",
+            "S": "net065"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M15",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "XP",
+            "B": "GND",
+            "G": "VPN",
+            "S": "net065"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "1",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M14",
+          "lib": "tsmcN65",
+          "cell": "nch",
+          "terms": {
+            "D": "net065",
+            "B": "GND",
+            "G": "CLK",
+            "S": "GND"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "8",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M27",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net070",
+            "B": "VDD",
+            "G": "CLKN",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "16",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M26",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "VOUTN",
+            "B": "net070",
+            "G": "net045",
+            "S": "net070"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "12",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M25",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "net045",
+            "B": "net070",
+            "G": "VOUTN",
+            "S": "net070"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "12",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M20",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "XP",
+            "B": "VDD",
+            "G": "CLK",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "16",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "M19",
+          "lib": "tsmcN65",
+          "cell": "pch",
+          "terms": {
+            "D": "XN",
+            "B": "VDD",
+            "G": "CLK",
+            "S": "VDD"
+          },
+          "saved_parameters": {
+            "l": "60n",
+            "w": "1u",
+            "wf": "1u",
+            "fingers": "1",
+            "m": "16",
+            "nf": "1"
+          }
+        },
+        {
+          "name": "I4",
+          "lib": "Pipe_SAR",
+          "cell": "NOR_SOURCE",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "OUT": "OUTP",
+            "A": "lop",
+            "B": "OUTN"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I5",
+          "lib": "Pipe_SAR",
+          "cell": "NOR_SOURCE",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "OUT": "OUTN",
+            "A": "lon",
+            "B": "OUTP"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I3",
+          "lib": "Pipe_SAR",
+          "cell": "INV",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "OUT": "lon",
+            "IN": "VOUTN"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I2",
+          "lib": "Pipe_SAR",
+          "cell": "INV",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "OUT": "lop",
+            "IN": "net045"
+          },
+          "saved_parameters": {}
+        },
+        {
+          "name": "I6",
+          "lib": "Pipe_SAR",
+          "cell": "NOT_SOURCE",
+          "terms": {
+            "GND": "GND",
+            "VDD": "VDD",
+            "OUT": "CLKN",
+            "IN": "CLK"
+          },
+          "saved_parameters": {}
+        }
+      ]
+    }
+  ]
+}
